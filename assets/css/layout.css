@@ -246,8 +246,17 @@
     /* Stacked, he stands below the wordmark instead of across
        it — at this width the overlap just obscures the name —
        so he can afford to be much bigger than he could when
-       sharing a row with it. */
-    height: clamp(15rem, 68vw, 26rem);
+       sharing a row with it.
+
+       Sized by height, like the wide layout, because the figure
+       is 362×940: a width rule would make him a thousand pixels
+       tall. That also means width is never the binding
+       constraint here — at this height he is about 140px wide on
+       a phone — so the only real limit is how much of the first
+       screen he is allowed to take. The svh cap is that limit,
+       in s-units so a retreating address bar can't change the
+       answer mid-scroll. */
+    height: min(clamp(18rem, 92vw, 32rem), 56svh);
     margin-top: 0.25rem;
     margin-inline-end: 0;
   }
