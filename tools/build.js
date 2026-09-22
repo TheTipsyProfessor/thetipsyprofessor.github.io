@@ -132,8 +132,14 @@ const rootRelative = (html) => html
     (_, q, v) => `url(${q}/${v}${q})`
   );
 
+/* Everything essay.html carries in its <head> below the page's own
+   title and description. Terminated by an explicit marker rather
+   than by the first </script>, which is what it used to use: that
+   silently truncated the block the moment a second script was added
+   to the head, dropping the preferences bootstrap from every
+   pre-rendered essay. */
 const HEAD_EXTRAS = rootRelative(
-  slice('<link rel="preconnect"', '</script>')
+  slice('<link rel="preconnect"', '<!--/head-extras-->')
     .replace(/<link rel="alternate"[\s\S]*?>\s*/g, '')
 );
 const BAR = rootRelative(slice('<header class="bar">', '</header>'));
