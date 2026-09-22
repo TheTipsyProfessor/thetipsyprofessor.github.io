@@ -1,0 +1,180 @@
+/* ============================================================
+   THE TIPSY PROFESSOR — tokens
+   Two ink plates, pulled slightly out of register.
+   ============================================================ */
+
+:root {
+  /* ---- Plates: day edition ------------------------------- */
+  --paper:      #efe9dc;
+  --paper-2:    #e6dece;   /* recessed panels, wells          */
+  --paper-3:    #dcd2bd;   /* rules, hairlines                */
+  --ink:        #16130f;
+  --ink-2:      #453d31;   /* secondary prose                 */
+  --rust:       #c4603a;   /* plate A                         */
+  --slate:      #37626f;   /* plate B                         */
+  --wine:       #6e2436;
+  --sage:       #6e7559;   /* metadata, captions              */
+
+  --ink-rgb:    22 19 15;
+  --paper-rgb:  239 233 220;
+
+  /* ---- Second inks, one per section ----------------------
+     Plate A is always rust. Plate B changes with the section,
+     so the colour drifting out from behind a card says what
+     kind of piece it is before a word has been read.
+
+     These are applied by overriding --slate on an element
+     carrying data-tangent — which means every rule that
+     already draws the second plate picks it up untouched. */
+  --ink-elsewhere: #37626f;   /* away — cold, tidal        */
+  --ink-overheard: #414a75;   /* other people — blue hour  */
+  --ink-arguments: #6e2436;   /* heat                      */
+  --ink-habits:    #5f6a4a;   /* the daily, unremarkable   */
+  --ink-strangers:   #2f5d4a;   /* someone you did not know  */
+
+  /* ---- Typefaces ----------------------------------------- */
+  --display: "Fraunces", "Hoefler Text", Georgia, serif;
+  --body:    "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono:    "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Per-script stacks. Latin faces first so shared glyphs
+     (punctuation, digits) stay in the house style; the script
+     face only picks up what the Latin face cannot set.       */
+  --script-jp: var(--body), "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  --script-hi: var(--body), "Kohinoor Devanagari", "Nirmala UI", "Noto Serif Devanagari", serif;
+  --script-ar: var(--body), "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", serif;
+  --script-el: var(--body), "GFS Didot", "Noto Serif", serif;
+  --script-zh: var(--body), "Songti SC", "Noto Serif SC", serif;
+
+  /* ---- Reader-controlled size ---------------------------- */
+  --fs-scale: 1;
+
+  /* ---- Type scale (fluid, then multiplied by --fs-scale) -- */
+  --t-masthead: clamp(3.4rem, 13.5vw, 12.5rem);
+  --t-display:  clamp(2.3rem, 6.2vw, 4.6rem);
+  --t-title:    clamp(1.75rem, 3.4vw, 2.85rem);
+  --t-sub:      clamp(1.2rem, 1.9vw, 1.6rem);
+  --t-body:     clamp(1.0625rem, 0.42vw + 0.98rem, 1.2rem);
+  --t-small:    0.875rem;
+  --t-micro:    0.6875rem;
+
+  --lh-tight: 0.92;
+  --lh-title: 1.1;
+  --lh-body:  1.66;
+
+  --measure: 34rem;        /* ~64 characters at body size     */
+  --rail:    15.5rem;      /* the margin apparatus            */
+  --gutter:  clamp(1.25rem, 4vw, 3.5rem);
+
+  /* ---- Sobriety ------------------------------------------
+     --tipsy is the single dial. 0 = a perfect Swiss grid.
+     1 = the room has started to move. Set by prefs.js.       */
+  --tipsy: 0.6;
+
+  /* Scroll velocity, 0..1, written by grid.js. Rattles the
+     press: fast scrolling pushes the plates further apart.   */
+  --shake: 0;
+
+  /* Derived from the dial — never set these directly.        */
+  --wonk:     calc(var(--tipsy) * 1);
+  --soft:     calc(var(--tipsy) * 60);
+  --offset:   calc(var(--tipsy) * 3px * (1 + var(--shake) * 1.5));
+  --lean:     calc(var(--tipsy) * 1deg);
+
+  /* How far the two plates run past the edge of the sheet.
+     Deliberately not tied to --shake: the rest of the page may
+     rattle while you scroll, but a border that breathes in
+     your peripheral vision for three pours is unbearable. */
+  --bleed:    calc(var(--tipsy) * 2.75rem);
+
+  /* Per-element sway, written by grid.js. Defaults keep the
+     page sane if JS never arrives.                           */
+  --sway-r: 0;
+  --sway-x: 0;
+  --sway-y: 0;
+
+  /* ---- Motion -------------------------------------------- */
+  --ease: cubic-bezier(0.2, 0.8, 0.25, 1);
+  --ease-ink: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur: 0.5s;
+
+  color-scheme: light;
+}
+
+/* ---- Night edition ---------------------------------------
+   Not an inversion. The same press, run on black stock, with
+   the plates brightened so they survive the darker ground.   */
+:root[data-edition="night"] {
+  --paper:   #141210;
+  --paper-2: #1d1a16;
+  --paper-3: #2e2922;
+  --ink:     #e9e1d1;
+  --ink-2:   #a79d8b;
+  --rust:    #e0794d;
+  --slate:   #6fa3b0;
+  --wine:    #c2566b;
+  --sage:    #9aa47f;
+
+  --ink-rgb:   233 225 209;
+  --paper-rgb: 20 18 16;
+
+  /* Brightened for black stock, same hues. */
+  --ink-elsewhere: #6fa3b0;
+  --ink-overheard: #8790c4;
+  --ink-arguments: #c2566b;
+  --ink-habits:    #9aa47f;
+  --ink-strangers:   #6fae91;
+
+  color-scheme: dark;
+}
+
+/* The same black stock, reached by system preference rather
+   than by the toggle. The section inks have to be brightened
+   here too — left at their day values they are dark colours
+   on a dark ground, which is how a reader on auto would have
+   seen them. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-edition="day"]) {
+    --paper:   #141210;
+    --paper-2: #1d1a16;
+    --paper-3: #2e2922;
+    --ink:     #e9e1d1;
+    --ink-2:   #a79d8b;
+    --rust:    #e0794d;
+    --slate:   #6fa3b0;
+    --wine:    #c2566b;
+    --sage:    #9aa47f;
+
+    --ink-rgb:   233 225 209;
+    --paper-rgb: 20 18 16;
+
+    --ink-elsewhere: #6fa3b0;
+    --ink-overheard: #8790c4;
+    --ink-arguments: #c2566b;
+    --ink-habits:    #9aa47f;
+    --ink-strangers:   #6fae91;
+
+    color-scheme: dark;
+  }
+}
+
+/* ---- Which second ink is on the press --------------------
+   Overriding --slate is the whole mechanism. Every rule that
+   already draws the second plate — the card edges, the stamp,
+   the page bleed, the focus ring, the second speaker in an
+   exchange — reads var(--slate) and picks this up untouched.
+   Nothing else in the stylesheet had to change.              */
+[data-tangent="Elsewhere"] { --slate: var(--ink-elsewhere); }
+[data-tangent="Overheard"] { --slate: var(--ink-overheard); }
+[data-tangent="Arguments"] { --slate: var(--ink-arguments); }
+[data-tangent="Habits"]    { --slate: var(--ink-habits); }
+[data-tangent="Strangers"]  { --slate: var(--ink-strangers); }
+
+/* ---- Sober by request ------------------------------------
+   A reader who asks for less motion gets a dead-level grid.  */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --tipsy: 0;
+    --dur: 0.01ms;
+  }
+}

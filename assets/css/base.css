@@ -1,0 +1,237 @@
+/* ============================================================
+   BASE — reset, paper, running text
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: calc(100% * var(--fs-scale));
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  /* Let both faces pick their own optical size from the size
+     they are actually rendered at — which means the A+/A− control
+     shifts the type toward display cuts as it grows, instead of
+     just scaling one cut up. */
+  font-optical-sizing: auto;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  hanging-punctuation: first last;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+/* ---- Paper tooth -----------------------------------------
+   A single fixed grain layer over the whole page. Multiply in
+   the day edition, screen at night, so the same texture reads
+   as fibre on both stocks.                                   */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+:root[data-edition="night"] body::before { mix-blend-mode: screen; opacity: 0.18; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-edition="day"]) body::before { mix-blend-mode: screen; opacity: 0.18; }
+}
+
+/* ---- The sheet itself goes out of register ----------------
+   Rust runs past the top and left edges, slate past the bottom
+   and right — the same two plates that miss behind the masthead
+   and behind every card, arriving at the edge of the page.
+
+   Built from four gradients rather than a blurred shadow: this
+   composites on the GPU and never repaints, where a blur over
+   the whole viewport would repaint on every scroll frame.
+
+   At --tipsy 0 the width and the opacity are both zero, so
+   there is genuinely nothing here.                          */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* Behind the content, in front of the paper colour. The ink
+     is *in* the sheet — it must not wash over the text, and it
+     must not tint the control bar, which reads as an alert the
+     moment it goes pink. */
+  z-index: -1;
+  pointer-events: none;
+  opacity: calc(var(--tipsy) * 0.55);
+  mix-blend-mode: multiply;
+  /* Most of the colour in the first third of the bleed, so it
+     wicks in from the trim edge rather than washing across a
+     wide band. */
+  background:
+    linear-gradient(to bottom, var(--rust),  #0000 62%) top    / 100% var(--bleed) no-repeat,
+    linear-gradient(to right,  var(--rust),  #0000 62%) left   / var(--bleed) 100% no-repeat,
+    linear-gradient(to top,    var(--slate), #0000 62%) bottom / 100% var(--bleed) no-repeat,
+    linear-gradient(to left,   var(--slate), #0000 62%) right  / var(--bleed) 100% no-repeat;
+  transition: opacity 0.4s var(--ease);
+}
+
+/* On black stock the ink has to add light rather than subtract
+   it — and it has to stay faint, because a bright halo on a
+   dark ground stops reading as ink and starts reading as a
+   failing panel. */
+:root[data-edition="night"] body::after { mix-blend-mode: screen; opacity: calc(var(--tipsy) * 0.3); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-edition="day"]) body::after { mix-blend-mode: screen; opacity: calc(var(--tipsy) * 0.3); }
+}
+
+img, svg, video, iframe { max-width: 100%; display: block; }
+img { height: auto; }
+
+/* ---- Headings --------------------------------------------
+   Fraunces carries the personality. WONK and SOFT are wired to
+   the dial, so the letterforms themselves sober up.          */
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-variation-settings:
+    "SOFT" var(--soft),
+    "WONK" var(--wonk);
+  font-weight: 600;
+  line-height: var(--lh-title);
+  letter-spacing: -0.021em;
+  text-wrap: balance;
+  margin: 0;
+}
+
+h1 { font-size: var(--t-display); }
+h2 { font-size: var(--t-title); }
+h3 { font-size: var(--t-sub); font-weight: 500; }
+
+p { margin: 0 0 1.15em; text-wrap: pretty; }
+
+a {
+  color: inherit;
+  text-decoration-color: var(--rust);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 0.18s var(--ease), text-decoration-color 0.18s var(--ease);
+}
+a:hover { color: var(--rust); }
+
+strong { font-weight: 650; }
+em { font-style: italic; }
+
+/* ---- Focus ------------------------------------------------
+   Visible on both stocks, on every interactive thing.        */
+:focus-visible {
+  outline: 2px solid var(--slate);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+::selection { background: var(--rust); color: var(--paper); }
+
+/* The control bar is sticky, so anything jumped to by an
+   anchor needs to clear it. */
+:target, [id] { scroll-margin-top: 5.5rem; }
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 10000;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: top 0.2s var(--ease);
+}
+.skip-link:focus { top: 0.75rem; }
+
+.vh {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---- The utility voice -----------------------------------
+   Datelines, plate numbers, controls. Lining numerals here —
+   these are data, not prose.                                 */
+.mono {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--sage);
+}
+
+/* ---- The dateline ----------------------------------------
+   Where it was written, when, and how long. The site's only
+   structural marker — numbering essays 01/02/03 would say
+   nothing true about them.                                   */
+.dateline {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--sage);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+.dateline > * { margin: 0; }
+
+/* The separator belongs to the item before it. As its own
+   element it could wrap onto the next line and sit there on
+   its own, which happens constantly once a date is in the
+   line and the column is narrow. */
+.dateline > *:not(:last-child)::after {
+  content: "·";
+  color: var(--rust);
+  margin-inline: 0.55em;
+}
+
+/* ---- Scripts ---------------------------------------------
+   Set each script in a face that was actually drawn for it.  */
+:lang(ja) { font-family: var(--script-jp); line-height: 1.85; }
+:lang(zh) { font-family: var(--script-zh); line-height: 1.85; }
+:lang(hi), :lang(mr), :lang(sa) { font-family: var(--script-hi); line-height: 1.8; }
+:lang(ar), :lang(fa), :lang(ur) { font-family: var(--script-ar); line-height: 1.9; }
+:lang(el) { font-family: var(--script-el); }
+:lang(ar), :lang(fa), :lang(ur), :lang(he) { direction: rtl; unicode-bidi: isolate; }
+
+/* CJK and Devanagari have no oldstyle figures and no italic;
+   asking for them produces synthetic junk.                   */
+:lang(ja), :lang(zh), :lang(hi), :lang(ar) {
+  font-variant-numeric: normal;
+  font-synthesis: none;
+}
+
+/* ---- Rules ------------------------------------------------ */
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--paper-3);
+  margin: 3rem 0;
+}

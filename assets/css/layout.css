@@ -1,0 +1,480 @@
+/* ============================================================
+   LAYOUT — the tipsy grid
+   Furniture sways. Running text never does.
+   ============================================================ */
+
+/* Cross-document transitions where the browser offers them.
+   Pure progressive enhancement — nothing depends on it.      */
+@view-transition { navigation: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+
+/* Navigating is a plate change: the outgoing sheet lifts off
+   toward one plate's offset, the incoming one drops in from the
+   other's. Both distances are --offset, so at sober there is no
+   displacement at all and this degrades to a plain crossfade —
+   the same contract as everything else the dial governs.      */
+::view-transition-old(root) {
+  animation: plate-lift 0.3s var(--ease-ink) both;
+}
+::view-transition-new(root) {
+  animation: plate-drop 0.42s var(--ease-ink) both;
+}
+
+@keyframes plate-lift {
+  to {
+    opacity: 0;
+    transform: translate(calc(var(--offset) * -5), calc(var(--offset) * -2.5));
+  }
+}
+@keyframes plate-drop {
+  from {
+    opacity: 0;
+    transform: translate(calc(var(--offset) * 5), calc(var(--offset) * 2.5));
+  }
+}
+
+.shell {
+  width: min(100% - (var(--gutter) * 2), 78rem);
+  margin-inline: auto;
+}
+
+/* ---- The sway --------------------------------------------
+   grid.js writes --sway-* per element from its index, so the
+   page is identically askew on every load: a drawn layout,
+   not random noise. The dial scales all of it to zero.       */
+[data-sway] {
+  transform:
+    rotate(calc(var(--sway-r) * var(--tipsy) * 1deg))
+    translate(calc(var(--sway-x) * var(--tipsy) * 1px),
+              calc(var(--sway-y) * var(--tipsy) * 1px));
+  transition: transform 0.55s var(--ease);
+}
+
+/* ============================================================
+   CONTROL BAR
+   ============================================================ */
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px) saturate(1.2);
+  border-bottom: 1px solid var(--paper-3);
+}
+
+.bar__inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, var(--gutter));
+  padding: 0.85rem 0;
+}
+
+.bar__mark {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.bar__mark:hover { color: var(--rust); }
+
+.bar__nav {
+  display: flex;
+  gap: 1.35rem;
+  margin-inline-end: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.bar__nav::-webkit-scrollbar { display: none; }
+
+.bar__nav a {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink-2);
+  white-space: nowrap;
+  padding-block: 0.2rem;
+  border-bottom: 1px solid transparent;
+}
+.bar__nav a:hover,
+.bar__nav a[aria-current] { color: var(--ink); border-bottom-color: var(--rust); }
+
+.bar__tools { display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0; }
+
+/* Narrow: the sections drop to a second, swipeable row rather
+   than disappearing. Hiding them would leave the footer as the
+   only way to reach a section. */
+@media (max-width: 52rem) {
+  .bar__inner { flex-wrap: wrap; gap: 0.5rem 1rem; padding-bottom: 0; }
+  .bar__mark { margin-inline-end: auto; }
+  .bar__nav {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--paper-3);
+    gap: 1.1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================================
+   MASTHEAD — the riso registration
+   ============================================================ */
+
+.masthead {
+  position: relative;
+  /* Tight at the top so the figure gets the height instead. */
+  padding-block: clamp(1rem, 2.5vw, 2rem) clamp(2.5rem, 7vw, 6rem);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+}
+
+.masthead__type {
+  grid-area: 1 / 1 / 2 / 3;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--display);
+  font-size: var(--t-masthead);
+  line-height: var(--lh-tight);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  text-transform: lowercase;
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+}
+
+.mh-line { position: relative; display: block; isolation: isolate; }
+.mh-line--the   { font-size: 0.32em; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.4em; margin-left: 0.3em; }
+.mh-line--tipsy { margin-left: 0.04em; }
+.mh-line--prof  { margin-left: 0.9em; margin-top: -0.14em; }
+
+/* The two plates sit behind the ink and peek out at the edges.
+   At --tipsy 0 they hide exactly beneath it.                 */
+.mh-line::before,
+.mh-line::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.mh-line::before {
+  color: var(--rust);
+  transform: translate(calc(var(--offset) * -1.4), calc(var(--offset) * -0.7));
+  animation: plate-a 1.15s var(--ease-ink) backwards;
+}
+.mh-line::after {
+  color: var(--slate);
+  transform: translate(calc(var(--offset) * 1.4), calc(var(--offset) * 0.7));
+  animation: plate-b 1.15s var(--ease-ink) backwards;
+}
+.mh-line--tipsy::before, .mh-line--tipsy::after { animation-delay: 0.1s; }
+.mh-line--prof::before,  .mh-line--prof::after  { animation-delay: 0.2s; }
+
+@keyframes plate-a {
+  from { transform: translate(-0.14em, -0.06em); opacity: 0; }
+  55%  { opacity: 1; }
+  to   { transform: translate(calc(var(--offset) * -1.4), calc(var(--offset) * -0.7)); opacity: 1; }
+}
+@keyframes plate-b {
+  from { transform: translate(0.14em, 0.06em); opacity: 0; }
+  55%  { opacity: 1; }
+  to   { transform: translate(calc(var(--offset) * 1.4), calc(var(--offset) * 0.7)); opacity: 1; }
+}
+
+/* The cutout is 362×940 — a tall, narrow figure. Size it by
+   height, or a width constraint makes it a thousand pixels
+   tall and the masthead disappears underneath it.            */
+.masthead__figure {
+  grid-area: 1 / 2 / 2 / 3;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  /* As large as the first screen will carry. The svh cap is
+     what stops his head going under the control bar on a short
+     window — s-units so a mobile address bar sliding away can't
+     change the answer mid-scroll. */
+  height: min(clamp(18rem, 56vw, 54rem), 84svh);
+  justify-self: end;
+  /* Pulled left so he stands in the wordmark rather than
+     beside it — "professor" runs behind his legs.           */
+  margin-inline-end: clamp(0rem, 8vw, 7rem);
+  animation: figure-in 1.1s 0.25s var(--ease-ink) backwards;
+}
+.masthead__figure img {
+  height: 100%;
+  width: auto;
+  filter: drop-shadow(0 1.5rem 2rem rgb(var(--ink-rgb) / 0.13));
+}
+:root[data-edition="night"] .masthead__figure img { filter: none; }
+
+@keyframes figure-in {
+  from { opacity: 0; transform: translateY(1.5rem); }
+  to   { opacity: 1; transform: none; }
+}
+
+.masthead__dek {
+  grid-area: 2 / 1 / 3 / 2;
+  max-width: 26rem;
+  margin: 1.75rem 0 0;
+  font-size: var(--t-sub);
+  line-height: 1.45;
+  color: var(--ink-2);
+  font-style: italic;
+  animation: figure-in 0.9s 0.5s var(--ease-ink) backwards;
+}
+
+@media (max-width: 48rem) {
+  .masthead { grid-template-columns: 1fr; }
+  .masthead__type { grid-area: auto; }
+  .masthead__figure {
+    grid-area: auto;
+    justify-self: center;
+    /* Stacked, he stands below the wordmark instead of across
+       it — at this width the overlap just obscures the name —
+       so he can afford to be much bigger than he could when
+       sharing a row with it. */
+    height: clamp(15rem, 68vw, 26rem);
+    margin-top: 0.25rem;
+    margin-inline-end: 0;
+  }
+  .masthead__dek { grid-area: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mh-line::before, .mh-line::after,
+  .masthead__figure, .masthead__dek { animation: none; }
+}
+
+/* ============================================================
+   THE FEED — a grid that lost its footing
+   ============================================================ */
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem) var(--gutter);
+  padding-block: clamp(3rem, 7vw, 6rem);
+  align-items: start;
+}
+
+/* A repeating stagger. Columns and drops are fixed, so the
+   layout is composed rather than accidental.                 */
+.feed > * { grid-column: span 12; }
+
+/* Three up. Each card takes four of the twelve columns and
+   sits at its own height, so the row reads as a shelf that
+   nobody levelled rather than a tidy row of three.           */
+@media (min-width: 62rem) {
+  .feed { gap: clamp(2.5rem, 4vw, 3.5rem) clamp(1.5rem, 2.5vw, 2.5rem); }
+  .feed > *:nth-child(3n+1) { grid-column: 1 / span 4; margin-top: calc(var(--tipsy) * 2.25rem); }
+  .feed > *:nth-child(3n+2) { grid-column: 5 / span 4; margin-top: 0; }
+  .feed > *:nth-child(3n+3) { grid-column: 9 / span 4; margin-top: calc(var(--tipsy) * 3.5rem); }
+}
+
+/* Two up. */
+@media (min-width: 40rem) and (max-width: 61.999rem) {
+  .feed > *:nth-child(odd)  { grid-column: 1 / span 7; }
+  .feed > *:nth-child(even) { grid-column: 6 / span 7; margin-top: calc(var(--tipsy) * 2rem); }
+}
+
+/* ============================================================
+   THE READER — text column with a living margin
+   ============================================================ */
+
+/* One column definition, shared by the essay head, the prose
+   and everything that follows it, so they all sit on the same
+   axis no matter how wide the window is.                      */
+/* The empty column on the right mirrors the rail on the left,
+   so the text column lands in the optical centre of the page
+   instead of being shunted right by the apparatus.           */
+.reader-grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(var(--gutter), 1fr)
+    [rail-start] minmax(0, var(--rail))
+    [rail-end] var(--gutter)
+    [text-start] minmax(0, var(--measure)) [text-end]
+    var(--gutter)
+    minmax(0, var(--rail))
+    minmax(var(--gutter), 1fr) [full-end];
+}
+
+.reader-grid > * {
+  grid-column: text-start / text-end;
+  position: relative;   /* anchors absolutely-placed margin notes */
+  min-width: 0;
+}
+
+.reader-grid > .bleed  { grid-column: full-start / full-end; }
+.reader-grid > .wide   { grid-column: rail-start / text-end; }
+.reader-grid > .spread { grid-column: rail-start / full-end; }
+
+/* Below the rail breakpoint the apparatus folds inline. */
+@media (max-width: 68rem) {
+  .reader-grid {
+    grid-template-columns:
+      [full-start] var(--gutter)
+      [rail-start text-start] minmax(0, var(--measure)) [rail-end text-end]
+      var(--gutter) [full-end];
+    justify-content: center;
+  }
+  .reader-grid > .wide, .reader-grid > .spread { grid-column: text-start / text-end; }
+}
+
+.prose { padding-block: clamp(2rem, 5vw, 4rem) clamp(4rem, 9vw, 8rem); }
+
+/* ---- Essay opening ---------------------------------------- */
+.essay-head {
+  padding-block: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 3vw, 2.5rem);
+}
+.essay-head .dateline { margin-bottom: 1.4rem; }
+.essay-head h1 {
+  font-size: var(--t-display);
+  letter-spacing: -0.032em;
+  margin-bottom: 0.5rem;
+}
+.essay-head .dek {
+  font-size: var(--t-sub);
+  font-style: italic;
+  color: var(--ink-2);
+  max-width: 30rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* A page that opens with a video lets the headline yield, so
+   the thumbnail is the first thing that registers rather than
+   competing with type two-thirds its size again.
+
+   Keyed to the video, not to a section: that is the actual
+   reason, and it means any piece anywhere gets the treatment
+   the moment it carries a hero. */
+body[data-hero] .essay-head h1 {
+  font-size: clamp(1.95rem, 4.4vw, 3.2rem);
+}
+body[data-hero] .essay-head .dek {
+  font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+}
+body[data-hero] .essay-head {
+  padding-block: clamp(2rem, 4.5vw, 3.5rem) clamp(1.25rem, 2.5vw, 2rem);
+}
+
+/* ---- Reading progress ------------------------------------- */
+.progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 2px;
+  z-index: 300;
+  background: transparent;
+  pointer-events: none;
+}
+.progress__bar {
+  height: 100%;
+  width: 0;
+  background: var(--rust);
+  transform-origin: left;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.foot {
+  border-top: 1px solid var(--paper-3);
+  /* Extra room at the bottom so the fixed dial never sits on
+     top of the last column. */
+  padding-block: clamp(2.5rem, 5vw, 4rem) clamp(6rem, 8vw, 8rem);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  align-items: start;
+}
+.foot h2 {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 400;
+  margin-bottom: 0.85rem;
+}
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
+.foot a { text-decoration: none; }
+.foot a:hover { text-decoration: underline; text-decoration-color: var(--rust); }
+.foot__note {
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  font-style: italic;
+  line-height: 1.5;
+}
+/* The short colophon ends in a link; it should read as one
+   without breaking out of the italic it sits in. */
+.foot__note a { color: var(--rust); text-decoration: none; white-space: nowrap; }
+.foot__note a:hover { text-decoration: underline; }
+
+/* ---- Instagram -------------------------------------------
+   Drawn in the same weight as the registration mark, so it
+   sits as a printed device rather than a pasted-in badge, and
+   it takes the section ink on hover like every other link.   */
+.foot__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.foot__social svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  flex: none;
+}
+.foot__social .foot__social-dot { fill: currentColor; stroke: none; }
+.foot__social:hover { color: var(--rust); }
+
+/* ---- The press mark --------------------------------------
+   A printer's registration target, where a press sheet carries
+   one: in the trim, at the end. At sober the three impressions
+   coincide and it reads as a single crosshair. As the dial
+   rises the two plates walk out from under the ink — the same
+   drift as everything else, shown as the instrument that
+   measures it.                                                */
+.foot__device {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  padding-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.regmark { overflow: visible; }
+.regmark g {
+  fill: none;
+  stroke-width: 1.1;
+  transition: transform 0.55s var(--ease);
+}
+.regmark__plate--a {
+  stroke: var(--rust);
+  transform: translate(calc(var(--offset) * -1.6), calc(var(--offset) * -1.6));
+}
+.regmark__plate--b {
+  stroke: var(--slate);
+  transform: translate(calc(var(--offset) * 1.6), calc(var(--offset) * 1.6));
+}
+.regmark__ink { stroke: var(--ink-2); }

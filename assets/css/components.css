@@ -1,0 +1,1207 @@
+/* ============================================================
+   COMPONENTS
+   ============================================================ */
+
+/* ---- Buttons in the utility voice ------------------------- */
+.btn {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  background: transparent;
+  border: 1px solid var(--paper-3);
+  padding: 0.42rem 0.6rem;
+  min-width: 2.1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  transition: color 0.18s var(--ease), border-color 0.18s var(--ease), background-color 0.18s var(--ease);
+}
+.btn:hover { color: var(--ink); border-color: var(--rust); }
+.btn:active { background: var(--paper-2); }
+.btn[aria-pressed="true"] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.btn--ghost { border-color: transparent; }
+.btn--wide { padding-inline: 1rem; }
+
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.btn:disabled:hover { color: var(--ink-2); border-color: var(--paper-3); }
+
+/* Font-size stepper reads as one object, not three buttons. */
+.stepper { display: flex; align-items: stretch; }
+.stepper .btn { border-radius: 0; }
+.stepper .btn + .btn { margin-left: -1px; }
+.stepper__read {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  color: var(--sage);
+  border: 1px solid var(--paper-3);
+  border-inline: 0;
+  padding-inline: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  margin-inline: -1px;
+}
+
+/* ============================================================
+   THE SOBRIETY DIAL
+   The one control the whole stylesheet answers to.
+   ============================================================ */
+
+.dial {
+  position: fixed;
+  right: clamp(0.75rem, 2vw, 1.5rem);
+  bottom: clamp(0.75rem, 2vw, 1.5rem);
+  z-index: 250;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(12px) saturate(1.2);
+  border: 1px solid var(--paper-3);
+  box-shadow: 0 0.6rem 1.8rem rgb(var(--ink-rgb) / 0.1);
+}
+
+.dial__label {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  user-select: none;
+  white-space: nowrap;
+}
+.dial__label--now { color: var(--wine); min-width: 4.2em; }
+
+.dial input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: clamp(4.5rem, 12vw, 7.5rem);
+  height: 1.25rem;
+  background: transparent;
+  cursor: grab;
+  margin: 0;
+}
+.dial input[type="range"]:active { cursor: grabbing; }
+
+.dial input[type="range"]::-webkit-slider-runnable-track {
+  height: 1px;
+  background: var(--ink-2);
+}
+.dial input[type="range"]::-moz-range-track {
+  height: 1px;
+  background: var(--ink-2);
+}
+.dial input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-top: -0.42rem;
+  border-radius: 50%;
+  background: var(--wine);
+  border: 2px solid var(--paper);
+  box-shadow: 0 0 0 1px var(--wine);
+}
+.dial input[type="range"]::-moz-range-thumb {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--wine);
+  border: 2px solid var(--paper);
+  box-shadow: 0 0 0 1px var(--wine);
+}
+
+@media (max-width: 34rem) {
+  .dial__label:not(.dial__label--now) { display: none; }
+}
+
+/* ============================================================
+   ESSAY CARD
+   ============================================================ */
+
+.card { position: relative; }
+
+.card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.card__link::after { content: ""; position: absolute; inset: 0; }
+
+/* The plate: a print pasted onto the page, with the two ink
+   layers peeking out from behind it. Hover pulls them apart. */
+.card__plate {
+  position: relative;
+  margin: 0 0 1.1rem;
+  isolation: isolate;
+  background: var(--paper-2);
+}
+.card__plate::before,
+.card__plate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: transform 0.4s var(--ease);
+}
+.card__plate::before {
+  background: var(--rust);
+  transform: translate(calc(var(--offset) * -1.6), calc(var(--offset) * -1.6));
+}
+.card__plate::after {
+  background: var(--slate);
+  transform: translate(calc(var(--offset) * 1.6), calc(var(--offset) * 1.6));
+}
+.card__link:hover .card__plate::before,
+.card__link:focus-visible .card__plate::before { transform: translate(-0.6rem, -0.6rem); }
+.card__link:hover .card__plate::after,
+.card__link:focus-visible .card__plate::after { transform: translate(0.6rem, 0.6rem); }
+
+.card__plate img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 50% 28%;
+  filter: saturate(0.92);
+}
+
+/* An essay with no plate gets type instead of a photograph.
+   Borrowing an unrelated illustration would say less.
+
+   The panel is a separate, fully opaque child. The figure's
+   ::before/::after ink layers paint above the figure's own
+   background (isolation traps their negative z-index), so a
+   background set on the figure itself would be covered over. */
+.card__plate--set { aspect-ratio: 4 / 3; }
+
+.card__panel {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0 9px,
+      color-mix(in srgb, var(--rust) 9%, transparent) 9px 18px
+    ),
+    var(--paper-2);
+  border: 1px solid var(--paper-3);
+}
+.card__initial {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-size: clamp(4rem, 9vw, 7rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--rust);
+  grid-area: 1 / 1;
+  opacity: 0.85;
+}
+.card__stamp {
+  grid-area: 1 / 1;
+  align-self: end;
+  justify-self: end;
+  margin: 0.8rem;
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--slate);
+  border: 1px solid currentColor;
+  padding: 0.2rem 0.45rem;
+  transform: rotate(calc(var(--tipsy) * -4deg));
+}
+.card--lead .card__plate--set { aspect-ratio: 16 / 10; }
+
+/* A conversation gets two initials instead of one, in the two
+   inks, slightly out of register with each other — the site's
+   whole argument turned into a portrait of two people talking.
+   Costs nothing and scales to every guest there will ever be. */
+/* Content-sized on purpose: the two sets of initials sit almost
+   on top of each other, which is the point — one plate over the
+   other, not quite aligned. Stretching this to fill the panel
+   pushes them to opposite corners and it stops being a
+   misregistration and starts being two labels. */
+.card__pair {
+  grid-area: 1 / 1;
+  display: grid;
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+.card__pair span { grid-area: 1 / 1; }
+.card__pair span:first-child {
+  color: var(--rust);
+  justify-self: start;
+  align-self: start;
+  transform: translate(calc(var(--offset) * -1.2), calc(var(--offset) * -1.2));
+}
+.card__pair span:last-child {
+  color: var(--slate);
+  justify-self: end;
+  align-self: end;
+  transform: translate(calc(var(--offset) * 1.2), calc(var(--offset) * 1.2));
+}
+.card__pair span:last-child::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  margin-bottom: 0.12em;
+  opacity: 0.5;
+}
+
+/* Sized for a card four columns wide, not for the full measure
+   — the display scale would swamp a three-up row. */
+.card__title {
+  font-size: clamp(1.3rem, 1.1vw + 0.85rem, 1.75rem);
+  margin: 0.55rem 0 0.4rem;
+  letter-spacing: -0.028em;
+  transition: font-variation-settings 0.35s var(--ease);
+}
+/* Hovering loosens the letterforms themselves — but only as
+   far as the dial allows. Sober stays sober.                 */
+.card__link:hover .card__title,
+.card__link:focus-visible .card__title {
+  color: var(--rust);
+  font-variation-settings:
+    "SOFT" calc(var(--soft) + var(--tipsy) * 40),
+    "WONK" var(--wonk);
+}
+
+.card__dek {
+  color: var(--ink-2);
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 30rem;
+}
+
+.card__tangent {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rust);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.15em;
+}
+
+.card__body { display: block; }
+
+/* The lead essay takes the full measure of the grid and runs
+   as a two-column composition rather than a bigger card. */
+.card--lead .card__plate img { aspect-ratio: 16 / 10; }
+.card--lead .card__title { font-size: var(--t-display); }
+.card--lead .card__dek { font-size: var(--t-sub); font-style: italic; max-width: 26rem; }
+
+@media (min-width: 62rem) {
+  .feed--lead > * { grid-column: 1 / -1 !important; margin-top: 0 !important; }
+  .card--lead .card__link {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: var(--gutter);
+    align-items: center;
+  }
+  .card--lead .card__plate { margin-bottom: 0; }
+}
+
+/* ============================================================
+   SECTION HEADS
+   ============================================================ */
+
+.head-rule {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 1rem 0;
+  border-top: 2px solid var(--ink);
+}
+.head-rule h2 {
+  font-size: var(--t-sub);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.head-rule p {
+  margin: 0;
+  margin-inline-start: auto;
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--sage);
+  text-align: right;
+}
+
+/* ============================================================
+   RUNNING TEXT INSIDE AN ESSAY
+   ============================================================ */
+
+.prose > p,
+.prose > ul,
+.prose > ol,
+.prose > h2,
+.prose > h3,
+.prose > .katex-display,
+.prose > figure,
+.prose > blockquote,
+.prose > table { margin-block: 0 1.15em; }
+
+.prose > h2 { margin-block: 2.6em 0.55em; font-size: var(--t-title); }
+.prose > h3 { margin-block: 2em 0.4em; }
+
+.prose > ul, .prose > ol { padding-inline-start: 1.3em; }
+.prose li { margin-bottom: 0.45em; }
+.prose li::marker { color: var(--rust); }
+
+/* Drop cap on the first paragraph — a real initial, sized to
+   three lines, not a decorative oversized letter.            */
+.prose > p.opening::first-letter {
+  float: left;
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-weight: 700;
+  font-size: 3.6em;
+  line-height: 0.82;
+  padding: 0.06em 0.09em 0 0;
+  color: var(--rust);
+}
+
+.prose blockquote {
+  margin-inline: 0;
+  padding-inline-start: 1.2rem;
+  border-inline-start: 2px solid var(--rust);
+  color: var(--ink-2);
+  font-style: italic;
+}
+.prose blockquote p:last-child { margin-bottom: 0; }
+
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: var(--paper-2);
+  padding: 0.15em 0.35em;
+  border: 1px solid var(--paper-3);
+}
+.prose pre {
+  background: var(--paper-2);
+  border: 1px solid var(--paper-3);
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+.prose pre code { background: none; border: 0; padding: 0; font-size: 1em; }
+
+/* Tables scroll inside themselves; the page never does. */
+.table-wrap { overflow-x: auto; margin-bottom: 1.15em; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+.prose th, .prose td {
+  text-align: left;
+  padding: 0.5rem 0.85rem 0.5rem 0;
+  border-bottom: 1px solid var(--paper-3);
+}
+.prose th {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 400;
+  border-bottom-color: var(--ink-2);
+}
+
+/* ============================================================
+   THE MARGIN APPARATUS
+   Notes live beside the line that summons them. They never
+   send the reader to the bottom of the page.
+   ============================================================ */
+
+.mn { font-style: normal; }
+
+.mn__toggle { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.mn__marker {
+  font-family: var(--mono);
+  font-size: 0.62em;
+  font-variant-numeric: lining-nums;
+  color: var(--rust);
+  vertical-align: super;
+  line-height: 0;
+  cursor: pointer;
+  padding: 0 0.1em;
+  border-bottom: 1px solid transparent;
+}
+.mn__marker:hover { border-bottom-color: var(--rust); }
+.mn__toggle:focus-visible + .mn__marker {
+  outline: 2px solid var(--slate);
+  outline-offset: 2px;
+}
+
+.mn__body {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(-1 * (var(--rail) + var(--gutter)));
+  width: var(--rail);
+  font-family: var(--body);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  font-style: normal;
+  text-align: left;
+  /* Deliberately not transitioned. The top is computed, not
+     animated — and a transition here can be left suspended by
+     a cross-document view transition, which pins the note to
+     the start value and stacks it on its neighbour. */
+}
+.mn__body::before {
+  content: attr(data-n);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--rust);
+  margin-inline-end: 0.4em;
+  vertical-align: 0.3em;
+}
+
+/* Folded in: below the rail breakpoint the note opens inline. */
+@media (max-width: 68rem) {
+  .mn__body {
+    position: static;
+    width: auto;
+    display: none;
+    margin: 0.85rem 0;
+    padding: 0.7rem 0.9rem;
+    background: var(--paper-2);
+    border-left: 2px solid var(--rust);
+  }
+  .mn__toggle:checked + .mn__marker + .mn__body { display: block; }
+  .mn__toggle:checked + .mn__marker { color: var(--paper); background: var(--rust); }
+}
+@media (min-width: 68.001rem) {
+  .mn__marker { cursor: default; }
+}
+
+/* ---- The professor interrupts -----------------------------
+   A voice note in the margin, distinct from a citation.      */
+.aside-anchor { height: 0; margin: 0 !important; }
+
+.aside {
+  position: absolute;
+  top: 0;
+  left: calc(-1 * (var(--rail) + var(--gutter)));
+  width: var(--rail);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  border-top: 2px solid var(--wine);
+  padding-top: 0.6rem;
+}
+.aside::before {
+  content: "the professor interrupts";
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-bottom: 0.45rem;
+}
+.aside p:last-child { margin-bottom: 0; }
+
+@media (max-width: 68rem) {
+  .aside-anchor { height: auto; margin-block: 1.6rem !important; }
+  .aside {
+    position: static;
+    width: auto;
+    background: var(--paper-2);
+    padding: 1rem 1.15rem;
+    border-top-width: 2px;
+  }
+}
+
+/* ---- Pull quote — breaks the measure on purpose ----------- */
+.pull {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-size: clamp(1.5rem, 3.1vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.028em;
+  color: var(--ink);
+  margin-block: 2.6rem !important;
+  padding-block: 1.4rem;
+  border-top: 2px solid var(--rust);
+  border-bottom: 1px solid var(--paper-3);
+  text-wrap: balance;
+}
+.pull p { margin: 0; }
+.pull cite {
+  display: block;
+  margin-top: 0.9rem;
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--sage);
+}
+
+/* ============================================================
+   THE EXCHANGE — two people, one measure
+
+   Speaker names go in the margin rail, not inline. The text
+   column stays a clean single measure and the reading rhythm
+   never breaks for a bolded name. Consecutive turns by the
+   same speaker drop the label entirely.
+   ============================================================ */
+
+.turn { margin-block: 0 1.15em; }
+.turn p { margin-bottom: 0.65em; }
+.turn p:last-child { margin-bottom: 0; }
+
+/* Space between speakers, not between paragraphs. */
+.turn:not(.turn--same) { margin-top: 1.7em; }
+.prose > .turn:first-of-type { margin-top: 0; }
+
+.turn__who {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(-1 * (var(--rail) + var(--gutter)));
+  width: var(--rail);
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--rust);
+  text-align: left;
+}
+
+/* Each speaker keeps one ink for the whole piece. md.js
+   assigns the voice number by order of first appearance, so
+   an aside landing between two turns can't shift the colours. */
+.turn[data-voice="2"] .turn__who { color: var(--slate); }
+.turn[data-voice="3"] .turn__who { color: var(--wine); }
+.turn[data-voice="4"] .turn__who { color: var(--sage); }
+
+@media (max-width: 68rem) {
+  .turn__who {
+    position: static;
+    width: auto;
+    margin-bottom: 0.35rem;
+    border-bottom: 1px solid var(--paper-3);
+    padding-bottom: 0.3rem;
+  }
+}
+
+/* ============================================================
+   THE SLIP — what is being reviewed
+   ============================================================ */
+
+.slip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 1.1rem;
+  row-gap: 0.2rem;
+  border: 1px solid var(--paper-3);
+  border-left: 2px solid var(--rust);
+  padding: 0.85rem 1.2rem;
+  margin-block: 0 2.25rem !important;
+  background: var(--paper-2);
+}
+.slip__kind {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.slip__title {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.slip__by {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* ============================================================
+   VIDEO HERO — straight after the title, before the words
+   ============================================================ */
+
+/* Same width as any other embed in the prose — it is the grid
+   child itself, so the `wide` span applies. It sits first, so
+   it loses the top margin and keeps a generous one below. */
+.embed--hero { margin-block: 0 clamp(2rem, 4vw, 3rem) !important; }
+.embed--hero .embed__title { font-size: clamp(1.25rem, 2.6vw, 1.9rem); }
+
+/* A real thumbnail when one has been fetched; the printed
+   panel when it hasn't. */
+.embed__poster--art {
+  background-size: cover;
+  background-position: center;
+}
+/* Dark enough at the foot to carry the overlaid title. */
+.embed__poster--art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.72), rgb(0 0 0 / 0.1) 55%, rgb(0 0 0 / 0.35));
+}
+.embed__poster--art > * { position: relative; }
+
+/* ============================================================
+   FIGURES
+   ============================================================ */
+
+.prose figure { margin-inline: 0; }
+
+/* The illustrations are tall portraits. Cap them by height or
+   a single plate eats three screens of scrolling. */
+.prose figure img {
+  width: auto;
+  max-width: 100%;
+  max-height: min(76vh, 42rem);
+  margin-inline: auto;
+}
+.prose figure.bleed img { max-height: min(88vh, 52rem); }
+
+.prose figcaption {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  color: var(--sage);
+  margin-top: 0.7rem;
+  text-transform: none;
+}
+.prose figcaption b {
+  color: var(--rust);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-inline-end: 0.5em;
+}
+
+/* ============================================================
+   VIDEO — nothing leaves this page until the reader asks
+   ============================================================ */
+
+.embed { margin-block: 2rem !important; }
+
+.embed__frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background: var(--ink);
+  overflow: hidden;
+}
+.embed__frame iframe { width: 100%; height: 100%; border: 0; }
+
+.embed__poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  color: var(--paper);
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 6px,
+      rgb(var(--paper-rgb) / 0.045) 6px 12px
+    ),
+    linear-gradient(160deg, var(--wine), var(--ink) 62%, var(--slate));
+  transition: filter 0.3s var(--ease);
+}
+:root[data-edition="night"] .embed__poster { color: var(--ink); }
+.embed__poster:hover { filter: brightness(1.14); }
+
+.embed__play {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  margin-bottom: auto;
+  align-self: flex-start;
+  transition: transform 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+.embed__poster:hover .embed__play { transform: scale(1.08); background: rgb(var(--paper-rgb) / 0.12); }
+
+.embed__meta {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.embed__title {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.15;
+  max-width: 26ch;
+  text-wrap: balance;
+}
+
+/* ============================================================
+   MATH
+   ============================================================ */
+
+.katex { font-size: 1.04em; }
+.prose .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.6rem;
+  margin-block: 1.8rem !important;
+}
+
+/* Un-typeset TeX: what you see before KaTeX arrives, or
+   permanently if it never does. Set as source, deliberately,
+   rather than as broken prose. */
+.tex {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  color: var(--ink-2);
+}
+.tex--display {
+  display: block;
+  text-align: center;
+  overflow-x: auto;
+  padding-block: 0.6rem;
+  margin-block: 1.8rem !important;
+  white-space: pre-wrap;
+}
+.tex--failed {
+  color: var(--wine);
+  border-bottom: 1px dotted var(--wine);
+}
+
+/* ============================================================
+   DISCOVERY — search, filters, shuffle
+   ============================================================ */
+
+/* The search takes a full row of its own; the filters, the
+   count and the shuffle share the row beneath it. Crowding
+   them all onto one line makes the count read as a chip. */
+.finder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1rem;
+  padding-block: 1.5rem 1.75rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.search {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 1px solid var(--ink-2);
+  padding-bottom: 0.4rem;
+}
+.search__icon { color: var(--sage); flex-shrink: 0; }
+.search input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.05rem;
+  padding: 0.15rem 0;
+  min-width: 0;
+}
+.search input:focus { outline: none; }
+.search:focus-within { border-bottom-color: var(--rust); }
+.search input::placeholder { color: var(--sage); font-style: italic; opacity: 1; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 0.45rem; flex: 1 1 auto; }
+
+.count {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-variant-numeric: lining-nums tabular-nums;
+  margin-inline-start: auto;
+  white-space: nowrap;
+}
+
+.empty {
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--ink-2);
+  font-style: italic;
+}
+.empty strong { font-style: normal; color: var(--ink); }
+
+/* ---- The run: a dense index, not cards -------------------- */
+.run { list-style: none; margin: 0; padding: 0; }
+.run li { border-bottom: 1px solid var(--paper-3); }
+.run a {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.3rem 1.5rem;
+  padding: 1.15rem 0;
+  text-decoration: none;
+  transition: padding-inline-start 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+.run a:hover { padding-inline-start: 0.85rem; background: var(--paper-2); }
+.run a:hover .run__title { color: var(--rust); }
+.run__title {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+  font-size: 1.32rem;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  line-height: 1.2;
+}
+.run__dek { color: var(--ink-2); font-size: 0.95rem; line-height: 1.5; }
+
+@media (min-width: 46rem) {
+  /* Wide enough for "31 AUG 2026 · 2 POURS" on one line now
+     that the dateline carries a date. */
+  .run a { grid-template-columns: 14.5rem 1fr; align-items: baseline; }
+  .run .dateline { grid-row: span 2; align-content: start; }
+}
+
+/* ---- A run that carries its plates ------------------------
+   Used for the conversations, where the picture is half the
+   reason to click. One class, so any other section can be
+   promoted to this by adding its name to PLATED in listing.js. */
+.run--plated a { padding-block: 1.4rem; }
+
+.run--plated .card__plate {
+  margin: 0;
+  align-self: start;
+  max-width: 12rem;
+}
+/* Both kinds of plate to one ratio, or a row with artwork and
+   a row still waiting on it sit at different heights and the
+   list reads as ragged. */
+.run--plated .card__plate img,
+.run--plated .card__plate--set { aspect-ratio: 16 / 10; }
+
+.run--plated a:hover .card__plate::before { transform: translate(-0.4rem, -0.4rem); }
+.run--plated a:hover .card__plate::after  { transform: translate(0.4rem, 0.4rem); }
+
+@media (min-width: 46rem) {
+  /* Plate, then dateline, then the words — matching the order
+     row() emits them, so the DOM order and the visual order
+     agree and the mobile stack needs no reversing. */
+  .run--plated a {
+    grid-template-columns: 11rem 13rem 1fr;
+    column-gap: 1.75rem;
+  }
+  .run--plated .card__plate { grid-row: span 2; max-width: none; }
+}
+
+/* ---- The plate held up against the run --------------------
+   A proof pulled next to the line the pointer is on. Same two
+   inks and the same misregistration as a card, so it reads as
+   the printed object the rest of the site is made of rather
+   than as a tooltip. Positioned by assets/js/peek.js. */
+.peek {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 13.5rem;
+  z-index: 350;             /* over the run, under the dial */
+  pointer-events: none;     /* never eat the click it is advertising */
+  opacity: 0;
+  transition: opacity 0.18s var(--ease);
+
+  /* The plates are painted at z-index -1, so this needs a
+     background of its own to sit on — the same trap the set
+     panels fell into. */
+  background: var(--paper-2);
+  isolation: isolate;
+  box-shadow: 0 1.2rem 2.5rem -1rem rgb(var(--ink-rgb) / 0.35);
+}
+.peek.is-on { opacity: 1; }
+
+.peek::before,
+.peek::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.peek::before {
+  background: var(--rust);
+  transform: translate(calc(var(--offset) * -2), calc(var(--offset) * -2));
+}
+.peek::after {
+  background: var(--slate);
+  transform: translate(calc(var(--offset) * 2), calc(var(--offset) * 2));
+}
+
+.peek img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: saturate(0.92);
+}
+
+/* The run is a text document; the plate is the one picture in
+   it, so it earns a little of the sway the cards get. */
+.peek { rotate: calc(var(--tipsy) * -1.1deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .peek { transition: none; rotate: none; }
+}
+
+/* ---- Related ---------------------------------------------- */
+.related {
+  border-top: 2px solid var(--ink);
+  margin-top: clamp(3rem, 7vw, 6rem);
+  padding-top: 1.5rem;
+}
+
+/* ============================================================
+   QUOTE TO LINK
+   Select a sentence, get a permalink to it.
+   ============================================================ */
+
+.quotelink {
+  position: absolute;
+  z-index: 400;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.18s var(--ease), visibility 0.18s;
+}
+.quotelink[data-open="true"] { opacity: 1; visibility: visible; }
+.quotelink .btn {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+  box-shadow: 0 0.4rem 1.2rem rgb(var(--ink-rgb) / 0.25);
+  white-space: nowrap;
+}
+.quotelink .btn:hover { background: var(--rust); border-color: var(--rust); color: var(--paper); }
+
+mark.quoted {
+  background: color-mix(in srgb, var(--rust) 26%, transparent);
+  color: inherit;
+  padding: 0.05em 0;
+}
+
+/* ============================================================
+   COLOPHON — the press documents itself
+   ============================================================ */
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 1px;
+  background: var(--paper-3);
+  border: 1px solid var(--paper-3);
+  margin-block: 1.6rem 2rem !important;
+}
+.swatch {
+  background: var(--paper);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.swatch__chip { height: 4.5rem; }
+.swatch__meta {
+  padding: 0.55rem 0.7rem 0.7rem;
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+.swatch__name { display: block; text-transform: uppercase; color: var(--ink); }
+.swatch__hex { display: block; color: var(--sage); font-variant-numeric: lining-nums; }
+.swatch__role { display: block; color: var(--sage); text-transform: none; letter-spacing: 0.02em; }
+
+.specimen {
+  border-top: 1px solid var(--paper-3);
+  padding-block: 1.4rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.specimen__label {
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.specimen__line {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+.specimen__line--display {
+  font-family: var(--display);
+  font-weight: 600;
+  font-variation-settings: "SOFT" var(--soft), "WONK" var(--wonk);
+}
+/* Two fixed settings, side by side, so the axis is legible as
+   a choice rather than a gimmick. */
+.specimen__line--sober { font-variation-settings: "SOFT" 0, "WONK" 0; }
+.specimen__line--wonk  { font-variation-settings: "SOFT" 100, "WONK" 1; }
+.specimen__line--body  { font-family: var(--body); font-size: clamp(1.1rem, 2vw, 1.4rem); letter-spacing: 0; }
+.specimen__line--mono  { font-family: var(--mono); font-size: clamp(0.95rem, 1.6vw, 1.15rem); letter-spacing: 0.02em; }
+
+.scripts { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; }
+.scripts li { display: grid; gap: 0.15rem; }
+.scripts .mono { display: block; }
+.scripts span[lang] { font-size: 1.25rem; line-height: 1.6; }
+
+/* ============================================================
+   NO SCRIPT
+   ============================================================ */
+
+.noscript {
+  margin: 2rem 0;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--rust);
+  background: var(--paper-2);
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   PRINT — an offprint, not a screenshot
+   ============================================================ */
+
+@media print {
+  @page { margin: 18mm 16mm; }
+
+  :root {
+    --tipsy: 0 !important;
+    --shake: 0 !important;
+    --paper: #fff;
+    --ink: #000;
+    --ink-2: #333;
+    --paper-2: #fff;
+    --paper-3: #bbb;
+    --rail: 0;
+    --gutter: 0;
+    --measure: 100%;
+  }
+  body::before, body::after,
+  .bar, .dial, .progress, .quotelink, .related, .foot,
+  .embed__play, .finder, .noscript, .skip-link { display: none !important; }
+
+  body { font-size: 10.5pt; line-height: 1.45; background: #fff; }
+
+  [data-sway] { transform: none !important; }
+
+  /* Collapse the reading grid — head, body and everything after
+     it — to one plain column the width of the page. */
+  .reader-grid { display: block; max-width: 100%; padding-inline: 0; }
+  .reader-grid > * { grid-column: auto; }
+  .prose { padding-block: 0; }
+  .essay-head { padding-block: 0 1.2rem; }
+
+  /* Notes become real footnotes on paper — the margin cannot
+     follow the reader onto a printed sheet.                   */
+  .mn__body, .aside {
+    position: static !important;
+    top: auto !important;
+    display: block;
+    width: auto;
+    font-size: 8.5pt;
+    margin: 0.4rem 0 0.4rem 1.5rem;
+    border-left: 1pt solid #999;
+    padding-left: 0.6rem;
+    border-top: 0;
+    background: none;
+  }
+  /* The anchor is zero-height on screen because the aside is
+     lifted out of flow. On paper the aside is back in flow, so
+     the anchor has to make room for it. */
+  .aside-anchor { height: auto !important; margin: 0.6rem 0 !important; }
+  .aside::before { color: #000; }
+
+  .mn__toggle { display: none; }
+  .mn__marker { color: #000; cursor: default; }
+
+  .prose > p.opening::first-letter {
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
+    color: #000;
+  }
+
+  .embed__frame { aspect-ratio: auto; background: none; border: 1pt solid #999; }
+  .embed__poster {
+    position: static;
+    background: none;
+    color: #000;
+    padding: 0.6rem;
+    display: block;
+  }
+  .embed__poster::after {
+    content: " — " attr(data-url);
+    font-family: var(--mono);
+    font-size: 8pt;
+  }
+
+  a { text-decoration: none; }
+  .prose a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-family: var(--mono);
+    font-size: 8pt;
+    color: #555;
+    word-break: break-all;
+  }
+
+  h1, h2, h3 { break-after: avoid; }
+  figure, .pull, .katex-display { break-inside: avoid; }
+
+  .offprint-slug {
+    display: block !important;
+    margin-top: 2rem;
+    padding-top: 0.6rem;
+    border-top: 1pt solid #000;
+    font-family: var(--mono);
+    font-size: 8pt;
+  }
+}
+
+.offprint-slug { display: none; }

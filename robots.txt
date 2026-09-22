@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# The runtime renderer serves the same shell for every essay.
+# The real pages are under /essay/.
+Disallow: /essay.html
+
+Sitemap: https://thetipsyprofessor.com/sitemap.xml

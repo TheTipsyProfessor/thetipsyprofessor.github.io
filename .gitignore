@@ -1,0 +1,25 @@
+# This repository is public — GitHub Pages on the free plan requires it.
+# Anything committed here is downloadable from thetipsyprofessor.com and
+# stays in the git history even after a later commit deletes it. So the
+# rule is: keep things out, rather than take them back out.
+
+# macOS litter. Harmless, but it would be served.
+.DS_Store
+
+# Documents. Excluded by extension deliberately, so the next CV or
+# contract dropped in this folder is covered without anyone remembering.
+*.pdf
+*.docx
+*.pages
+
+# Secrets and keys. Nothing here needs any, which is exactly when one
+# gets committed by accident.
+.env
+.env.*
+*.env
+*.pem
+*.key
+
+# Local scratch
+*.log
+.cache/
