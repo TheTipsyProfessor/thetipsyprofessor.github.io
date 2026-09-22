@@ -481,6 +481,14 @@ console.log('  _redirects'.padEnd(46) + `${posts.length} legacy urls`);
 
 /* feed */
 const rfc822 = (date, time) => new Date(`${date}T${time || '00:00'}:00Z`).toUTCString();
+
+/* lastBuildDate is optional in RSS 2.0, and an empty blog has no
+   newest post to date it by. Omitting the element is correct; the
+   alternative — stamping the current time — would also rewrite
+   feed.xml on every build whether or not anything had changed. */
+const lastBuilt = posts.length
+  ? `\n    <lastBuildDate>${rfc822(posts[0].date, posts[0].time)}</lastBuildDate>`
+  : '';
 write('feed.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -488,8 +496,7 @@ write('feed.xml', `<?xml version="1.0" encoding="UTF-8"?>
     <link>${SITE}/</link>
     <atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/>
     <description>${esc(TAGLINE)}</description>
-    <language>en</language>
-    <lastBuildDate>${rfc822(posts[0].date, posts[0].time)}</lastBuildDate>
+    <language>en</language>${lastBuilt}
     <generator>tools/build.js</generator>
 ${posts.map((p) => `    <item>
       <title>${esc(p.title)}</title>

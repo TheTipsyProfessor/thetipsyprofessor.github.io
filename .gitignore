@@ -23,3 +23,7 @@
 # Local scratch
 *.log
 .cache/
+
+# Drafts and kept copies. Local only — nothing in here is published,
+# which is the point of it.
+backup/

@@ -147,7 +147,14 @@
 
     if (emptyBox) {
       emptyBox.hidden = hits.length > 0;
-      if (!hits.length) {
+
+      /* An empty run and a search that found nothing are not the
+         same thing. Before the first post exists there is no
+         query to blame and no filter to clear, and offering to
+         clear one reads as a fault. */
+      if (!all.length) {
+        emptyBox.innerHTML = 'Nothing has been poured yet.';
+      } else if (!hits.length) {
         emptyBox.innerHTML = 'Nothing here matches <strong>' + esc(query || tangent) +
           '</strong>. Try fewer words, or <a href="#" data-clear>clear the filters</a>.';
         var clear = emptyBox.querySelector('[data-clear]');
@@ -228,6 +235,8 @@
                      .slice(0, feed && strangersBox ? 6 : 7);
 
       if (leadPost) lead.innerHTML = card(leadPost, true);
+      else if (lead) lead.innerHTML =
+        '<p class="empty">Nothing has been poured yet. The first one lands here.</p>';
 
       if (strangersBox) {
         strangersBox.innerHTML = talks.map(function (p) {
