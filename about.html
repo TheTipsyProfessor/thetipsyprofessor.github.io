@@ -396,51 +396,6 @@
       you were here, which is the correct amount for anybody to know.
     </p>
 
-    <p>
-      That principle is why the videos are drawn as a still panel. An ordinary
-      embed starts reporting to YouTube the moment the page opens, whether or
-      not you ever press play — the page would be handing you over on your
-      behalf. Nothing is requested until you press it, and when you do, it goes
-      to the no-cookie host. Your edition, text size and sobriety live in
-      <code>localStorage</code> on your own machine and are never sent anywhere.
-    </p>
-
-    <p>
-      Two third parties are touched on load, and they are the only two: Google
-      Fonts serves the typefaces, and on essays containing mathematics, jsDelivr
-      serves KaTeX. Both are pinned by subresource integrity, so a tampered file
-      simply won’t run. Everything else — the words, the drawings, the mistakes
-      — is here.
-    </p>
-
-    <h3>Under the hood</h3>
-
-    <p>
-      Every essay is a markdown file in <code>posts/</code> — plain text, no
-      database, no admin panel, nothing that can go down. That is the whole
-      archival strategy: if all fifteen of these pages stopped working tomorrow,
-      the writing would still open in any text editor on earth, which is more
-      than most publishing platforms can promise about their own contents.
-    </p>
-
-    <p>
-      The markdown is turned into pages twice, by the same code. Once in the
-      browser, so a draft can be written and read without ceremony; and once at
-      publication, by a script that runs the browser’s own renderer and writes
-      each essay out as a finished HTML file. Two renderers would eventually
-      disagree with each other, and the version a search engine reads would
-      start drifting from the version you read. One renderer cannot.
-    </p>
-
-    <p>
-      About nineteen hundred lines of JavaScript, comments included — and a good
-      part of it is comments. The publishing script is another seven hundred,
-      and it is the only tooling there is: no framework, no bundler, no
-      <code>package.json</code>, nothing that could be abandoned by its author
-      in three years and take the site with it. The only thing fetched at runtime is KaTeX, on the
-      essays that contain mathematics.
-    </p>
-
   </article>
 
   <div class="shell">
