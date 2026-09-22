@@ -245,7 +245,9 @@ ${image ? `<meta property="og:image" content="${attr(image)}">
 <meta name="twitter:description" content="${attr(dek)}">
 ${image ? `<meta name="twitter:image" content="${attr(image)}">` : ''}
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='9' fill='%23c4603a'/%3E%3Ccircle cx='19.5' cy='19' r='9' fill='%2337626f' opacity='.78'/%3E%3C/svg%3E">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="/assets/img/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="${BRAND}" href="/feed.xml">
 ${doc.video && doc.video.id ? `
 <!-- Tells search engines there is a video here, which is what
