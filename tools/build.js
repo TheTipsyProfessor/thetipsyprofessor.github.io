@@ -210,6 +210,26 @@ function relatedBlock(entry) {
 
 /* ---- One essay -------------------------------------------- */
 
+/* The rendered essay as one line of plain text: what the archive
+   search reads. Tags go, the entities the renderer writes come
+   back as characters, whitespace collapses. */
+const plain = (html) => html
+  .replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')
+  // A margin note's number is a marker, not a word.
+  .replace(/<label class="mn__marker"[^>]*>[\s\S]*?<\/label>/g, '')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/&nbsp;/g, ' ')
+  .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
+  .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+  .replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
+  .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')
+  .replace(/\s+/g, ' ')
+  // Dropping an inline tag leaves a space where none belongs.
+  .replace(/ ([,.;:!?)\]’”])/g, '$1')
+  .replace(/([(\[“‘]) /g, '$1')
+  .trim();
+
+
 function buildEssay(p) {
   const source = read(`posts/${p.slug}.md`);
   const doc = md.parse(source);
@@ -310,7 +330,8 @@ ${SCRIPTS}
 `;
 
   write(`essay/${p.slug}/index.html`, html);
-  return { words: doc.html.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length, notes: doc.notes };
+  const text = plain(doc.html);
+  return { words: text.split(' ').filter(Boolean).length, notes: doc.notes, text };
 }
 
 /* ---- Inject crawlable lists into the JS-driven pages ------
@@ -416,11 +437,19 @@ console.log(`Building ${BRAND} for ${SITE}\n`);
 }
 
 let totalWords = 0;
+const searchText = {};
 for (const p of posts) {
   const r = buildEssay(p);
   totalWords += r.words;
+  searchText[p.slug] = r.text;
   console.log(`  essay/${p.slug}/`.padEnd(46) + `${String(r.words).padStart(5)} words, ${r.notes} notes`);
 }
+
+/* Full text for the archive search, keyed by slug. Loaded only
+   when a reader starts typing, so the archive itself stays light. */
+write('posts/search.json', JSON.stringify(searchText) + '\n');
+console.log('  posts/search.json'.padEnd(46) +
+  `${Math.round(Buffer.byteLength(JSON.stringify(searchText)) / 1024)} KB of searchable text`);
 
 console.log('');
 if (injectList('index.html', '<!--build:strangers-->', '<!--/build:strangers-->', staticTalks)) {

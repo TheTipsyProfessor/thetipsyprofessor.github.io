@@ -1,0 +1,148 @@
+---
+title: Why I Am, Twice
+dek: A prisoner's short essay and a politician's long book both begin with the same three words. One answers them with God, the other without, and reading them together is the most useful argument about religion I have had with anyone.
+place: New York
+time: 23:40
+date: 2026-09-18
+tangent: Arguments
+pours: 4
+image: assets/img/plate-why-i-am-twice.webp
+imageAlt: AI-generated illustration of a man in a saffron shawl sitting cross-legged on a rock, seen from behind. To his left, temple spires, river steps and oil lamps glow in a sunset; to his right, a star-filled night sky and a shooting star hang over snowy mountains and a lake.
+keywords: bhagat singh, why i am an atheist, shashi tharoor, why i am a hindu, hinduism, atheism, hindutva, karma, caste, faith, doubt, books
+---
+
+Two titles that begin with the same three words. *Why I Am a Hindu*, by Shashi Tharoor. *Why I Am an Atheist*, by Bhagat Singh. One is a book of several hundred pages written by a sitting member of parliament with a library at his elbow. The other is a short essay written in a prison cell by a young man who expected to be hanged, and was writing partly to make sure nobody could say afterwards that he had flinched.
+
+I did not read them together on purpose. I read one, and then found I could not stop answering it with the other. This essay is where that argument has got to.
+
+![A man sitting on a rock between temples and oil lamps at sunset on one side and a starry night sky over mountains on the other.](assets/img/plate-why-i-am-twice.webp "Two kinds of light, and a man who has read about both."){wide 1448x1086}
+
+One rule before I start: everything here comes from the two texts and nothing else.^[It is a harder rule to keep with these two than it sounds. Both men have become symbols, one of a martyr and one of a certain kind of liberal Indian, and a great deal gets said in their names that neither of these texts says.] Bhagat Singh's essay circulates in several versions whose wording differs slightly from one edition to the next; where I quote it, the words may not match your copy exactly, but the arguments will.
+
+## Two defences
+
+The first thing worth noticing is that neither text was written in a vacuum. Both are defences. Somebody questioned the author, and the book is the reply.
+
+Bhagat Singh tells you exactly who. Some of his friends, he writes, had begun to suggest that his atheism was not a conclusion at all but a symptom: that fame had gone to his head, and that a man who had become a household name thought himself too big for God. The essay is his answer to the charge of vanity. It is, in a sense, a document about character before it is a document about theology.
+
+Tharoor's accuser is plural and political. His book is written against two opponents at once. On one side are people who assume that any educated, liberal Indian must have left religion behind, and that a Hinduism worth the name is a bundle of superstitions. On the other side, and much more urgently, are the advocates of Hindutva, who claim to speak for all Hindus and whom Tharoor regards as having taken his religion hostage. He is defending his faith from its detractors and, at greater length, from some of its self-appointed defenders.
+
+That shared defensiveness changes how the two should be read. Neither is a neutral inquiry. Each author already knows his conclusion and is showing his working. The interesting question is whether the working holds.
+
+## The unbeliever's biography
+
+Bhagat Singh's answer to the charge of vanity is to tell the story of how he got here, and it is a story of losing a belief slowly, not of throwing it away in a single moment of pride.
+
+He was not raised an atheist. He writes that he was brought up in a religious household under the influence of the Arya Samaj, and that as a schoolboy at the DAV school in Lahore, living in the hostel, he said his morning and evening prayers and recited the Gayatri Mantra for hours. At the National College he began to think more freely about religion, but he was still a believer. He kept his hair long for a time, he says, though he could not bring himself to believe in the mythology and doctrines of Sikhism or of any other religion.
+
+What moved him was the revolutionary movement, and books. He describes the leaders he first met in the movement, some of whom were believers and none of whom, he says, dared to deny God outright. Then came the reading: Bakunin, Marx, Lenin, Trotsky, and others who had made revolutions without any help from heaven. By the end of 1926, he writes, he had become convinced that the belief in an almighty creator and ruler of the universe had no foundation.
+
+Then comes the part of the essay that is really his answer to the vanity charge, and the reason I trust the rest of it. After an arrest in 1927, the police, he says, suggested to him that he should pray. He was in a position where a man might reasonably want God. He tells you he was tempted, and that he refused, because to start praying the moment he was in trouble would have been cowardice and self-interest, not faith.
+
+::: pull
+The best argument Bhagat Singh makes against the charge of vanity is not an argument at all. It is a description of what it cost him to stay consistent.
+:::
+
+This is the heart of the essay, and it shaped how I read everything else in it. His case for atheism is not that belief is foolish. It is that he examined belief, found no reason for it, and then declined to take it up again at the one moment when it would have been most comforting. Whatever one thinks of his conclusion, that is not how vanity behaves.
+
+## The believer's Hinduism
+
+Tharoor's book begins in a similar place: with himself. He describes his own practice and the household he grew up in, and he is clear that his Hinduism is a lived faith rather than a political identity or a cultural habit. He calls himself a believing Hindu.
+
+But what he believes in is not quite what Bhagat Singh rejected, and this took me a while to see.
+
+The Hinduism Tharoor describes has no single founder, no single holy book and no church. There is no pope, no creed to recite, and no central authority entitled to declare someone a heretic. It is a family of traditions spread across the Vedas and the Upanishads, the epics and the Gita, the great philosophers from Adi Shankara onward, and the devotional movements. He leans heavily on a line from the Rig Veda that he returns to more than once: truth is one, and the wise call it by many names.^[*Ekam sat vipra bahudha vadanti.* It functions in the book almost as a thesis statement. Everything Tharoor says about pluralism flows out of it.] And he describes a religion with several paths to the divine: through knowledge, through devotion, through action and through meditation. Which path a Hindu takes is left to the Hindu.
+
+He places great weight on Swami Vivekananda, and particularly on his address to the Parliament of the World's Religions in Chicago in 1893, where Vivekananda presented Hinduism as a religion that did not merely tolerate other faiths but accepted them as true paths. For Tharoor this is the distinction that matters most: tolerance implies putting up with something you think is wrong, acceptance implies you think it may be right.
+
+So when Tharoor says "why I am a Hindu", he is not really saying "why I believe what Bhagat Singh stopped believing". He is saying something closer to "why I belong to a tradition large enough to hold people who disagree about almost everything, including God".
+
+## The hymn that doubts itself
+
+The most surprising thing in Tharoor's book, for anyone who comes to it straight from Bhagat Singh, is how much doubt it contains.
+
+Tharoor quotes the Creation Hymn from the Rig Veda, the *Nasadiya Sukta*. It asks how the universe began and then declines to answer. Who really knows, it asks, and who can declare where this creation came from? The gods themselves came later than the creation. Perhaps the one who oversees it from the highest heaven knows. Or perhaps he does not know.
+
+That last line could have been written by Bhagat Singh. It is the same question he puts to believers, asked in one of the oldest texts of the religion he left, and left unanswered on purpose.
+
+Tharoor goes further. He notes that the Indian philosophical tradition he is claiming includes materialists and sceptics who denied the gods altogether, the Charvaka or Lokayata school among them, and that Hinduism as he understands it has room for the agnostic and even the atheist. It is one of the book's boldest claims, and it has a strange consequence for my pair of books.
+
+::: aside
+By Tharoor's definition, Bhagat Singh may never have left at all. I suspect Bhagat Singh would have found this the most irritating sentence in either book.
+:::
+
+There is something generous about a religion that says to the man who has rejected it: you are still one of us, and your doubt is part of our tradition. There is also something slippery about it. Bhagat Singh wrote his essay precisely to make his rejection unambiguous. A faith that can absorb its own apostates has made itself very hard to argue with, and a position that cannot be argued with is, from Bhagat Singh's side of the table, not a strength. It is a way of avoiding the question.
+
+I go back and forth on this. On generous days I think Tharoor has found the most humane answer any religion has given to unbelief. On less generous days I think he has changed the subject.
+
+## The question Tharoor doesn't need to answer
+
+The core of Bhagat Singh's essay is an old argument made with young impatience. If God is almighty, all-knowing and good, why does the world contain so much suffering? Why does He permit it? If He created the world, why did He create it like this? He does not accept that the suffering is a test, or a lesson, or a mystery beyond human understanding. He wants a straight answer and suspects there isn't one.
+
+He then turns on the theory of karma, and this is where the essay is sharpest. Suppose, he says, the suffering of this life is punishment for sins in a previous one. What kind of punishment is it? A punishment is supposed to reform the person punished. But if a man is reborn as a cow or a cat or a tree for his sins, what reformation can take place? The animal does not know what it did wrong. It cannot learn. So the punishment is not reformative, only retributive, and retribution for its own sake is exactly what civilised people are supposed to have moved beyond. And why, if God can punish sins after they happen, does He not prevent them before they happen?
+
+He brings the argument home, as he brings everything home, to politics. Why, he asks, does God allow the British to rule India? Why does He not make them generous, or make them leave? If an all-powerful God permits an empire to exploit a whole people, then either He is not all-powerful or He is not good.
+
+Reading Tharoor with this in my head, I kept waiting for the reply, and I did not find one that would have satisfied Bhagat Singh. I do not think this is an oversight. Tharoor is not trying to prove that God exists or that God is good. His Hinduism does not stand or fall on a personal creator who could have stopped the British and chose not to. A religion whose central philosophical tradition speaks of an impersonal ultimate reality, and in which each soul is at root identical with it, is not obviously committed to the God Bhagat Singh was attacking.
+
+So in one sense the two books talk past each other. Bhagat Singh demolished a particular idea of God: personal, omnipotent, benevolent and interventionist. Tharoor defends a tradition in which that idea is one option among several. Each could claim a victory and neither would have landed a blow.
+
+But in another sense the karma argument does land, because karma is not optional in the way a personal God is. It is part of the moral architecture of the tradition Tharoor describes, and I have not been able to shake Bhagat Singh's point about the cow. A system of justice in which the punished cannot know what they are being punished for is a strange kind of justice. On this point, as a matter of argument, I think the prisoner is right.
+
+## What religion does in the hands of power
+
+This is where the two books, which disagree about nearly everything, agree most strongly.
+
+Bhagat Singh argues that the belief in God has long been used by the powerful to keep the powerless quiet. The poor are told their poverty is the will of God or the fruit of their past lives, and that their reward will come after death, and so they do not revolt in this life. He quotes Upton Sinclair to the effect that if you make a man believe in immortality you can rob him of everything he has, and he will help you do it. For Bhagat Singh, the idea of God is not only false. It is useful to the wrong people.
+
+Tharoor would reject that as an account of religion in general. But a large part of his book is a case study of something very close to it. He traces the idea of Hindutva from V. D. Savarkar, who coined the term, through M. S. Golwalkar and the RSS, and he is scathing about where it has led: a political movement that treats Hinduism as a badge of national belonging rather than a spiritual path, that defines who counts as a true Indian by religion, and that has made violence respectable. He writes about the demolition of the Babri Masjid in 1992 and about the lynchings of Muslims by self-appointed protectors of the cow. He argues that these people are not defending Hinduism at all. They are using it.
+
+Put that beside Bhagat Singh and the convergence is striking. The atheist says religion is a tool the powerful use to control people. The believer spends a good part of his book showing, in detail and with real anger, the powerful using his religion to control people. They disagree about whether this is the essence of religion or its corruption. They agree completely about what it looks like.
+
+On this, both are right, and I find it the most useful thing either book taught me. You do not have to decide whether God exists to recognise the moment when faith is being turned into a weapon. The signs are the same from both sides: when religion is used to decide who belongs, who may be punished, and who must stay in their place.
+
+## Caste
+
+There is one subject on which I expected Tharoor to be defensive and found him mostly honest.
+
+He calls caste the greatest failing of Hinduism as it has actually been practised, and he does not soften what it has meant for the people at the bottom of it. His argument is that the rigid, hereditary hierarchy is a corruption of the older idea of *varna* as described in the Gita, where a person's place was supposed to follow from their qualities and their actions, not from their birth. The religion, he argues, does not require caste, and a Hinduism true to its own texts would be free of it.
+
+Bhagat Singh's essay does not discuss caste. It does not need to. His general argument, that a social order which tells people their suffering is deserved is serving somebody's interests, applies to caste more exactly than to anything else. A hierarchy justified by the deeds of a previous life is precisely the thing he is describing when he talks about the poor being taught to accept their lot.
+
+This is where I think Tharoor is right in his conclusion and weaker in his argument. He is right that a Hinduism without caste is possible, and his own book shows that the tradition has the resources for it. But the defence that caste is a corruption rather than a feature has a limit. When a corruption lasts for most of a religion's recorded history, the claim that it is not really part of the religion starts to feel like the claim that the empire was not really exploiting India, only some of its officers were. On caste, I read Tharoor as having made the better case for the future and Bhagat Singh as having made the better case about the past.
+
+## Consolation
+
+Bhagat Singh concedes one thing to the believer, and it is a large concession. He admits that belief makes suffering easier. A man who believes in God can hand his troubles over. A man facing death who believes in another life has something to look forward to. He, on the other hand, knows that when the rope goes round his neck, that will be the end. There is nothing waiting for him. He says so plainly and without self-pity.
+
+He does not argue that belief brings no comfort. He argues that comfort is not a reason to believe something. His standard is harder: a man should stand on his own feet, face reality as it is, and do his duty without the promise of reward. He describes himself as a realist, and he sets out his principle in a sentence I have not been able to forget:
+
+> Criticism and independent thinking are the two necessary qualities of a revolutionary.
+
+He goes on to say that anyone who stands for progress has to criticise, disbelieve and challenge every item of the old faith.
+
+Tharoor's book is, among other things, an answer to this in practice. His Hinduism is full of questioning, and he is proud of it: the hymn that doubts creation, the argumentative traditions of the philosophers, the absence of anyone entitled to shut an argument down. For Tharoor, faith and criticism are not opposites. He is a believer because of the kind of inquiry his tradition allows, not in spite of it.
+
+I think both of them are right, which is not the evasion it sounds like. Bhagat Singh is right that consolation is not evidence, and that a belief held because it is comforting is not really a belief, only a sedative. Tharoor is right that a tradition can contain real inquiry, and that belonging to one does not mean surrendering one's judgement. Where they differ is in what they think inquiry is for. For Bhagat Singh it is a tool for tearing down what is false. For Tharoor it is a way of living inside a very old conversation. You need both, at different times.
+
+## Where each of them goes wrong
+
+It would be too neat to leave it there, and both books have a blind spot that the other makes visible.
+
+Bhagat Singh's is the claim that religion was essentially invented by the powerful to control the weak. His essay also offers a gentler account, that belief in God grew out of human weakness and fear and the need for comfort in a frightening world, and the two accounts sit uneasily together. Tharoor's book, whatever else one thinks of it, is full of religion that did not come from anyone's wish to control anybody: philosophers arguing about the nature of reality, poets asking whether even the creator knows how creation began. Religion has certainly been used by the powerful. It does not follow that it was made by them, and the Upanishads are hard to read as a device for keeping peasants quiet.
+
+Tharoor's blind spot is the mirror image. He spends much of the book distinguishing true Hinduism, tolerant, plural and accepting, from the Hindutva that he says has hijacked it. I agree with nearly everything he says about Hindutva. But the move itself, declaring that the real religion is the one I recognise and the people I disagree with are not really practising it, is exactly the move he objects to when Hindutva makes it. A religion with no pope, as he rightly says, has nobody to decide who the real Hindus are. That cuts both ways.
+
+The mistakes have the same shape. Each man looks at a religion that has been many things to many people over thousands of years, and chooses the version that suits his argument. Bhagat Singh sees an instrument of control. Tharoor sees a tradition of acceptance. Both versions are real. Neither is the whole thing.
+
+## What I kept
+
+I did not end up where either of them did, which is probably the point of reading them together.
+
+From Bhagat Singh I have kept a test. When I notice that I believe something, I ask whether I would still believe it if it stopped being comfortable, and whether I would still hold it in the one situation where giving it up would make my life easier. He applied that test to God in a police cell and did not blink. Most of my beliefs have never been tested half that hard.
+
+From Tharoor I have kept the Creation Hymn, and the idea behind it. It seems to me the most honest thing ever written about the origin of things: a text at the root of a religious tradition that asks the biggest question it can and then admits that perhaps even the one who knows does not know. If that is where a faith begins, it has at least begun in the right place.
+
+And from the two of them together I have kept the thing they agree on, which is the thing I trust most because they agree on it from opposite sides. Whatever you believe about God, watch what people do with the belief. When it is used to decide who belongs, who deserves to suffer, and who should stay where they are, it has stopped being about God, and both the believer and the unbeliever should say so.
+
+Both books begin with the same three words. I have come to think that "why I am" is not a question you answer once. It is one you have to keep answering, and a good answer is one that still holds up when someone as honest as a prisoner, or as well-read as a politician, asks you again.

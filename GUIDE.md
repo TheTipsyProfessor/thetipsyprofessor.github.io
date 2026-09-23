@@ -451,6 +451,7 @@ essay.html        runtime renderer (?p=slug) — for reading drafts
 
 essay/<slug>/     the published essays                    ← built, commit these
 feed.xml  sitemap.xml  robots.txt  _redirects             ← built
+posts/search.json the essays as plain text, for the archive search ← built
 
 posts/            posts.json + one .md per essay          ← what you edit
 assets/css/       tokens · base · layout · components

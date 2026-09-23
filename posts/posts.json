@@ -11,5 +11,18 @@
     "image": "assets/img/plate-doctor-barrister.webp",
     "imageAlt": "AI-generated illustration of Che Guevara in a starred beret, his shirt washed in rust, beside a smiling Gandhi in a white shawl holding a walking stick, with mountains and palms behind one and a spinning wheel behind the other.",
     "keywords": "che guevara, gandhi, jon lee anderson, experiments with truth, nonviolence, revolution, means and ends, books, biography"
+  },
+  {
+    "slug": "why-i-am-twice",
+    "title": "Why I Am, Twice",
+    "dek": "A prisoner's short essay and a politician's long book both begin with the same three words. One answers them with God, the other without, and reading them together is the most useful argument about religion I have had with anyone.",
+    "place": "New York",
+    "time": "23:40",
+    "date": "2026-09-18",
+    "tangent": "Arguments",
+    "pours": 4,
+    "image": "assets/img/plate-why-i-am-twice.webp",
+    "imageAlt": "AI-generated illustration of a man in a saffron shawl sitting cross-legged on a rock, seen from behind. To his left, temple spires, river steps and oil lamps glow in a sunset; to his right, a star-filled night sky and a shooting star hang over snowy mountains and a lake.",
+    "keywords": "bhagat singh, why i am an atheist, shashi tharoor, why i am a hindu, hinduism, atheism, hindutva, karma, caste, faith, doubt, books"
   }
 ]

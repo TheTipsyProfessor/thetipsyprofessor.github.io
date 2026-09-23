@@ -894,6 +894,24 @@
   line-height: 1.2;
 }
 .run__dek { color: var(--ink-2); font-size: 0.95rem; line-height: 1.5; }
+/* The line a search found inside the essay. Always in the words
+   column, under the dek, whatever the row's layout. */
+.run__snippet {
+  display: block;
+  grid-column: -2 / -1;
+  margin-top: 0.35rem;
+  color: var(--ink-2);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+.run__snippet mark,
+.run__dek mark {
+  background: color-mix(in srgb, var(--rust) 18%, transparent);
+  color: var(--ink);
+  font-style: normal;
+  padding: 0 0.1em;
+}
 
 @media (min-width: 46rem) {
   /* Wide enough for "31 AUG 2026 · 2 POURS" on one line now
@@ -992,9 +1010,9 @@
 
 /* ---- Related ---------------------------------------------- */
 .related {
-  border-top: 2px solid var(--ink);
+  /* The head-rule inside draws the line; a second one here
+     just stacked two rules on top of each other. */
   margin-top: clamp(3rem, 7vw, 6rem);
-  padding-top: 1.5rem;
 }
 
 /* ============================================================
