@@ -28,7 +28,7 @@
   r.setAttribute('data-edition',p.edition==='night'?'night':'day');
   var S=[.875,1,1.125,1.25,1.375,1.5],i=typeof p.size==='number'&&S[p.size]?p.size:1;
   r.style.setProperty('--fs-scale',S[i]);
-  var t=typeof p.tipsy==='number'?p.tipsy:.6;
+  var t=typeof p.tipsy==='number'?p.tipsy:.25;
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)t=0;
   r.style.setProperty('--tipsy',t);
 }catch(e){}})();
@@ -115,10 +115,10 @@
 
 <div class="dial" role="group" aria-label="Sobriety">
   <span class="dial__label" aria-hidden="true">sober</span>
-  <input type="range" data-control="tipsy" min="0" max="1" step="0.01" value="0.6"
+  <input type="range" data-control="tipsy" min="0" max="1" step="0.01" value="0.25"
          aria-label="Sobriety — how much the page sways">
   <span class="dial__label" aria-hidden="true">tipsy</span>
-  <span class="dial__label dial__label--now" data-slot="mood" aria-hidden="true">tipsy</span>
+  <span class="dial__label dial__label--now" data-slot="mood" aria-hidden="true">steady</span>
 </div>
 
 <script src="/assets/js/prefs.js"></script>

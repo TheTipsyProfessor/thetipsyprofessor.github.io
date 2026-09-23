@@ -12,4 +12,9 @@
     <loc>https://thetipsyprofessor.com/about.html</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://thetipsyprofessor.com/essay/the-doctor-and-the-barrister/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>

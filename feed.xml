@@ -6,7 +6,15 @@
     <atom:link href="https://thetipsyprofessor.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Essays written between the second coffee and the first drink. Mostly explaining how things work, occasionally wondering why.</description>
     <language>en</language>
+    <lastBuildDate>Thu, 24 Sep 2026 22:10:00 GMT</lastBuildDate>
     <generator>tools/build.js</generator>
-
+    <item>
+      <title>The Doctor and the Barrister</title>
+      <link>https://thetipsyprofessor.com/essay/the-doctor-and-the-barrister/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/the-doctor-and-the-barrister/</guid>
+      <pubDate>Thu, 24 Sep 2026 22:10:00 GMT</pubDate>
+      <category>Arguments</category>
+      <description>Che Guevara and Gandhi sit next to each other on my bookshelf as a joke. Over the years the joke has turned into an argument, and the argument has turned out to be useful.</description>
+    </item>
   </channel>
 </rss>

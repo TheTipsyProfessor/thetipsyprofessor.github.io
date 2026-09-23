@@ -87,7 +87,7 @@
   /* ---- Sobriety ------------------------------------------
      --tipsy is the single dial. 0 = a perfect Swiss grid.
      1 = the room has started to move. Set by prefs.js.       */
-  --tipsy: 0.6;
+  --tipsy: 0.25;
 
   /* Scroll velocity, 0..1, written by grid.js. Rattles the
      press: fast scrolling pushes the plates further apart.   */

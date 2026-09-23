@@ -18,7 +18,7 @@
 
   /* Words, not numbers. A reader setting the room's angle
      shouldn't have to think in decimals. */
-  // Banded so the 0.6 default lands on the house setting.
+  // Banded so the 0.25 default lands on the house setting: steady.
   var MOODS = [
     [0.00, 'sober'],
     [0.14, 'steady'],
@@ -45,7 +45,7 @@
   var prefs = read();
   if (prefs.edition !== 'night') prefs.edition = 'day';
   if (typeof prefs.size !== 'number' || !SIZES[prefs.size]) prefs.size = DEFAULT_SIZE;
-  if (typeof prefs.tipsy !== 'number' || prefs.tipsy < 0 || prefs.tipsy > 1) prefs.tipsy = 0.6;
+  if (typeof prefs.tipsy !== 'number' || prefs.tipsy < 0 || prefs.tipsy > 1) prefs.tipsy = 0.25;
 
   /* ---- Edition ------------------------------------------- */
 
@@ -154,15 +154,30 @@
 
   function posts() {
     if (manifest) return manifest;
-    manifest = fetch('posts/posts.json')
+    // Root-relative: this also runs on /essay/<slug>/ pages and on
+    // a 404 served at a deep url, where a relative path would look
+    // for /essay/<slug>/posts/posts.json and find nothing.
+    manifest = fetch('/posts/posts.json')
       .then(function (r) { return r.ok ? r.json() : []; })
       .catch(function () { return []; });
     return manifest;
   }
 
+  // Nothing on the shelf yet: say so rather than do nothing.
+  function dry() {
+    var live = document.getElementById('pref-status');
+    if (live) live.textContent = 'Nothing poured yet.';
+    Array.prototype.forEach.call(document.querySelectorAll('[data-control="pour"]'), function (b) {
+      if (b.dataset.label) return;
+      b.dataset.label = b.textContent;
+      b.textContent = 'nothing poured yet';
+      setTimeout(function () { b.textContent = b.dataset.label; delete b.dataset.label; }, 2200);
+    });
+  }
+
   function pour() {
     posts().then(function (list) {
-      if (!list.length) return;
+      if (!list.length) { dry(); return; }
       // Don't pour the reader the essay they're already on,
       // whichever kind of URL they arrived by.
       var here = document.body.getAttribute('data-prerendered') ||
@@ -228,7 +243,7 @@
       case '+': case '=': stepSize(1); break;
       case '-': case '_': stepSize(-1); break;
       case 's':
-        prefs.tipsy = prefs.tipsy > 0 ? 0 : 0.6;
+        prefs.tipsy = prefs.tipsy > 0 ? 0 : 0.25;
         applyTipsy(true);
         break;
       case 'r': pour(); break;

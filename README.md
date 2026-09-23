@@ -209,8 +209,10 @@ a hash of the element's index, so the layout is identically askew on every load.
 
 `prefers-reduced-motion` pins it to 0 before first paint and disables the slider.
 
-To change the house setting, edit the default in `assets/css/tokens.css` (`--tipsy`)
-and the matching fallback in each page's inline `<head>` script.
+The house setting is 0.25, "steady". To change it, edit the same number in
+`assets/css/tokens.css` (`--tipsy`), the two defaults in `assets/js/prefs.js`, and
+on each page the inline `<head>` fallback, the slider's `value` and the mood word
+beside it.
 
 ## Keyboard
 
