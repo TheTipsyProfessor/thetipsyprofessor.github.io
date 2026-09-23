@@ -197,25 +197,20 @@
 .mh-line::before {
   color: var(--rust);
   transform: translate(calc(var(--offset) * -1.4), calc(var(--offset) * -0.7));
-  animation: plate-a 1.15s var(--ease-ink) backwards;
+  animation: plate-in 0.9s ease-out backwards;
 }
 .mh-line::after {
   color: var(--slate);
   transform: translate(calc(var(--offset) * 1.4), calc(var(--offset) * 0.7));
-  animation: plate-b 1.15s var(--ease-ink) backwards;
+  animation: plate-in 0.9s ease-out backwards;
 }
-.mh-line--tipsy::before, .mh-line--tipsy::after { animation-delay: 0.1s; }
-.mh-line--prof::before,  .mh-line--prof::after  { animation-delay: 0.2s; }
+.mh-line--tipsy::before, .mh-line--tipsy::after { animation-delay: 0.05s; }
+.mh-line--prof::before,  .mh-line--prof::after  { animation-delay: 0.1s; }
 
-@keyframes plate-a {
-  from { transform: translate(-0.14em, -0.06em); opacity: 0; }
-  55%  { opacity: 1; }
-  to   { transform: translate(calc(var(--offset) * -1.4), calc(var(--offset) * -0.7)); opacity: 1; }
-}
-@keyframes plate-b {
-  from { transform: translate(0.14em, 0.06em); opacity: 0; }
-  55%  { opacity: 1; }
-  to   { transform: translate(calc(var(--offset) * 1.4), calc(var(--offset) * 0.7)); opacity: 1; }
+/* The plates fade in where they rest — no travel, so the
+   heading never appears to move. */
+@keyframes plate-in {
+  from { opacity: 0; }
 }
 
 /* The cutout is 362×940 — a tall, narrow figure. Size it by
@@ -289,6 +284,20 @@
     margin-inline-end: 0;
   }
   .masthead__dek { grid-area: auto; }
+}
+
+/* ---- Text first ------------------------------------------
+   The 404 reads top-down: the wordmark and its line of text
+   sit together at the top, the figure beside them on a wide
+   screen and after them once the layout stacks.              */
+.masthead--text-first { align-items: start; grid-template-rows: auto 1fr; }
+.masthead--text-first .masthead__type   { grid-area: 1 / 1 / 2 / 2; }
+.masthead--text-first .masthead__dek    { grid-area: 2 / 1 / 3 / 2; }
+.masthead--text-first .masthead__figure { grid-area: 1 / 2 / 3 / 3; }
+@media (max-width: 48rem) {
+  .masthead--text-first .masthead__type,
+  .masthead--text-first .masthead__dek,
+  .masthead--text-first .masthead__figure { grid-area: auto; }
 }
 
 /* ---- A masthead carrying a plate instead of the cutout ----

@@ -9,7 +9,7 @@ putting the site on GitHub Pages at a custom domain — see **[GUIDE.md](GUIDE.m
 ```
 index.html      the press — masthead, lead essay, the tipsy grid
 archive.html    the full run — searchable, filterable
-about.html      about + colophon
+about.html      about
 404.html
 essay.html      runtime renderer (?p=slug) — local editing + legacy links
 essay/<slug>/   the real, published essays        ← built

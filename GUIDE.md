@@ -418,7 +418,7 @@ Before the first push:
 ```
 index.html        the press — masthead, lead essay, the tipsy grid
 archive.html      the full run — searchable, filterable
-about.html        who's buying + the colophon
+about.html        who's buying
 essay.html        runtime renderer (?p=slug) — for reading drafts
 404.html
 

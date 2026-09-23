@@ -1,6 +1,6 @@
 /* ============================================================
    PREFS — the reader's three controls
-   Edition (day/night/auto), text size, and sobriety.
+   Edition (day/night), text size, and sobriety.
    All three persist. All three are keyboard-operable.
 
    The values are applied before first paint by the inline
@@ -43,28 +43,27 @@
   }
 
   var prefs = read();
-  if (prefs.edition !== 'day' && prefs.edition !== 'night') prefs.edition = 'auto';
+  if (prefs.edition !== 'night') prefs.edition = 'day';
   if (typeof prefs.size !== 'number' || !SIZES[prefs.size]) prefs.size = DEFAULT_SIZE;
   if (typeof prefs.tipsy !== 'number' || prefs.tipsy < 0 || prefs.tipsy > 1) prefs.tipsy = 0.6;
 
   /* ---- Edition ------------------------------------------- */
 
   function applyEdition() {
-    if (prefs.edition === 'auto') root.removeAttribute('data-edition');
-    else root.setAttribute('data-edition', prefs.edition);
+    root.setAttribute('data-edition', prefs.edition);
 
     var btn = document.querySelector('[data-control="edition"]');
     if (!btn) return;
-    var label = { auto: 'auto', day: 'day', night: 'night' }[prefs.edition];
-    var next = { auto: 'the day edition', day: 'the night edition', night: 'whatever your system prefers' }[prefs.edition];
-    var glyph = { auto: '◐', day: '☀', night: '☾' }[prefs.edition];
+    var label = prefs.edition;
+    var next = { day: 'the night edition', night: 'the day edition' }[prefs.edition];
+    var glyph = { day: '☀', night: '☾' }[prefs.edition];
     btn.querySelector('[data-slot="glyph"]').textContent = glyph;
     btn.querySelector('[data-slot="label"]').textContent = label;
     btn.setAttribute('aria-label', 'Edition: ' + label + '. Switch to ' + next + '.');
   }
 
   function cycleEdition() {
-    prefs.edition = { auto: 'day', day: 'night', night: 'auto' }[prefs.edition];
+    prefs.edition = prefs.edition === 'night' ? 'day' : 'night';
     write(prefs);
     applyEdition();
   }

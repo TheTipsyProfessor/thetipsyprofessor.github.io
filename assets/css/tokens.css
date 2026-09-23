@@ -5,9 +5,9 @@
 
 :root {
   /* ---- Plates: day edition ------------------------------- */
-  --paper:      #efe9dc;
-  --paper-2:    #e6dece;   /* recessed panels, wells          */
-  --paper-3:    #dcd2bd;   /* rules, hairlines                */
+  --paper:      #ffffff;
+  --paper-2:    #f2f2f2;   /* recessed panels, wells          */
+  --paper-3:    #e2e2e2;   /* rules, hairlines                */
   --ink:        #16130f;
   --ink-2:      #453d31;   /* secondary prose                 */
   --rust:       #c4603a;   /* plate A                         */
@@ -28,7 +28,7 @@
     drop-shadow(0 0 7px  rgb(255 255 255 / 0.40));
 
   --ink-rgb:    22 19 15;
-  --paper-rgb:  239 233 220;
+  --paper-rgb:  255 255 255;
 
   /* ---- Second inks, one per section ----------------------
      Plate A is always rust. Plate B changes with the section,
@@ -117,11 +117,11 @@
    Not an inversion. The same press, run on black stock, with
    the plates brightened so they survive the darker ground.   */
 :root[data-edition="night"] {
-  --paper:   #141210;
-  --paper-2: #1d1a16;
-  --paper-3: #2e2922;
-  --ink:     #e9e1d1;
-  --ink-2:   #a79d8b;
+  --paper:   #121212;
+  --paper-2: #1b1b1b;
+  --paper-3: #2c2c2c;
+  --ink:     #ececea;
+  --ink-2:   #a3a3a0;
   --halo:
     drop-shadow(0 0 1px rgb(255 255 255 / 0.45))
     drop-shadow(0 0 5px rgb(255 255 255 / 0.16));
@@ -130,8 +130,8 @@
   --wine:    #c2566b;
   --sage:    #9aa47f;
 
-  --ink-rgb:   233 225 209;
-  --paper-rgb: 20 18 16;
+  --ink-rgb:   236 236 234;
+  --paper-rgb: 18 18 18;
 
   /* Brightened for black stock, same hues. */
   --ink-elsewhere: #6fa3b0;
@@ -141,39 +141,6 @@
   --ink-strangers:   #6fae91;
 
   color-scheme: dark;
-}
-
-/* The same black stock, reached by system preference rather
-   than by the toggle. The section inks have to be brightened
-   here too — left at their day values they are dark colours
-   on a dark ground, which is how a reader on auto would have
-   seen them. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-edition="day"]) {
-    --paper:   #141210;
-    --paper-2: #1d1a16;
-    --paper-3: #2e2922;
-    --ink:     #e9e1d1;
-    --ink-2:   #a79d8b;
-  --halo:
-    drop-shadow(0 0 1px rgb(255 255 255 / 0.45))
-    drop-shadow(0 0 5px rgb(255 255 255 / 0.16));
-    --rust:    #e0794d;
-    --slate:   #6fa3b0;
-    --wine:    #c2566b;
-    --sage:    #9aa47f;
-
-    --ink-rgb:   233 225 209;
-    --paper-rgb: 20 18 16;
-
-    --ink-elsewhere: #6fa3b0;
-    --ink-overheard: #8790c4;
-    --ink-arguments: #c2566b;
-    --ink-habits:    #9aa47f;
-    --ink-strangers:   #6fae91;
-
-    color-scheme: dark;
-  }
 }
 
 /* ---- Which second ink is on the press --------------------

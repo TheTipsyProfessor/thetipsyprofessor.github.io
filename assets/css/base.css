@@ -43,14 +43,11 @@ body::before {
   inset: 0;
   z-index: 9000;
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.06;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)'/%3E%3C/svg%3E");
 }
-:root[data-edition="night"] body::before { mix-blend-mode: screen; opacity: 0.18; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-edition="day"]) body::before { mix-blend-mode: screen; opacity: 0.18; }
-}
+:root[data-edition="night"] body::before { mix-blend-mode: screen; opacity: 0.06; }
 
 /* ---- The sheet itself goes out of register ----------------
    Rust runs past the top and left edges, slate past the bottom
@@ -91,9 +88,6 @@ body::after {
    dark ground stops reading as ink and starts reading as a
    failing panel. */
 :root[data-edition="night"] body::after { mix-blend-mode: screen; opacity: calc(var(--tipsy) * 0.3); }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-edition="day"]) body::after { mix-blend-mode: screen; opacity: calc(var(--tipsy) * 0.3); }
-}
 
 img, svg, video, iframe { max-width: 100%; display: block; }
 img { height: auto; }

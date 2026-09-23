@@ -228,8 +228,7 @@ function buildEssay(p) {
 <meta name="description" content="${attr(dek)}">
 <meta name="author" content="${BRAND}">
 <link rel="canonical" href="${attr(url)}">
-<meta name="theme-color" content="#efe9dc" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="${BRAND}">

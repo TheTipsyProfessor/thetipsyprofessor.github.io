@@ -7,8 +7,7 @@
 <title>Who’s buying — The Tipsy Professor</title>
 <meta name="description" content="A short account of the man at the end of the bar, and of the press this thing is printed on.">
 <meta name="author" content="The Tipsy Professor">
-<meta name="theme-color" content="#efe9dc" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
 
 <meta property="og:type" content="profile">
 <!-- Written by tools/build.js — see index.html. -->
@@ -43,7 +42,7 @@
 <script>
 (function(){try{
   var p=JSON.parse(localStorage.getItem('tp.prefs')||'{}')||{},r=document.documentElement;
-  if(p.edition==='day'||p.edition==='night')r.setAttribute('data-edition',p.edition);
+  r.setAttribute('data-edition',p.edition==='night'?'night':'day');
   var S=[.875,1,1.125,1.25,1.375,1.5],i=typeof p.size==='number'&&S[p.size]?p.size:1;
   r.style.setProperty('--fs-scale',S[i]);
   var t=typeof p.tipsy==='number'?p.tipsy:.6;
@@ -82,8 +81,8 @@
 
     <div class="bar__tools">
       <button type="button" class="btn" data-control="edition" aria-label="Edition">
-        <span data-slot="glyph" aria-hidden="true">◐</span>
-        <span data-slot="label">auto</span>
+        <span data-slot="glyph" aria-hidden="true">☀</span>
+        <span data-slot="label">day</span>
       </button>
 
       <div class="stepper" role="group" aria-label="Text size">
@@ -114,8 +113,8 @@
   <article class="prose reader-grid" data-margin>
 
     <figure class="plate wide" data-sway="4">
-      <img src="assets/img/plate-overlook.webp" width="1086" height="1448"
-           alt="Ink and wash drawing of a bearded man leaning against a wooden fence, smiling, with a red-roofed town and mountains behind him.">
+      <img src="assets/img/plate-railing-2.webp" width="904" height="1100"
+           alt="Ink and wash drawing of a bearded man with his hair in a bun, hands in his pockets, standing at a wooden railing above a red-roofed town with mountains beyond.">
       <figcaption><b>Plate 1</b> The subject above Cusco, on the fourth morning of a stay he had intended to last one night.</figcaption>
     </figure>
 
@@ -176,244 +175,6 @@
     <p>
       Interviews, corrections and arguments:
       <a href="mailto:tipsy@amitabh.ch">tipsy@amitabh.ch</a>.
-    </p>
-
-    <h2 id="colophon">Colophon</h2>
-
-    <p>
-      Books used to carry one of these in small type at the back: the press,
-      the paper, the face it was set in. The habit is worth reviving, and not
-      only for the romance of it.
-    </p>
-
-    <p>
-      Most of the essays here insist that the interesting part of anything is
-      the part that gets left out — <a href="/essay/against-the-highlight-reel/">the
-      denominator under the highlight</a>, <a href="/essay/the-trouble-with-best/">the
-      criteria hiding under the ranking</a>, the four hours on the bus that
-      nobody photographs. It would be a poor joke to make that argument at
-      length and then hand you the thing you are reading as though it had
-      simply arrived.
-    </p>
-
-    <p>
-      So here is the working — what it’s made of, why it behaves the way it
-      does, and what it deliberately doesn’t do. A press that won’t say what
-      it’s made of isn’t a press, it’s a mood.
-    </p>
-
-    <h3>Two inks, badly registered</h3>
-
-    <p>
-      A riso press lays down one colour at a time, and getting two of them to
-      line up exactly costs money nobody has ever spent on a zine. The slight
-      miss is what the real thing looks like, so it is what this looks like.
-    </p>
-
-    <p>
-      Rust is always the first plate. <b>The second changes with the
-      section</b> — which means the colour drifting out from behind a card
-      tells you what kind of piece it is before you have read a word. That is
-      the one piece of decoration here carrying information, and it is the
-      reason the scheme earns its keep rather than just looking like
-      something.
-    </p>
-
-    <div class="swatches wide">
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--paper)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Paper</b><span class="swatch__hex">#EFE9DC / #141210</span><span class="swatch__role">the stock</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--ink)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Ink</b><span class="swatch__hex">#16130F / #E9E1D1</span><span class="swatch__role">the text</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--rust)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Rust</b><span class="swatch__hex">#C4603A</span><span class="swatch__role">plate A</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--slate)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Slate</b><span class="swatch__hex">#37626F</span><span class="swatch__role">plate B</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--wine)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Wine</b><span class="swatch__hex">#6E2436</span><span class="swatch__role">the dial</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--sage)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Sage</b><span class="swatch__hex">#6E7559</span><span class="swatch__role">datelines</span></p>
-      </div>
-    </div>
-
-    <div class="swatches wide">
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--ink-elsewhere)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Elsewhere</b><span class="swatch__role">away — cold, tidal</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--ink-overheard)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Overheard</b><span class="swatch__role">other people, blue hour</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--ink-arguments)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Arguments</b><span class="swatch__role">heat</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--ink-strangers)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Strangers</b><span class="swatch__role">someone else in the room</span></p>
-      </div>
-      <div class="swatch">
-        <div class="swatch__chip" style="background: var(--ink-habits)"></div>
-        <p class="swatch__meta"><b class="swatch__name">Habits</b><span class="swatch__role">the daily, unremarkable</span></p>
-      </div>
-    </div>
-
-    <p>
-      There is a night edition, and it is not an inversion — an inverted page
-      is a photograph of a page, not a page. Same press, black stock, every
-      plate brightened enough to survive it.
-    </p>
-
-    <h3>Three faces, one of them drunk</h3>
-
-    <div class="specimen wide">
-      <p class="specimen__label">Display — Fraunces, <code>WONK 0</code></p>
-      <p class="specimen__line specimen__line--display specimen__line--sober">Handsomely sober at nine in the morning</p>
-    </div>
-
-    <div class="specimen wide">
-      <p class="specimen__label">Display — Fraunces, <code>WONK 1</code>, <code>SOFT 100</code></p>
-      <p class="specimen__line specimen__line--display specimen__line--wonk">Handsomely sober at nine in the morning</p>
-    </div>
-
-    <p>
-      Three faces because there are three jobs, and a page that lets one face
-      do all of them ends up looking like every other page. Fraunces carries
-      the personality and is used sparingly. Source Serif 4 carries the
-      reading. Space Mono carries the data — datelines, plate numbers,
-      controls — and never gets to be expressive about it.
-    </p>
-
-    <p>
-      Fraunces ships with a variable axis its designers actually named
-      <b>WONK</b> — it swaps in a set of eccentric alternates, and there is a
-      <b>SOFT</b> axis alongside it that rounds the terminals. Both are wired
-      straight to the dial. When you sober the page up, the letterforms sober up
-      with it. That is not decoration bolted on afterwards; it is the typeface
-      doing the work.
-    </p>
-
-    <p>
-      Both faces also carry an optical-size axis, and nothing here pins it.
-      The type picks its own cut from the size it is actually being rendered
-      at — which means the A− / A+ control does not simply scale one drawing
-      up and down. Enlarge the text and it shifts toward a cut drawn for
-      display; shrink it and it moves back. This is the sort of thing almost
-      nobody notices and everybody feels.
-    </p>
-
-    <div class="specimen wide">
-      <p class="specimen__label">Body — Source Serif 4</p>
-      <p class="specimen__line specimen__line--body">Chosen for the long middle of an essay, and for having glyphs where other faces have apologies.</p>
-    </div>
-
-    <div class="specimen wide">
-      <p class="specimen__label">Utility — Space Mono</p>
-      <p class="specimen__line specimen__line--mono">REYKJAVÍK · 02:14 · 3 POURS</p>
-    </div>
-
-    <h3>Other scripts</h3>
-
-    <p>
-      A sentence in Devanagari set in a Latin fallback is not neutral — it is
-      wrong. Wrong face, wrong line height, and a fake slanted italic for a
-      script that has never had one. Left alone, a browser will do exactly
-      that, and the writer looks careless about a language they were careful
-      enough to quote.
-    </p>
-
-    <p>
-      So every run in another script is tagged with its language and set in a
-      face drawn for it. Numerals and synthetic italics are switched off where
-      the script has no such thing, and right-to-left runs are isolated so
-      they cannot drag the punctuation around them out of order.
-    </p>
-
-    <ul class="scripts wide">
-      <li><span class="mono">Japanese</span><span lang="ja">その晩、港は港のふりをやめた。</span></li>
-      <li><span class="mono">Hindi</span><span lang="hi">सबसे अच्छी बातचीत आख़िरी बस छूटने के बाद होती है।</span></li>
-      <li><span class="mono">Arabic</span><span lang="ar">أفضل الأحاديث تبدأ بعد أن تفوت آخر حافلة.</span></li>
-      <li><span class="mono">Greek</span><span lang="el">Τὸ δὶς ἐξαμαρτεῖν οὐκ ἀνδρὸς σοφοῦ.</span></li>
-    </ul>
-
-    <h3>Pours, not minutes</h3>
-
-    <p>
-      Every piece carries the city it was written in, the hour it was finished
-      at, and its length in <b>pours</b>. One pour is about six minutes —
-      roughly how long a drink lasts if you are paying attention to it.
-    </p>
-
-    <p>
-      The obvious alternative is a minute count, and a minute count is a
-      promise the page cannot keep: it is a claim about how fast you read, made
-      by somebody who has never met you, and it quietly reframes an essay as a
-      cost to be budgeted. A pour measures the thing rather than the reader. It
-      also declines to pretend to a precision it does not have, which
-      “4&nbsp;min&nbsp;read” does with a straight face.
-    </p>
-
-    <h3>The dial</h3>
-
-    <p>
-      The layout makes a claim — that a page can lean a little and still be
-      read. Not everyone will agree, and a reader who doesn’t should be able
-      to decline it rather than leave. So there is one control, bottom right,
-      running from <b>sober</b> to <b>merry</b>.
-    </p>
-
-    <p>
-      It drives a single number that the entire stylesheet reads: rotation,
-      drift, how far the ink plates separate, how far the page bleeds past its
-      own edges, and the two Fraunces axes. At zero the page is a plain, square,
-      perfectly conventional grid with every plate in exact register. At one
-      the room has started to move. Nothing else on the site has an opinion
-      about this; they all just read the number.
-    </p>
-
-    <div class="aside-anchor">
-      <aside class="aside">
-        <p>
-          If your system asks for reduced motion, the dial is pinned to sober
-          before the first pixel is drawn and the slider is disabled. You should
-          never have to turn this off — it should already be off.
-        </p>
-      </aside>
-    </div>
-
-    <p>
-      Nothing about it is random. Every angle on the page comes from a hash of
-      the element’s position, so the layout is identically askew on every load,
-      on every machine. It was drawn, not rolled.
-    </p>
-
-    <h3>What this page knows about you</h3>
-
-    <p>
-      Enough to answer one question: is anybody reading this. There is a
-      counter on the site — Google Analytics, the same one most of the web
-      runs — which records which pages were opened, roughly where from, and on
-      what sort of device. It sets a cookie to do it, and Google receives that
-      data on their terms rather than on mine.
-    </p>
-
-    <p>
-      Nothing is sold, nothing is advertised, and no attempt is made to work
-      out who you are. The videos are still drawn as a still panel and request
-      nothing until you press play, which remains the part worth insisting on:
-      an ordinary embed reports to YouTube the moment a page opens, whether or
-      not you ever watch.
     </p>
 
   </article>

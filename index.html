@@ -7,8 +7,7 @@
 <title>The Tipsy Professor — field notes from the long way round</title>
 <meta name="description" content="Essays written between the second drink and the third. Mostly about elsewhere, occasionally about being wrong.">
 <meta name="author" content="The Tipsy Professor">
-<meta name="theme-color" content="#efe9dc" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
 
 <meta property="og:type" content="website">
 <!-- Canonical and social tags need an absolute origin, so
@@ -47,7 +46,7 @@
 <script>
 (function(){try{
   var p=JSON.parse(localStorage.getItem('tp.prefs')||'{}')||{},r=document.documentElement;
-  if(p.edition==='day'||p.edition==='night')r.setAttribute('data-edition',p.edition);
+  r.setAttribute('data-edition',p.edition==='night'?'night':'day');
   var S=[.875,1,1.125,1.25,1.375,1.5],i=typeof p.size==='number'&&S[p.size]?p.size:1;
   r.style.setProperty('--fs-scale',S[i]);
   var t=typeof p.tipsy==='number'?p.tipsy:.6;
@@ -86,8 +85,8 @@
 
     <div class="bar__tools">
       <button type="button" class="btn" data-control="edition" aria-label="Edition">
-        <span data-slot="glyph" aria-hidden="true">◐</span>
-        <span data-slot="label">auto</span>
+        <span data-slot="glyph" aria-hidden="true">☀</span>
+        <span data-slot="label">day</span>
       </button>
 
       <div class="stepper" role="group" aria-label="Text size">
@@ -187,7 +186,6 @@
         <ul>
           <li><a href="archive.html">The full run</a></li>
           <li><a href="about.html">Who’s buying</a></li>
-          <li><a href="about.html#colophon">Colophon</a></li>
           <li><a href="feed.xml">RSS</a></li>
         </ul>
       </div>

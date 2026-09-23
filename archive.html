@@ -7,8 +7,7 @@
 <title>The full run — The Tipsy Professor</title>
 <meta name="description" content="Everything poured so far, in the order it was poured. Search it, or filter it down to one kind of evening.">
 <meta name="author" content="The Tipsy Professor">
-<meta name="theme-color" content="#efe9dc" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
 
 <meta property="og:type" content="website">
 <!-- Written by tools/build.js — see index.html. -->
@@ -43,7 +42,7 @@
 <script>
 (function(){try{
   var p=JSON.parse(localStorage.getItem('tp.prefs')||'{}')||{},r=document.documentElement;
-  if(p.edition==='day'||p.edition==='night')r.setAttribute('data-edition',p.edition);
+  r.setAttribute('data-edition',p.edition==='night'?'night':'day');
   var S=[.875,1,1.125,1.25,1.375,1.5],i=typeof p.size==='number'&&S[p.size]?p.size:1;
   r.style.setProperty('--fs-scale',S[i]);
   var t=typeof p.tipsy==='number'?p.tipsy:.6;
@@ -82,8 +81,8 @@
 
     <div class="bar__tools">
       <button type="button" class="btn" data-control="edition" aria-label="Edition">
-        <span data-slot="glyph" aria-hidden="true">◐</span>
-        <span data-slot="label">auto</span>
+        <span data-slot="glyph" aria-hidden="true">☀</span>
+        <span data-slot="label">day</span>
       </button>
 
       <div class="stepper" role="group" aria-label="Text size">
@@ -155,7 +154,6 @@
         <ul>
           <li><a href="index.html">The counter</a></li>
           <li><a href="about.html">Who’s buying</a></li>
-          <li><a href="about.html#colophon">Colophon</a></li>
           <li><a href="feed.xml">RSS</a></li>
         </ul>
       </div>
