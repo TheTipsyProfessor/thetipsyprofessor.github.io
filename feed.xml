@@ -4,7 +4,7 @@
     <title>The Tipsy Professor</title>
     <link>https://thetipsyprofessor.com/</link>
     <atom:link href="https://thetipsyprofessor.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Essays written between the second drink and the third. Mostly about elsewhere, occasionally about being wrong.</description>
+    <description>Essays written between the second coffee and the first drink. Mostly explaining how things work, occasionally wondering why.</description>
     <language>en</language>
     <generator>tools/build.js</generator>
 

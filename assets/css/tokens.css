@@ -30,6 +30,13 @@
   --ink-rgb:    22 19 15;
   --paper-rgb:  255 255 255;
 
+  /* ---- Prints (photos.html) ------------------------------
+     A photograph's border is card stock, not page: it stays
+     light at night, so its caption stays in dark ink.      */
+  --print:      #fcfbf8;
+  --print-ink:  #16130f;
+  --print-meta: #6e7559;
+
   /* ---- Second inks, one per section ----------------------
      Plate A is always rust. Plate B changes with the section,
      so the colour drifting out from behind a card says what
@@ -38,10 +45,9 @@
      These are applied by overriding --slate on an element
      carrying data-tangent — which means every rule that
      already draws the second plate picks it up untouched. */
-  --ink-elsewhere: #37626f;   /* away — cold, tidal        */
+  --ink-explained: #37626f;  /* cool, clear — the working  */
   --ink-overheard: #414a75;   /* other people — blue hour  */
   --ink-arguments: #6e2436;   /* heat                      */
-  --ink-habits:    #5f6a4a;   /* the daily, unremarkable   */
   --ink-strangers:   #2f5d4a;   /* someone you did not know  */
 
   /* ---- Typefaces ----------------------------------------- */
@@ -133,11 +139,12 @@
   --ink-rgb:   236 236 234;
   --paper-rgb: 18 18 18;
 
+  --print:     #ecebe6;
+
   /* Brightened for black stock, same hues. */
-  --ink-elsewhere: #6fa3b0;
+  --ink-explained: #6fa3b0;
   --ink-overheard: #8790c4;
   --ink-arguments: #c2566b;
-  --ink-habits:    #9aa47f;
   --ink-strangers:   #6fae91;
 
   color-scheme: dark;
@@ -149,10 +156,9 @@
    the page bleed, the focus ring, the second speaker in an
    exchange — reads var(--slate) and picks this up untouched.
    Nothing else in the stylesheet had to change.              */
-[data-tangent="Elsewhere"] { --slate: var(--ink-elsewhere); }
+[data-tangent="Explained"] { --slate: var(--ink-explained); }
 [data-tangent="Overheard"] { --slate: var(--ink-overheard); }
 [data-tangent="Arguments"] { --slate: var(--ink-arguments); }
-[data-tangent="Habits"]    { --slate: var(--ink-habits); }
 [data-tangent="Strangers"]  { --slate: var(--ink-strangers); }
 
 /* ---- Sober by request ------------------------------------

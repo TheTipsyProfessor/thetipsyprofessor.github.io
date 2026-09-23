@@ -1205,3 +1205,264 @@ mark.quoted {
 }
 
 .offprint-slug { display: none; }
+
+/* ============================================================
+   THE SHOEBOX — a wall of prints (photos.html)
+   ============================================================ */
+
+/* A grid of equal prints. Every picture is trimmed square on
+   the wall, the way a print is; the viewer shows it whole. */
+.wall {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0 clamp(4rem, 9vw, 7rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  gap: clamp(2rem, 4vw, 3.25rem) clamp(1.5rem, 3.5vw, 3rem);
+}
+
+/* Room for the tape. The print fills the cell, so every print
+   in a row is the same height whatever its caption runs to. */
+.wall__item {
+  display: flex;
+  padding-top: 1.1rem;
+}
+.wall__item > .print { flex: 1; display: flex; flex-direction: column; }
+
+/* Each print is pinned at its own angle. The angle comes from
+   photos.js, deterministic per print, and the sobriety dial
+   scales it: at sober the wall is squared up. */
+.print {
+  position: relative;
+  margin: 0;
+  padding: 0.55rem 0.55rem 0;
+  background: var(--print);
+  color: var(--print-ink);
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 0.06),
+    0 10px 24px -12px rgb(0 0 0 / 0.28);
+  transform: rotate(calc(var(--tilt, 0) * var(--tipsy) * 1deg));
+  transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease);
+}
+
+/* A strip of tape in one of the two inks, alternating. It is
+   translucent the way tape is, so the print shows through. */
+.print::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  width: 4.6rem;
+  height: 1.35rem;
+  transform: translateX(-50%) rotate(calc(var(--tape, 0) * 1deg));
+  background: color-mix(in srgb, var(--rust) 30%, transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+.wall__item:nth-child(even) .print::before {
+  background: color-mix(in srgb, var(--slate) 30%, transparent);
+}
+
+.print__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  /* A little above centre: faces sit high in most photographs.
+     "focus" in photos.json moves it for any one print. */
+  object-position: 50% 35%;
+  background: rgb(0 0 0 / 0.05);   /* holds the space while it loads */
+}
+
+/* The whole print is the control; the button is stretched over
+   it so the caption is part of the target too. */
+.print__open {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+.print__open:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 4px;
+}
+
+.print:hover,
+.print:focus-within {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.08),
+    0 22px 38px -16px rgb(0 0 0 / 0.38);
+}
+
+.print__caption {
+  flex: 1;
+  padding: 0.8rem 0.3rem 1rem;
+}
+.print__text {
+  margin: 0;
+  font-family: var(--body);
+  font-style: italic;
+  font-size: calc(1rem * var(--fs-scale));
+  line-height: 1.45;
+}
+.print__meta {
+  margin-top: 0.45rem;
+  color: var(--print-meta);
+}
+
+/* ---- The viewer ------------------------------------------ */
+
+html:has(.lightbox[open]) { overflow: hidden; }
+
+/* Always on near-black, whatever the edition: photographs are
+   judged against dark, and white glare would fight them. */
+.lightbox {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #0e0e0e;
+  color: #ececea;
+  overflow: hidden;
+}
+.lightbox::backdrop { background: rgb(14 14 14 / 0.6); }
+
+/* The dark is the table; the print sits in the middle of it. */
+.lightbox[open] {
+  display: grid;
+  place-items: center;
+  padding: var(--lb-pad-top) var(--lb-pad-x) var(--lb-pad-bottom);
+  box-sizing: border-box;
+  animation: lightbox-in 0.28s var(--ease) both;
+}
+.lightbox {
+  --lb-pad-top: clamp(3.5rem, 7vh, 4.5rem);
+  --lb-pad-bottom: clamp(1rem, 3vh, 2rem);
+  --lb-pad-x: clamp(1rem, 7vw, 6rem);
+  --lb-border: clamp(0.6rem, 1.3vw, 1rem);
+  /* What the caption lip is allowed to take from the height. */
+  --lb-lip: 7.5rem;
+}
+.lightbox[open] .lightbox__figure { animation: lightbox-lift 0.36s var(--ease) both; }
+@keyframes lightbox-in   { from { opacity: 0; } }
+@keyframes lightbox-lift { from { opacity: 0; transform: scale(0.975); } }
+
+/* A table so the caption is exactly as wide as the picture above
+   it, however long the line on the back runs. */
+.lightbox__figure {
+  display: table;
+  margin: 0;
+  transform: rotate(calc(var(--tipsy) * -0.6deg));
+  filter: drop-shadow(0 24px 40px rgb(0 0 0 / 0.55));
+}
+
+/* The border is the image's own padding, so it is the same on
+   three sides whatever shape the picture is. Never cropped. */
+.lightbox__img {
+  display: block;
+  box-sizing: content-box;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - var(--lb-pad-x) * 2 - var(--lb-border) * 2);
+  max-height: calc(100dvh - var(--lb-pad-top) - var(--lb-pad-bottom) - var(--lb-border) - var(--lb-lip));
+  padding: var(--lb-border) var(--lb-border) 0;
+  background: var(--print);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.lightbox__caption {
+  display: table-caption;
+  caption-side: bottom;
+  padding: calc(var(--lb-border) + 0.2rem) calc(var(--lb-border) + 0.3rem) calc(var(--lb-border) + 0.8rem);
+  background: var(--print);
+  color: var(--print-ink);
+}
+.lightbox__text {
+  margin: 0;
+  font-family: var(--body);
+  font-style: italic;
+  font-size: calc(1.1rem * var(--fs-scale));
+  line-height: 1.45;
+}
+.lightbox__meta {
+  margin-top: 0.45rem;
+  color: var(--print-meta);
+}
+
+.lightbox__count {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.14em;
+  font-variant-numeric: tabular-nums;
+  color: #a3a3a0;
+}
+
+.lightbox__close,
+.lightbox__nav {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 50%;
+  background: rgb(14 14 14 / 0.55);
+  color: #ececea;
+  font-family: var(--mono);
+  cursor: pointer;
+  transition: background-color 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+.lightbox__close:hover,
+.lightbox__nav:hover {
+  background: rgb(255 255 255 / 0.1);
+  border-color: rgb(255 255 255 / 0.4);
+}
+.lightbox__close:focus-visible,
+.lightbox__nav:focus-visible {
+  outline: 2px solid #e8603a;
+  outline-offset: 3px;
+}
+
+.lightbox__close {
+  top: 0.85rem;
+  right: 0.85rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1rem;
+}
+
+.lightbox__nav {
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-top: -1.5rem;
+  font-size: 1.15rem;
+}
+.lightbox__nav--prev { left: clamp(0.5rem, 2vw, 1.5rem); }
+.lightbox__nav--next { right: clamp(0.5rem, 2vw, 1.5rem); }
+.lightbox__nav[hidden] { display: none; }
+
+/* On a phone the arrows would sit on the photograph; swiping
+   does their job there, so they drop to the bottom corners. */
+@media (max-width: 40rem) {
+  .lightbox__nav { top: auto; bottom: 0.9rem; margin-top: 0; }
+  .lightbox { --lb-pad-bottom: 4.75rem; --lb-lip: 8.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .print { transition: none; }
+  .lightbox[open],
+  .lightbox[open] .lightbox__figure { animation: none; }
+}

@@ -28,11 +28,11 @@ const ROOT = path.join(__dirname, '..');
 const SITE = (process.argv[2] || 'https://thetipsyprofessor.com').replace(/\/+$/, '');
 
 const BRAND = 'The Tipsy Professor';
-const TAGLINE = 'Essays written between the second drink and the third. Mostly about elsewhere, occasionally about being wrong.';
+const TAGLINE = 'Essays written between the second coffee and the first drink. Mostly explaining how things work, occasionally wondering why.';
 
 /* Names an essay slug may not take, because a file already
    answers to them. */
-const RESERVED = new Set(['index', 'essay', 'archive', 'about', '404', 'assets', 'posts', 'tools', 'feed', 'sitemap', 'robots']);
+const RESERVED = new Set(['index', 'essay', 'archive', 'about', 'photos', '404', 'assets', 'posts', 'tools', 'feed', 'sitemap', 'robots']);
 
 const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const write = (p, s) => {
@@ -455,6 +455,7 @@ const urls = [
   { loc: `${SITE}/`, pri: '1.0' },
   { loc: `${SITE}/archive.html`, pri: '0.6' },
   { loc: `${SITE}/about.html`, pri: '0.5' },
+  //   { loc: `${SITE}/photos.html`, pri: '0.5' },   hidden for now
   ...posts.map((p) => ({ loc: `${SITE}/essay/${p.slug}/`, pri: '0.8', date: p.date }))
 ];
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>

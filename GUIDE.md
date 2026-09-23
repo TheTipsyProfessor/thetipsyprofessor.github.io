@@ -53,7 +53,7 @@ dek: One sentence that makes someone want to read it.
 place: Reykjavík
 time: 02:14
 date: 2026-09-14
-tangent: Elsewhere
+tangent: Explained
 pours: 3
 image: assets/img/plate-mountains.webp
 imageAlt: Ink and wash drawing of a bearded man in profile against clouded mountains.
@@ -63,8 +63,8 @@ keywords: iceland harbour night walking insomnia
 Your first paragraph gets the drop cap automatically.
 ```
 
-`tangent` must be one of **Elsewhere · Overheard · Arguments · Strangers ·
-Habits**. `pours` is the reading length — one pour is about six minutes.
+`tangent` must be one of **Explained · Overheard · Arguments ·
+Strangers**. `pours` is the reading length — one pour is about six minutes.
 
 For an interview or a review there are five more fields (`with`, `met`,
 `speakers`, `video`, `subject`) — see *Guest pieces* in `README.md`.
@@ -90,6 +90,32 @@ page, and the one every link points at.
 > **Until you build, the post has no page.** Cards linking to it will 404. This
 > is the single easiest mistake to make; see *Publishing a new essay* in Part 2
 > for the habit that prevents it.
+
+## Add photographs
+
+The shoebox (`photos.html`) is a wall of prints read from
+`photos/photos.json`.
+
+1. Put the originals — JPEG, HEIC, PNG or TIFF, straight off the
+   phone — in `photos/originals/`. Git ignores that folder: phone
+   JPEGs carry the GPS position they were taken at.
+2. Run `node tools/optimize-photos.js`. For each photo it writes
+   `photos/<name>.webp` (2200px, for the viewer) and
+   `photos/<name>-sm.webp` (900px, for the wall), turns sideways
+   phone shots upright, strips all metadata, and adds an entry to
+   `photos.json` with the size and the date the camera recorded.
+3. Fill in `caption`, `alt`, and optionally `place`, in
+   `photos.json`. Order in the file is order on the wall.
+
+```json
+{ "file": "cusco-railing", "w": 2200, "h": 1650,
+  "caption": "The line on the back of the print.",
+  "alt": "What is actually in the picture.",
+  "place": "Cusco", "date": "2025-03-14" }
+```
+
+`date` takes `2025`, `2025-03` or `2025-03-14`. A link to
+`photos.html#photo-<file>` opens that print directly.
 
 ## What the build refuses to do
 
@@ -419,6 +445,7 @@ Before the first push:
 index.html        the press — masthead, lead essay, the tipsy grid
 archive.html      the full run — searchable, filterable
 about.html        who's buying
+photos.html       the shoebox — a wall of prints, from photos/photos.json
 essay.html        runtime renderer (?p=slug) — for reading drafts
 404.html
 

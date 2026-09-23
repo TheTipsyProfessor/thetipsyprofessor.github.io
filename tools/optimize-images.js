@@ -80,7 +80,7 @@ for (const file of sources) {
   execFileSync('sips', [
     '-s', 'format', 'jpeg',
     '-s', 'formatOptions', '80',
-    '--padColor', 'EFE9DC',
+    '--padColor', 'FFFFFF',
     src, '--out', jpg
   ], { stdio: 'ignore' });
 

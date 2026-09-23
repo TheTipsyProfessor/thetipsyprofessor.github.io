@@ -27,3 +27,8 @@
 # Drafts and kept copies. Local only — nothing in here is published,
 # which is the point of it.
 backup/
+
+# Photographs as they come off the camera. The site only needs
+# the WebPs tools/optimize-photos.js makes from them, and these
+# carry GPS positions.
+photos/originals/

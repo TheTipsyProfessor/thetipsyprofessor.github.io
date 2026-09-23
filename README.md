@@ -74,7 +74,7 @@ dek: One sentence that makes someone want to read it.
 place: Reykjavík
 time: 02:14
 date: 2026-09-14
-tangent: Elsewhere        # Elsewhere | Overheard | Arguments | Strangers | Habits
+tangent: Explained       # Explained | Overheard | Arguments | Strangers
 pours: 3                  # reading length; 1 pour ≈ 6 minutes
 image: assets/img/x.png   # optional — omit and the card sets type instead
 imageAlt: Describe it.    # required whenever image is set
@@ -184,8 +184,8 @@ Four facts, rendered two ways by `assets/js/dateline.js` — one implementation,
 used by the browser and by the build, so they can't drift.
 
 ```
-scanning   REYKJAVÍK · 14 SEP 2026 · 3 POURS · ELSEWHERE     cards, archive, related
-reading    REYKJAVÍK · 14 SEP 2026, 02:14 · 3 POURS · ELSEWHERE   the essay page
+scanning   REYKJAVÍK · 14 SEP 2026 · 3 POURS · EXPLAINED     cards, archive, related
+reading    REYKJAVÍK · 14 SEP 2026, 02:14 · 3 POURS · EXPLAINED   the essay page
 ```
 
 A card is answering *is this new, what order am I in*, so it gets the date. An essay

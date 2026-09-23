@@ -286,6 +286,24 @@
   .masthead__dek { grid-area: auto; }
 }
 
+/* ---- Lifted ----------------------------------------------
+   The home masthead sits on the figure's feet, which on a wide
+   screen puts the dek under the fold. Nudged up there only;
+   stacked, the figure sits between them and there is no room. */
+@media (min-width: 48.01rem) {
+  .masthead--lift .masthead__type,
+  .masthead--lift .masthead__dek {
+    position: relative;
+    top: calc(clamp(8.5rem, 22vh, 15rem) * -1);
+  }
+  .masthead--lift { margin-bottom: calc(clamp(8.5rem, 22vh, 15rem) * -1); }
+}
+
+/* Home only: "The" sits down closer on "tipsy". */
+.masthead--lift .mh-line--the { margin-bottom: -0.2em; }
+.masthead--lift .masthead__type { padding-bottom: 0.13em; }   /* clears the p of "professor" */
+.masthead--lift .masthead__dek { margin-top: 0.4rem; }
+
 /* ---- Text first ------------------------------------------
    The 404 reads top-down: the wordmark and its line of text
    sit together at the top, the figure beside them on a wide
