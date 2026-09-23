@@ -15,6 +15,18 @@
   --wine:       #6e2436;
   --sage:       #6e7559;   /* metadata, captions              */
 
+  /* ---- The cutout's edge -----------------------------------
+     professor-cutout and gate-cutout are transparent, so
+     drop-shadow traces their silhouette rather than a box. A
+     tight white halo die-cuts the figure off the paper and, on
+     the home page, lifts him clear of the wordmark he stands in.
+     A token because white reads far stronger on black stock and
+     has to be pulled right back at night.                       */
+  --halo:
+    drop-shadow(0 0 1px  rgb(255 255 255 / 0.95))
+    drop-shadow(0 0 3px  rgb(255 255 255 / 0.70))
+    drop-shadow(0 0 7px  rgb(255 255 255 / 0.40));
+
   --ink-rgb:    22 19 15;
   --paper-rgb:  239 233 220;
 
@@ -110,6 +122,9 @@
   --paper-3: #2e2922;
   --ink:     #e9e1d1;
   --ink-2:   #a79d8b;
+  --halo:
+    drop-shadow(0 0 1px rgb(255 255 255 / 0.45))
+    drop-shadow(0 0 5px rgb(255 255 255 / 0.16));
   --rust:    #e0794d;
   --slate:   #6fa3b0;
   --wine:    #c2566b;
@@ -140,6 +155,9 @@
     --paper-3: #2e2922;
     --ink:     #e9e1d1;
     --ink-2:   #a79d8b;
+  --halo:
+    drop-shadow(0 0 1px rgb(255 255 255 / 0.45))
+    drop-shadow(0 0 5px rgb(255 255 255 / 0.16));
     --rust:    #e0794d;
     --slate:   #6fa3b0;
     --wine:    #c2566b;

@@ -161,6 +161,29 @@
 .mh-line--tipsy { margin-left: 0.04em; }
 .mh-line--prof  { margin-left: 0.9em; margin-top: -0.14em; }
 
+/* The 404's number is the subject of that page, not an eyebrow
+   sitting above it. It borrows --the for the tracking and the
+   plate treatment, then takes back the size. Declared after, so
+   the two equal-specificity rules resolve this way round. */
+.mh-line--code {
+  /* Set in the reading face, not the display one. The number is a
+     label on the page, not the statement the page is making —
+     "wrong gate" says that, in Fraunces, underneath. Source Serif
+     keeps it quiet and lets the two lines carry different weights
+     of meaning rather than competing at the same volume.
+
+     Lining figures because old-style numerals have descenders,
+     and a 4 dropping below the baseline of a three-digit code
+     reads as a mistake rather than as typography. */
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 0.70em;
+  font-variant-numeric: lining-nums;
+  letter-spacing: 0.02em;
+  font-variation-settings: normal;   /* WONK and SOFT are Fraunces axes */
+  margin-bottom: 0.18em;
+}
+
 /* The two plates sit behind the ink and peek out at the edges.
    At --tipsy 0 they hide exactly beneath it.                 */
 .mh-line::before,
@@ -217,9 +240,14 @@
 .masthead__figure img {
   height: 100%;
   width: auto;
-  filter: drop-shadow(0 1.5rem 2rem rgb(var(--ink-rgb) / 0.13));
+  /* Halo first, then the ground shadow: filters apply in order,
+     so the white edge is traced off the artwork itself rather
+     than off the soft shadow underneath it. */
+  filter: var(--halo) drop-shadow(0 1.5rem 2rem rgb(var(--ink-rgb) / 0.13));
 }
-:root[data-edition="night"] .masthead__figure img { filter: none; }
+/* No ground shadow on black stock — it does nothing there — but
+   the halo stays, doing the separating on its own. */
+:root[data-edition="night"] .masthead__figure img { filter: var(--halo); }
 
 @keyframes figure-in {
   from { opacity: 0; transform: translateY(1.5rem); }
@@ -261,6 +289,34 @@
     margin-inline-end: 0;
   }
   .masthead__dek { grid-area: auto; }
+}
+
+/* ---- A masthead carrying a plate instead of the cutout ----
+   The 404 page puts an ordinary 1086×1448 illustration where the
+   home page puts the 362×940 figure. Everything above sizes that
+   figure by height, which is right for something three times
+   taller than it is wide and wrong for anything else: the height
+   rule and base.css's `img { max-width: 100% }` then fight, and
+   since the image is object-fit: fill, the picture stretches
+   rather than overflowing — which is harder to spot.
+
+   So a plate is sized by width and keeps its own proportions.
+   Placed after the narrow-screen block deliberately: the two
+   selectors have equal specificity, so this has to come later to
+   win.                                                          */
+.masthead__figure--plate {
+  /* Driven by vw rather than rem so the figure keeps its size when
+     a reader turns the text down — rem here tracks the A−/A+
+     control, which is right for type and wrong for a picture. On a
+     wide screen the grid column is the real limit anyway, so this
+     only has a say on a stacked layout. */
+  width: clamp(224px, 62vw, 480px);
+  height: auto;
+  justify-self: center;
+}
+.masthead__figure--plate img {
+  width: 100%;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
