@@ -10,7 +10,7 @@
   --paper-3:    #e2e2e2;   /* rules, hairlines                */
   --ink:        #16130f;
   --ink-2:      #453d31;   /* secondary prose                 */
-  --rust:       #c4603a;   /* plate A                         */
+  --rust:       #c8401f;   /* plate A                         */
   --slate:      #37626f;   /* plate B                         */
   --wine:       #6e2436;
   --sage:       #6e7559;   /* metadata, captions              */
@@ -125,7 +125,7 @@
   --halo:
     drop-shadow(0 0 1px rgb(255 255 255 / 0.45))
     drop-shadow(0 0 5px rgb(255 255 255 / 0.16));
-  --rust:    #e0794d;
+  --rust:    #e8603a;
   --slate:   #6fa3b0;
   --wine:    #c2566b;
   --sage:    #9aa47f;
