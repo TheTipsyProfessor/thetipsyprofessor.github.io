@@ -38,7 +38,14 @@ try {
   process.exit(1);
 }
 
-const sources = fs.readdirSync(DIR).filter((f) => /\.png$/i.test(f)).sort();
+/* The icons are already small, already the right size, and are
+   linked as .png from every page — a WebP and a JPEG of each
+   would be dead weight that reappears on every run. */
+const ICONS = /^(favicon|apple-touch-icon|espresso)/i;
+
+const sources = fs.readdirSync(DIR)
+  .filter((f) => /\.png$/i.test(f) && !ICONS.test(f))
+  .sort();
 if (!sources.length) {
   console.error(`No PNGs in ${DIR}`);
   process.exit(1);
