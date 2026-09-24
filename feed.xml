@@ -6,8 +6,16 @@
     <atom:link href="https://thetipsyprofessor.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Essays written between the second coffee and the first drink. Mostly explaining how things work, occasionally wondering why.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2026 22:10:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 23:30:00 GMT</lastBuildDate>
     <generator>tools/build.js</generator>
+    <item>
+      <title>My Kitchen Is a War Museum</title>
+      <link>https://thetipsyprofessor.com/essay/my-kitchen-is-a-war-museum/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/my-kitchen-is-a-war-museum/</guid>
+      <pubDate>Thu, 24 Sep 2026 23:30:00 GMT</pubDate>
+      <category>Explained</category>
+      <description>The microwave, the tin can, the duct tape and the map on my phone all came out of war. Heraclitus called war the father of all things. From a ten-thousand-year-old massacre to the drone and AI wars of 2026, and on into the biological century now beginning, this is an audit of what war actually invents, what it only buys, and who has always settled the bill.</description>
+    </item>
     <item>
       <title>The Doctor and the Barrister</title>
       <link>https://thetipsyprofessor.com/essay/the-doctor-and-the-barrister/</link>
@@ -17,12 +25,36 @@
       <description>Che Guevara and Gandhi sit next to each other on my bookshelf as a joke. Over the years the joke has turned into an argument, and the argument has turned out to be useful.</description>
     </item>
     <item>
+      <title>Love, Arranged</title>
+      <link>https://thetipsyprofessor.com/essay/love-arranged/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/love-arranged/</guid>
+      <pubDate>Thu, 24 Sep 2026 04:30:00 GMT</pubDate>
+      <category>Overheard</category>
+      <description>On an Indian overnight train, strangers will eventually ask the question every young Indian is asked. Behind it are two thousand years of law and scripture, a colonial courtroom, a republic's promises, Bollywood, the internet and a very large amount of family. A long look at how India chooses who marries whom, what each way gets right, and what it costs.</description>
+    </item>
+    <item>
+      <title>Dostoevsky, What the Fuck, Bro?</title>
+      <link>https://thetipsyprofessor.com/essay/dostoevsky-what-the-fuck-bro/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/dostoevsky-what-the-fuck-bro/</guid>
+      <pubDate>Thu, 24 Sep 2026 03:40:00 GMT</pubDate>
+      <category>Explained</category>
+      <description>A young writer is sentenced to death and pardoned at the last moment, by an order signed the day before. He spends the rest of his life writing about murderers, holy fools, and the best argument against God anyone has ever made. He believed in God anyway. This essay tries to work out how.</description>
+    </item>
+    <item>
       <title>Why I Am, Twice</title>
       <link>https://thetipsyprofessor.com/essay/why-i-am-twice/</link>
       <guid isPermaLink="true">https://thetipsyprofessor.com/essay/why-i-am-twice/</guid>
       <pubDate>Fri, 18 Sep 2026 23:40:00 GMT</pubDate>
       <category>Arguments</category>
       <description>A prisoner's short essay and a politician's long book both begin with the same three words. One answers them with God, the other without, and reading them together is the most useful argument about religion I have had with anyone.</description>
+    </item>
+    <item>
+      <title>Three Ways to Count a People</title>
+      <link>https://thetipsyprofessor.com/essay/three-ways-to-count-a-people/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/three-ways-to-count-a-people/</guid>
+      <pubDate>Sat, 15 Aug 2026 19:30:00 GMT</pubDate>
+      <category>Arguments</category>
+      <description>India asks almost a billion people once every five years. America asks too, then passes the answer through states, districts and electors that its founders built to check the majority. Switzerland asks its citizens four times a year while a quarter of the country looks on. On India's Independence Day, a look at why each system is shaped the way it is, what it needs to work, and who it has always left out.</description>
     </item>
     <item>
       <title>The Two Churchills</title>

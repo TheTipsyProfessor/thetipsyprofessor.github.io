@@ -1,5 +1,18 @@
 [
   {
+    "slug": "my-kitchen-is-a-war-museum",
+    "title": "My Kitchen Is a War Museum",
+    "dek": "The microwave, the tin can, the duct tape and the map on my phone all came out of war. Heraclitus called war the father of all things. From a ten-thousand-year-old massacre to the drone and AI wars of 2026, and on into the biological century now beginning, this is an audit of what war actually invents, what it only buys, and who has always settled the bill.",
+    "place": "Geneva",
+    "time": "23:30",
+    "date": "2026-09-24",
+    "tangent": "Explained",
+    "pours": 8,
+    "image": "assets/img/plate-war-museum.webp",
+    "imageAlt": "AI-generated painting of a towering, faceless armoured giant in a tattered red cloak, cradling an old radio, a rocket and a tin can in its arms, standing in a vast graveyard of broken tombstones and statues, with a ruined city and a setting sun behind.",
+    "keywords": "war, innovation, invention, technology, history, military, penicillin, radar, microwave, gps, internet, arpanet, v-2, rockets, drones, ukraine, gaza, iran, sudan, haber, fertiliser, red cross, geneva conventions, cern, arms industry, sipri, military spending, environment, emissions, animals, horses, landmines, biological weapons, biological weapons convention, mrna, crispr, alphafold, kuhn, paradigm shift, biosecurity"
+  },
+  {
     "slug": "the-doctor-and-the-barrister",
     "title": "The Doctor and the Barrister",
     "dek": "Che Guevara and Gandhi sit next to each other on my bookshelf as a joke. Over the years the joke has turned into an argument, and the argument has turned out to be useful.",
@@ -9,8 +22,34 @@
     "tangent": "Arguments",
     "pours": 3,
     "image": "assets/img/plate-doctor-barrister.webp",
-    "imageAlt": "AI-generated illustration of Che Guevara in a starred beret, his shirt washed in rust, beside a smiling Gandhi in a white shawl holding a walking stick, with mountains and palms behind one and a spinning wheel behind the other.",
+    "imageAlt": "AI-generated illustration of Gandhi and Che Guevara sitting back to back on the ground. Gandhi, in a white shawl, looks down, with a river, temples and a yellow sun behind him; Che, in fatigues and a starred beret, looks up, with mountains, palms and a red sun behind him.",
     "keywords": "che guevara, gandhi, jon lee anderson, experiments with truth, nonviolence, revolution, means and ends, books, biography"
+  },
+  {
+    "slug": "love-arranged",
+    "title": "Love, Arranged",
+    "dek": "On an Indian overnight train, strangers will eventually ask the question every young Indian is asked. Behind it are two thousand years of law and scripture, a colonial courtroom, a republic's promises, Bollywood, the internet and a very large amount of family. A long look at how India chooses who marries whom, what each way gets right, and what it costs.",
+    "place": "Geneva",
+    "time": "04:30",
+    "date": "2026-09-24",
+    "tangent": "Overheard",
+    "pours": 10,
+    "image": "assets/img/plate-love-arranged.webp",
+    "imageAlt": "AI-generated image of a railway platform at sunset: an older man holds the hand of a young woman in a flowered salwar kameez and red dupatta as she runs towards a moving train, where a young man leans out of the door reaching for her.",
+    "keywords": "marriage, arranged marriage, love marriage, india, caste, endogamy, dowry, manusmriti, gandharva, swayamvara, rukhmabai, age of consent, special marriage act, hindu marriage act, honour killing, khap panchayat, bollywood, ddlj, sairat, shaadi.com, indian matchmaking, globalisation, ambedkar, trains, 3ac"
+  },
+  {
+    "slug": "dostoevsky-what-the-fuck-bro",
+    "title": "Dostoevsky, What the Fuck, Bro?",
+    "dek": "A young writer is sentenced to death and pardoned at the last moment, by an order signed the day before. He spends the rest of his life writing about murderers, holy fools, and the best argument against God anyone has ever made. He believed in God anyway. This essay tries to work out how.",
+    "place": "Geneva",
+    "time": "03:40",
+    "date": "2026-09-24",
+    "tangent": "Explained",
+    "pours": 9,
+    "image": "assets/img/plate-dostoevsky.webp",
+    "imageAlt": "AI-generated painting of condemned prisoners tied to posts in the snow on a St Petersburg parade ground at dawn, a man with a beard looking up at the sky, a line of soldiers aiming rifles, a priest behind them, and a horseman galloping in holding a paper aloft.",
+    "keywords": "dostoevsky, fyodor dostoevsky, russian literature, mock execution, petrashevsky circle, notes from underground, crime and punishment, the idiot, demons, the brothers karamazov, grand inquisitor, ivan karamazov, tolstoy, nabokov, anna dostoevskaya, geneva, faith, doubt, freedom, existentialism"
   },
   {
     "slug": "why-i-am-twice",
@@ -20,10 +59,23 @@
     "time": "23:40",
     "date": "2026-09-18",
     "tangent": "Arguments",
-    "pours": 4,
+    "pours": 6,
     "image": "assets/img/plate-why-i-am-twice.webp",
     "imageAlt": "AI-generated illustration of a man in a saffron shawl sitting cross-legged on a rock, seen from behind. To his left, temple spires, river steps and oil lamps glow in a sunset; to his right, a star-filled night sky and a shooting star hang over snowy mountains and a lake.",
     "keywords": "bhagat singh, why i am an atheist, shashi tharoor, why i am a hindu, hinduism, atheism, hindutva, karma, caste, faith, doubt, books"
+  },
+  {
+    "slug": "three-ways-to-count-a-people",
+    "title": "Three Ways to Count a People",
+    "dek": "India asks almost a billion people once every five years. America asks too, then passes the answer through states, districts and electors that its founders built to check the majority. Switzerland asks its citizens four times a year while a quarter of the country looks on. On India's Independence Day, a look at why each system is shaped the way it is, what it needs to work, and who it has always left out.",
+    "place": "Geneva",
+    "time": "19:30",
+    "date": "2026-08-15",
+    "tangent": "Arguments",
+    "pours": 8,
+    "image": "assets/img/plate-three-ways.webp",
+    "imageAlt": "AI-generated illustration of the flags of India, the United States and Switzerland twisted together into a single knot at the centre, against a sunrise over mountains.",
+    "keywords": "elections, democracy, voting, india, united states, switzerland, lok sabha, congress, electoral college, direct democracy, referendum, popular initiative, first past the post, proportional representation, women's suffrage, representation, caste, federalism, election commission, landsgemeinde"
   },
   {
     "slug": "the-two-churchills",
