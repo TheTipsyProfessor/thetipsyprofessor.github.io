@@ -1,7 +1,7 @@
 ---
 title: Love, Arranged
 dek: On an Indian overnight train, strangers will eventually ask the question every young Indian is asked. Behind it are two thousand years of law and scripture, a colonial courtroom, a republic's promises, Bollywood, the internet and a very large amount of family. A long look at how India chooses who marries whom, what each way gets right, and what it costs.
-place: Geneva
+place: Macaé
 time: 04:30
 date: 2026-09-08
 tangent: Overheard
@@ -175,7 +175,7 @@ The attitudes have moved, but less than the technology. In the same 2016 Lokniti
 
 ## What arranged marriage gets right
 
-It would be easy, writing from Geneva, to treat arranged marriage as simply a relic. That would be dishonest, and it would not match the experience of millions of Indians who chose it willingly and are glad they did.
+It would be easy, writing from abroad, to treat arranged marriage as simply a relic. That would be dishonest, and it would not match the experience of millions of Indians who chose it willingly and are glad they did.
 
 At its best, arranged marriage treats marriage as what it largely is in India: the joining of two families, not only two people. The couple begin married life inside a network of relatives who have a stake in its success, who will help with money, with children, with illness and with crisis. For a young woman moving into her husband's household, as most Indian brides still do, a marriage arranged by families who know each other can mean a known and accountable home rather than a stranger's.
 

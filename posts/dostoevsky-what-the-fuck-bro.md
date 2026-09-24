@@ -1,7 +1,7 @@
 ---
 title: Dostoevsky, What the Fuck, Bro?
 dek: A young writer is sentenced to death and pardoned at the last moment, by an order signed the day before. He spends the rest of his life writing about murderers, holy fools, and the best argument against God anyone has ever made. He believed in God anyway. This essay tries to work out how.
-place: Geneva
+place: Rio de Janeiro
 time: 03:40
 date: 2026-08-31
 tangent: Explained
@@ -71,7 +71,7 @@ In 1862 he travelled to Western Europe for the first time. He spent eight days i
 
 A year later, in 1863, at Wiesbaden, he played roulette for the first time, and so began an obsession that lasted until 1871. A letter to his brother Mikhail that September has an entire short story compressed into it. He believed in his system, won 600 francs in a quarter of an hour, then lost everything, staked his last coins, and lost those too. "In Geneva I pawned my watch." He was not travelling alone. His companion that summer was Apollinaria Suslova, a young writer with feminist convictions and a temper to match his own, with whom he had begun an affair earlier that year. The relationship was stormy and ended badly, and she walked into his fiction almost unchanged: she is widely seen as the model for Polina in *The Gambler* and for the proud, self-destructive Nastasya Filippovna in *The Idiot*. Years later she married the philosopher Vasily Rozanov, seventeen years her junior.
 
-For anyone writing in Geneva, that is a sentence that stops you. Somewhere in this city there was a pawnbroker's counter where the future author of *Crime and Punishment* handed over his watch.
+For anyone who lives in Geneva, that is a sentence that stops you. Somewhere in that city there was a pawnbroker's counter where the future author of *Crime and Punishment* handed over his watch.
 
 Then came 1863 and 1864, which took almost everything. In May 1863 the authorities banned *Time*, the magazine he ran with his brother Mikhail. They started a new one, *Epoch*. On 15 April 1864 his wife, Maria, died of tuberculosis after a long and painful illness. Three months later Mikhail collapsed, worn down by the magazine's debts and ill, after hearing that the censors had rejected an important article. He died three days later at forty-three.
 
@@ -157,7 +157,7 @@ There is one passage in *The Idiot* that I read differently from most people, be
 
 Before his seizures, Myshkin says, there comes a moment of extraordinary light: a feeling of complete harmony, clarity and reconciliation, so intense that for that one second he would give his whole life. Afterwards, in the dark of the fit and the dullness that follows it, he wonders whether the feeling was simply part of the illness. And he decides that it does not matter. If in that second he felt the highest synthesis of life, what difference does it make that it was a disease?
 
-Dostoevsky was describing his own seizures, and neurologists have taken him at his word. The condition is now called ecstatic epilepsy, and it is rare: a form of focal epilepsy in which the seizure begins not with fear or confusion but with bliss. Patients describe physical well-being, a sudden mental clarity, a sense of oneness with the world, and time seeming to stretch. Some of the most important work on it has been done here in Geneva, by the neurologist Fabienne Picard at the Geneva University Hospitals, who has linked these auras to a region deep in the brain called the anterior insula. In 2019 a team led by Fabrice Bartolomei in Marseille reported reproducing ecstatic feelings in patients by stimulating that region directly with electrodes.
+Dostoevsky was describing his own seizures, and neurologists have taken him at his word. The condition is now called ecstatic epilepsy, and it is rare: a form of focal epilepsy in which the seizure begins not with fear or confusion but with bliss. Patients describe physical well-being, a sudden mental clarity, a sense of oneness with the world, and time seeming to stretch. Some of the most important work on it has been done in Geneva, by the neurologist Fabienne Picard at the Geneva University Hospitals, who has linked these auras to a region deep in the brain called the anterior insula. In 2019 a team led by Fabrice Bartolomei in Marseille reported reproducing ecstatic feelings in patients by stimulating that region directly with electrodes.
 
 The insula is involved in how we sense the state of our own body and in how the brain monitors uncertainty, the gap between what it expects and what happens. Picard has proposed that the ecstatic aura may be what it feels like when that monitoring of uncertainty is switched off: a moment in which, for once, nothing is in doubt.
 
@@ -351,7 +351,7 @@ He also spent it asking the only question that morning had left him with. If you
 
 So, what the fuck, bro? This, as far as I can tell. He was a man who had stood in front of a firing squad and learnt the difference between an idea and a life. He spent the rest of his life trying to make sure his readers would not have to learn it the way he did.
 
-In Plainpalais, not far from where I am writing this, there is a plaque for a girl who lived three months in 1868. Her father was the man who had stood at the post in the snow. By the time she was born he had lost his brother and his first wife, pawned his watch in this city, and signed away his future to a publisher and won it back in twenty-six days. He buried her here and went on writing. Every minute he did not waste after that is in the books.
+In Plainpalais, not far from where I live, there is a plaque for a girl who lived three months in 1868. Her father was the man who had stood at the post in the snow. By the time she was born he had lost his brother and his first wife, pawned his watch in that city, and signed away his future to a publisher and won it back in twenty-six days. He buried her there and went on writing. Every minute he did not waste after that is in the books.
 
 ## Sources
 
