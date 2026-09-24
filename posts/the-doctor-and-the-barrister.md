@@ -7,7 +7,7 @@ date: 2026-09-24
 tangent: Arguments
 pours: 3
 image: assets/img/plate-doctor-barrister.webp
-imageAlt: AI-generated illustration of Che Guevara in a starred beret, his shirt washed in rust, beside a smiling Gandhi in a white shawl holding a walking stick, with mountains and palms behind one and a spinning wheel behind the other.
+imageAlt: AI-generated illustration of Gandhi and Che Guevara sitting back to back on the ground. Gandhi, in a white shawl, looks down, with a river, temples and a yellow sun behind him; Che, in fatigues and a starred beret, looks up, with mountains, palms and a red sun behind him.
 keywords: che guevara, gandhi, jon lee anderson, experiments with truth, nonviolence, revolution, means and ends, books, biography
 ---
 
@@ -15,7 +15,7 @@ On one shelf in my flat, Jon Lee Anderson's *Che Guevara: A Revolutionary Life* 
 
 The joke has not aged well, mostly because it keeps being right. Every time I have reread one of them I have found myself arguing with the other. This is an attempt to write down where that argument has got to.
 
-![Che Guevara in a starred beret beside Gandhi in a white shawl, one against mountains and palms, the other against a spinning wheel.](assets/img/plate-doctor-barrister.webp "Spine to spine. Neither of them looks as if he minds."){wide 1448x1086}
+![Gandhi and Che Guevara sitting back to back, one looking down towards a river and temples, the other looking up towards mountains and palms.](assets/img/plate-doctor-barrister.webp "Back to back, as on the shelf. One looks down, the other looks up."){wide 1448x1086}
 
 One rule before I start. Everything in this essay comes from those two books and nothing else.^[That rule matters more than it sounds. Both men have been buried under several libraries of commentary, quotation and poster. I wanted to know what I actually learnt from the two books on my shelf, not what I absorbed from everywhere else.] That has a consequence worth stating: the two books are not the same kind of evidence. Gandhi is his own witness, so when I say Gandhi *admits* something, there is nobody else in the book to accuse him. Anderson is a biographer working from Che's diaries, letters and the people around him, so his Che is judged from outside. And Gandhi's book stops around 1920, long before the parts of his life most people know. Everything he did afterwards is, for the purposes of this shelf, off the shelf.
 
