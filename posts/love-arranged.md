@@ -3,7 +3,7 @@ title: Love, Arranged
 dek: On an Indian overnight train, strangers will eventually ask the question every young Indian is asked. Behind it are two thousand years of law and scripture, a colonial courtroom, a republic's promises, Bollywood, the internet and a very large amount of family. A long look at how India chooses who marries whom, what each way gets right, and what it costs.
 place: Geneva
 time: 04:30
-date: 2026-09-24
+date: 2026-09-08
 tangent: Overheard
 pours: 10
 image: assets/img/plate-love-arranged.webp

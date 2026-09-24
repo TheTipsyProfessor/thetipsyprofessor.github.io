@@ -3,7 +3,7 @@ title: Dostoevsky, What the Fuck, Bro?
 dek: A young writer is sentenced to death and pardoned at the last moment, by an order signed the day before. He spends the rest of his life writing about murderers, holy fools, and the best argument against God anyone has ever made. He believed in God anyway. This essay tries to work out how.
 place: Geneva
 time: 03:40
-date: 2026-09-24
+date: 2026-08-31
 tangent: Explained
 pours: 9
 image: assets/img/plate-dostoevsky.webp

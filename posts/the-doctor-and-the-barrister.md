@@ -3,7 +3,7 @@ title: The Doctor and the Barrister
 dek: Che Guevara and Gandhi sit next to each other on my bookshelf as a joke. Over the years the joke has turned into an argument, and the argument has turned out to be useful.
 place: Geneva
 time: 22:10
-date: 2026-09-24
+date: 2026-09-16
 tangent: Arguments
 pours: 3
 image: assets/img/plate-doctor-barrister.webp

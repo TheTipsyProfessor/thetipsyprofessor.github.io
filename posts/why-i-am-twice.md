@@ -3,7 +3,7 @@ title: Why I Am, Twice
 dek: A prisoner's short essay and a politician's long book both begin with the same three words. One answers them with God, the other without, and reading them together is the most useful argument about religion I have had with anyone.
 place: New York
 time: 23:40
-date: 2026-09-18
+date: 2026-08-23
 tangent: Arguments
 pours: 6
 image: assets/img/plate-why-i-am-twice.webp
