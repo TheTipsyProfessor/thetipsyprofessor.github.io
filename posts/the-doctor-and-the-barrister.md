@@ -8,7 +8,7 @@ tangent: Arguments
 pours: 3
 image: assets/img/plate-doctor-barrister.webp
 imageAlt: AI-generated illustration of Gandhi and Che Guevara sitting back to back on the ground. Gandhi, in a white shawl, looks down, with a river, temples and a yellow sun behind him; Che, in fatigues and a starred beret, looks up, with mountains, palms and a red sun behind him.
-keywords: che guevara, gandhi, jon lee anderson, experiments with truth, nonviolence, revolution, means and ends, books, biography
+keywords: che guevara, gandhi, alegría de pío, champaran, durban, jon lee anderson, experiments with truth, nonviolence, revolution, means and ends, books, biography
 ---
 
 On one shelf in my flat, Jon Lee Anderson's *Che Guevara: A Revolutionary Life* stands next to Gandhi's *An Autobiography, or The Story of My Experiments with Truth*. I put them there as a joke. Two thick books about two men who wanted to change the world, one with a rifle and one with a spinning wheel, pressed spine to spine as if they had agreed to share a flat.
@@ -35,9 +35,21 @@ For Che it is Guatemala in 1954. Anderson follows him there after years of drift
 
 So both books begin with the same discovery, made by two young professionals who could have gone home: comfort is not neutral. Somebody pays for it. Here they are both right, and it is the part of them I have never argued with.
 
+## The box and the brief
+
+The title of this essay is the two professions, and each book has a scene where its man stands at the edge of his.
+
+For Che it comes in December 1956, days after the *Granma* landed in Cuba. At Alegría de Pío the rebels were caught in the open by the army and scattered under fire. Che, the expedition's doctor, had a knapsack of medical supplies and, beside him, a box of ammunition dropped by another man. He could not carry both. By his own account, which Anderson retells, he chose the ammunition and left the medicine. He was wounded in the neck minutes later. It is the scene he himself framed as the choice between being a doctor and being a soldier, and from then on the war made him a fighter far more than a medic.
+
+Gandhi's equivalent is less dramatic, and that is the point. In South Africa his practice grew, and his book is full of small courtroom choices. In one case an arbitration award had gone his client's way, and he found a mistake in the accounts it rested on. His senior counsel advised him to say nothing. Gandhi insisted on admitting the mistake to the court, at the risk of losing the whole award. He writes that he had made it a rule never to take a lie to court, and that he would drop clients who deceived him. He never swapped the brief for a weapon. He turned the brief into an instrument of truth.
+
+So the doctor put down the tool for healing and picked up the tool for killing. The barrister kept his tool and changed what it was for. The rest of the argument between these two books grows from those two scenes.
+
 ## Where both are right
 
 **A conviction is something you do to yourself first.** Gandhi calls his life a series of experiments, and he means it literally. He experiments on his diet for decades, on his household, on his sexuality with the vow of *brahmacharya* he took in 1906, and on his work, moving his newspaper and his family onto a farm settlement at Phoenix where everyone did manual labour. Che, in Anderson's account, does the same. He refused to let his asthma excuse him from anything, and in government he spent his Sundays cutting cane and working on building sites as unpaid voluntary labour, the minister alongside the workers.
+
+The books are honest about where this can go wrong. In 1918, dangerously ill after the recruiting campaign, Gandhi refused milk because of an old vow. Kasturba argued that the vow could only have meant cow's and buffalo's milk, and he agreed to take goat's milk to recover. He writes that he knew he was keeping the letter of the vow and breaking its spirit, and that the memory still troubled him. A conviction practised on yourself can harden into a rule that serves nobody.
 
 It is easy to find this admirable and hard to imitate. What I take from both is narrower and more practical: if I believe something is right, the first place it should show up is in how I behave, not in what I argue.
 
@@ -55,11 +67,17 @@ The shelf joke is really a joke about one question: what are you allowed to do t
 
 Gandhi's answer, even in his early South African years, is almost stubbornly gentle. His first big case in South Africa was a commercial dispute, and instead of winning it in court he persuaded both parties to settle by arbitration. He says it taught him that the real work of a lawyer is to bring together people who have been torn apart. When he organised resistance in South Africa, the movement needed a name, and the one that stuck was *satyagraha*, holding firmly to truth. It is a method built on suffering yourself rather than inflicting suffering on others.
 
-Che's answer, in Anderson's book, is different, and Anderson does not soften it. In the Sierra Maestra in 1957 a peasant guide named Eutimio Guerra was discovered to have been leading the army to the rebels. Anderson quotes Che's own diary: Che shot him himself. After the victory, Che commanded the fortress of La Cabaña in Havana, where revolutionary tribunals tried and executed officials of the old regime. Near the end of his life he wrote, in a message to the Tricontinental conference, about hatred as an element of struggle.
+He was tested on it early, and in his own body. In January 1897, when he landed at Durban after a trip to India, a white crowd that believed he had slandered them abroad recognised him in the street, pelted him and beat him, until the wife of the police superintendent stepped in and shielded him with her parasol. He escaped that night in disguise. When the colonial government invited him to name his attackers so that they could be prosecuted, he refused. He writes that they had been misled, and that he did not want to bring anyone to court for it.
+
+Che's answer, in Anderson's book, is different, and Anderson does not soften it. In the Sierra Maestra in 1957 a peasant guide named Eutimio Guerra was discovered to have been leading the army to the rebels. Anderson quotes Che's own diary: Che shot him himself. After the victory, Che commanded the fortress of La Cabaña in Havana, where revolutionary tribunals tried and executed officials of the old regime. Anderson makes clear that this was not only wartime necessity. At the United Nations in December 1964, with the war long won, Che told the General Assembly that Cuba had executed, was executing and would go on executing as long as it was necessary. Near the end of his life he wrote, in a message to the Tricontinental conference, about hatred as an element of struggle.
+
+Put Eutimio Guerra and the Durban crowd side by side and the difference between the two books is already complete. One man, betrayed, killed the man who betrayed him. The other, beaten, refused even to sue.
 
 On this I have stopped being even-handed. I think Gandhi is right, and I think Che's own story is the best evidence for it.
 
 The clearest test is what each man did when his own people turned violent. In 1919 Gandhi called a nationwide protest against the Rowlatt Act, violence broke out, and he called it off. He described his mistake as a "Himalayan miscalculation": he had asked people to break laws before they had learnt the discipline that makes lawbreaking civil. He would rather stop than win badly.
+
+And when the method worked, his book shows why. In 1917 he went to Champaran in Bihar, where indigo planters were squeezing tenant farmers. The district magistrate ordered him to leave. He refused, pleaded guilty in court, and said he was disobeying the order not out of disrespect for the law but out of obedience to a higher law, his conscience. The case against him was withdrawn, an inquiry was set up with him on it, and the system that bound the tenants to grow indigo was abolished. Not a shot was fired, and the peasants, whose statements he and his colleagues had spent weeks recording, were the witnesses rather than the audience.
 
 Che never stopped. His manual on guerrilla warfare set out the idea that a small armed band could create the conditions for revolution instead of waiting for them. In Bolivia, in 1967, Anderson shows exactly how that went. The peasants he had come to liberate did not join him, the Bolivian Communist Party withheld its support, and the army was kept informed by the people in the valleys. He was captured and executed at La Higuera on 9 October 1967.
 
@@ -93,7 +111,7 @@ I notice that I am more forgiving of Gandhi here, and I think it is only because
 
 After years of rereading, I have ended up with something like a working rule, and it comes from both of them.
 
-From Che I keep the capacity to be angry. Anderson's Che could not look at an injustice and walk past it, whether in a leper colony in Peru or in Guatemala City, and I think a life without that reflex is a smaller life.
+From Che I keep the capacity to be angry. Anderson's Che could not look at an injustice and walk past it, whether in a leper colony in Peru or in Guatemala City, and I think a life without that reflex is a smaller life. The image of him I hold on to is not the beret. It is the young medical student at San Pablo, on his twenty-fourth birthday, swimming across the river from the side where the staff lived to the side where the patients were, because that was where he wanted to be.
 
 From Gandhi I keep the method. When I am angry about something and want to do something about it, the question I now ask is the one his book keeps asking: what does this require me to do to the person in front of me? If the answer is something I would not accept being done to me, the cause is not a good enough reason. In his closing chapter he says the way to truth is through *ahimsa*, and that a person has to put himself last among his fellow creatures to get anywhere near it.
 
