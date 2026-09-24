@@ -211,6 +211,9 @@ em { font-style: italic; }
 :lang(ja) { font-family: var(--script-jp); line-height: 1.85; }
 :lang(zh) { font-family: var(--script-zh); line-height: 1.85; }
 :lang(hi), :lang(mr), :lang(sa) { font-family: var(--script-hi); line-height: 1.8; }
+/* Devanagari has no italic. Inside a quote or an aside the browser
+   would otherwise slant it into a fake oblique. */
+:lang(hi), :lang(mr), :lang(sa) { font-style: normal; }
 :lang(ar), :lang(fa), :lang(ur) { font-family: var(--script-ar); line-height: 1.9; }
 :lang(el) { font-family: var(--script-el); }
 :lang(ar), :lang(fa), :lang(ur), :lang(he) { direction: rtl; unicode-bidi: isolate; }
