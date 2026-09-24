@@ -1,0 +1,423 @@
+---
+title: My Kitchen Is a War Museum
+dek: The microwave, the tin can, the duct tape and the map on my phone all came out of war. Heraclitus called war the father of all things. From a ten-thousand-year-old massacre to the drone and AI wars of 2026, and on into the biological century now beginning, this is an audit of what war actually invents, what it only buys, and who has always settled the bill.
+place: Geneva
+time: 23:30
+date: 2026-09-24
+tangent: Explained
+pours: 8
+image: assets/img/plate-war-museum.webp
+imageAlt: AI-generated painting of a towering, faceless armoured giant in a tattered red cloak, cradling an old radio, a rocket and a tin can in its arms, standing in a vast graveyard of broken tombstones and statues, with a ruined city and a setting sun behind.
+keywords: war, innovation, invention, technology, history, military, penicillin, radar, microwave, gps, internet, arpanet, v-2, rockets, drones, ukraine, gaza, iran, sudan, haber, fertiliser, red cross, geneva conventions, cern, arms industry, sipri, military spending, environment, emissions, animals, horses, landmines, biological weapons, biological weapons convention, mrna, crispr, alphafold, kuhn, paradigm shift, biosecurity
+---
+
+My kitchen is a war museum.
+
+The microwave on the counter exists because an engineer building radar sets in 1945 noticed that a chocolate bar in his pocket had melted. The tinned tomatoes in the cupboard descend from a prize the French government offered in 1795 for a way to feed its armies. The roll of duct tape in the drawer was proposed in 1943 by a munitions worker with two sons in the navy, who wanted ammunition boxes that opened faster under fire. The box of tissues by the window began as the filter material in First World War gas masks. The phone that tells me which way to walk to the tram knows where I am because of a satellite system the United States Department of Defense began building in 1973.
+
+We have a phrase for this, and it is wrong in an interesting way. "Necessity is the mother of invention," we say, and when the necessity is a war we make it "war is the mother of invention". The oldest version of the idea is harsher and more honest. Around 500 BC the Greek philosopher Heraclitus wrote that "war is the father of all things". Not the mother. In the world he lived in, the father was the one who decided, who made and unmade, who did not have to carry anything to term.
+
+![A faceless armoured giant cradling a radio, a rocket and a tin can, standing over a graveyard with a ruined city behind.](assets/img/plate-war-museum.webp "The father of all things, holding the children he never paid for."){wide 1448x1086}
+
+I live in Geneva, a city that has spent a century and a half trying to civilise war and has, in the process, invented things of its own. From here it is easy to be sentimental about the subject in both directions: to marvel at the inventions, or to recoil from the violence and refuse to look at the inventions at all. I want to do neither. I want to follow the proverb honestly, from the first massacre archaeologists have found to the drone wars being fought as I write, and ask four questions in order. What does war cost? What does it actually invent? What has come out of it that is worth keeping? And, once the accounts are done, is the proverb true?
+
+The order matters. We usually tell the story of military invention with the invention first and the bill in a footnote. I am going to start with the bill.
+
+## Act I: The invoice
+
+### The first evidence
+
+Around ten thousand years ago, at a place called Nataruk, near what was then the shore of Lake Turkana in Kenya, a group of at least 27 people were killed together. Among the remains archaeologists from Cambridge found were at least eight women and six children. Several skeletons show blunt-force trauma to the skull; two men still had stone projectile tips lodged in the skull and chest. The people who died there were hunter-gatherers, not farmers or city dwellers. There was no state, no army and no border. There was, it seems, a raid.
+
+Nataruk was published in *Nature* in 2016 as possible evidence of warfare among hunter-gatherers, and other researchers have since argued over how to interpret it. The cemetery at Jebel Sahaba, on the Nile in northern Sudan, is older still, about thirteen thousand years, and its dead carry spear and arrow wounds. A re-analysis published in 2021 concluded that it records not a single battle but a long series of violent raids, probably sharpened by a changing climate and competition for the river's resources.
+
+Two things are worth taking from these sites before anything else. The first is that organised killing between groups is very old. Jebel Sahaba is older than farming, and both sites are older than writing or the wheel. Whatever war invented later, it did not need civilisation to begin. The second is that the oldest known victims include children. The bill has always been paid, in part, by people who were never asked.
+
+### The industrial bill
+
+The twentieth century added industry to the ancient habit, and the totals changed scale. Estimates for the First World War are usually given at around fifteen to twenty million deaths, soldiers and civilians together; for the Second, somewhere between seventy and eighty-five million, the largest loss of life in any conflict in history. These are numbers so large that they stop meaning anything, which is itself one of war's inventions: a scale of death that the mind refuses to hold.
+
+The animals are easier to see. Around eight million horses, donkeys and mules died in the First World War, from shellfire and gas, from exhaustion, from mud and disease. Armies used them to haul guns and supplies through landscapes that engines could not cross, and they died in numbers that no one tried very hard to count. Dogs carried messages and pigeons carried more; the most famous of them, a pigeon named Cher Ami, delivered a message in 1918 that saved a trapped American battalion, and arrived shot through the chest and missing a leg.
+
+::: aside
+Every age of war has had its animals. Hannibal's elephants, the horses of every cavalry, the dogs and pigeons of the Somme, the dolphins and sea lions the United States Navy trained to find mines and swimmers. We give some of them medals. Britain's PDSA Dickin Medal has been awarded to dozens of animals for wartime service. We have never asked any of them whether they wanted to come.
+:::
+
+### The bill today
+
+The wars of 2026 are not exceptions to this history. They are its latest pages, and I will give their numbers as the organisations counting them do, with dates, because every one of these figures is contested and every one of them is still rising.
+
+In Gaza, the Health Ministry's count of Palestinians killed since October 2023 passed 73,000 in September 2026, according to its own reporting. A field survey published in *The Lancet Global Health* suggested that the true toll of violent and non-violent deaths is higher. More than a thousand people have been killed since the ceasefire of October 2025 took effect.
+
+In Ukraine, the United Nations Human Rights Monitoring Mission had verified more than 68,000 civilian casualties, killed and injured, by the end of July 2026. It reported that civilian casualties in the first half of 2026 were sharply higher than a year earlier. Military casualties on both sides are far larger and far less certain; estimates run into the hundreds of thousands.
+
+In Sudan, where the army and the Rapid Support Forces have been fighting since April 2023, estimates of the dead range from about 150,000 to 400,000, and the UN counts roughly eleven million people displaced inside the country. It is the largest displacement crisis in the world and among the least reported.
+
+And since 28 February 2026, when the United States and Israel began striking Iran, a regional war has drawn in the Gulf and the shipping lanes of the Strait of Hormuz. A ceasefire in April and a memorandum of understanding in June both failed; by September it had settled into a war of attrition, with an American naval blockade and talks about reopening the strait.
+
+### One name
+
+Numbers like these are true and almost impossible to feel. So here is one person, chosen because what happened to her was recorded minute by minute and reconstructed afterwards by journalists.
+
+On 29 January 2024, Hind Rajab, six years old, was in a car with her uncle, aunt and cousins, trying to leave Gaza City. The car came under Israeli fire near a petrol station. Her fifteen-year-old cousin Layan called the Palestine Red Crescent for help and was killed during the call. Hind was left alone in the back seat among her dead relatives, and for about three hours she stayed on the phone with the Red Crescent's dispatchers in the West Bank, telling them the tank was close and asking them to come and get her. The Red Crescent waited for clearance to send an ambulance. When the ambulance finally went, contact with its two paramedics was lost as well. Twelve days later, when the area could be reached, Hind, her family and the two paramedics were found dead. *The Washington Post* later reconstructed the timeline of that afternoon from the recordings, images and accounts.
+
+I have put her here, at the beginning of the accounts, because the children in the cemetery at Nataruk have no names and she does. Ten thousand years separate them. The bill is the same.
+
+### The bill that isn't counted
+
+Some of the bill never appears in casualty figures.
+
+The world's militaries, even in peacetime, are estimated by Scientists for Global Responsibility and the Conflict and Environment Observatory to account for about 5.5 per cent of global greenhouse gas emissions. If they were a country, they would have the fourth-largest carbon footprint on Earth, larger than Russia's. That estimate does not include the emissions of wars themselves: the burning cities, the fuel, the reconstruction.
+
+When the Kakhovka dam on the Dnipro was destroyed in June 2023, about sixteen cubic kilometres of water drained from its reservoir over two weeks, flooding towns, farmland and nature reserves downstream and pouring pollutants that had settled in the reservoir's sediments into the river and the Black Sea. A sturgeon breeding facility was badly damaged, and whole estuarine ecosystems were wiped out.
+
+This is not new either. In 1991 retreating Iraqi forces set hundreds of Kuwait's oil wells alight, and the fires burned for months. In Vietnam, the United States sprayed millions of litres of herbicides, including Agent Orange, over forests and farmland, with health and environmental consequences that are still being counted half a century later. Land is a casualty too, and it cannot be evacuated.
+
+::: pull
+The oldest known victims of war include children. The bill has always been paid, in part, by people who were never asked.
+:::
+
+### The wounds you cannot see
+
+The last part of the bill is the hardest to count, because it is carried home.
+
+In the First World War, soldiers who broke down under months of bombardment, who shook, went mute, could not stop weeping or could not move, were said to have "shell shock". The army did not know what to do with them, and often did not believe them. Britain executed 306 of its own soldiers during that war for offences such as desertion and cowardice, and many of them, according to the campaigners who fought for decades to clear their names, were almost certainly suffering from what we would now recognise as trauma. In 2006 the British government pardoned all 306.
+
+It took another war, and the people who fought it, to give the condition a name. American veterans of Vietnam, many of them unable to return to ordinary life, campaigned for their suffering to be recognised as an illness rather than a weakness, and in 1980 post-traumatic stress disorder entered the American Psychiatric Association's diagnostic manual. That recognition now helps survivors of accidents, assaults and disasters who have never been near a battlefield. It is one of war's genuine inventions, and it was invented by its victims, who had to insist on it.
+
+## Act II: The case for the proverb
+
+Now the inventions, and I want to make the case for the proverb as strongly as it can be made, because it is a real case.
+
+### Metal, horses and roads
+
+The earliest link between war and technology is hard to separate from everything else. The metallurgy that made bronze and then iron swords also made ploughs, pots and nails; it is not obvious which came first, and in most places it was probably both at once. The domestication of the horse and the invention of the spoked-wheel chariot transformed warfare across Eurasia in the second millennium BC, and the same animals and wheels transformed trade and travel.
+
+Rome's roads are the clearest early case of military infrastructure becoming civilian. They were built so that legions could move quickly across the empire, and they became the arteries along which goods, ideas, religions and eventually the empire's own conquerors travelled.
+
+Gunpowder is the useful counter-example, and I will come back to it. It was discovered in China by alchemists, probably in the ninth century, apparently while looking for an elixir of life. It became a weapon later. The first great "military" invention was born from a search for immortality.
+
+### The rockets of Mysore
+
+One of the more remarkable transfers in military history ran from India to Britain, and it ended up in the American national anthem.
+
+In the late eighteenth century the Kingdom of Mysore, under Hyder Ali and then his son Tipu Sultan, fielded the first successful iron-cased rockets. Earlier rockets used paper or bamboo casings; hammered iron allowed a far larger charge and a far longer range, and Mysore used them against the East India Company in the wars of the 1780s and 1790s. When the British took Tipu's capital at Srirangapatna in 1799, they found hundreds of launchers and thousands of rockets, and sent some back to England.
+
+In 1804 a young British inventor named William Congreve began studying the captured rockets at the Royal Arsenal at Woolwich, and developed from them the Congreve rocket. Ten years later, on the night of 13 September 1814, British ships fired Congreve rockets at Fort McHenry in Baltimore, and a lawyer named Francis Scott Key, watching from a ship in the harbour, wrote about "the rockets' red glare". Every time the American anthem is sung, it remembers a weapon whose design began in a kingdom in southern India that the British had just conquered.
+
+
+### Napoleon's kitchen and hospital
+
+The modern story begins with the French Revolution and the wars that followed it, and with the idea that a whole nation could be mobilised for war. On 23 August 1793 the revolutionary government decreed the *levée en masse*, calling up the entire French population: young men to fight, married men to forge weapons, women to make tents and serve in hospitals, children to turn old linen into bandages, and old men to go to public squares and rouse the courage of the fighters. It was the birth of total war, and total war needs total supply.
+
+The biggest thing war invented in this period was not a device at all. It was the modern state. The historical sociologist Charles Tilly summed up a whole school of research in 1975 in one line: "War made the state, and the state made war." To fight wars that were growing ever larger and more expensive, European rulers had to build permanent taxation, bureaucracies to collect it, censuses to count the people who could be taxed and conscripted, and national debt to borrow against the future. Britain's income tax began this way: William Pitt the Younger introduced it in January 1799 to pay for the war against revolutionary France, as a temporary measure. It was dropped when the wars ended, brought back in 1842, and has been collected ever since. Those institutions outlived the wars that created them. They became the machinery through which modern governments also build schools, pay pensions and run hospitals. If the proverb is true anywhere, it is true here: the state that now pays for most of the world's research was itself, in large part, invented to pay for war.
+
+
+In 1795 the French government offered a prize of 12,000 francs for a way to preserve food for its armies. A Parisian confectioner named Nicolas Appert spent more than a decade sealing food in glass bottles and boiling them, without understanding why it worked; Louis Pasteur would not explain it for another half-century. In 1810 the government paid him the 12,000 francs on condition that he publish his method. Every tin in every supermarket is a descendant.
+
+The same wars produced modern battlefield medicine. Dominique Jean Larrey, Napoleon's chief surgeon, designed light, fast "flying ambulances" to bring surgeons to the wounded during battle instead of after it, and treated the wounded according to the severity of their injuries rather than their rank, even treating the enemy's wounded by the same rule. It was the beginning of triage, the principle that now governs every emergency department in the world.
+
+Half a century later, in the Crimean War, Florence Nightingale's work at the military hospital at Scutari turned into a campaign to reform army medicine, and her statistical diagrams showing that more soldiers were dying of disease than of wounds became a landmark in the use of data to change policy.
+
+::: aside
+**Invoice. Invention:** canned food. **Commissioned by:** the French revolutionary government, 1795. **Delivered:** 1810. **Purpose:** to keep an army that was conquering Europe fed while it did so. The prize was 12,000 francs. The Napoleonic Wars that the tins helped sustain killed somewhere between three and six million people.
+:::
+
+### The chemist's war
+
+If one person contains the whole argument of this essay, it is Fritz Haber.
+
+In 1909, working in peacetime, Haber showed how to make ammonia from the nitrogen in the air, and the chemical company BASF, with the engineer Carl Bosch, turned his method into an industrial process. Ammonia is the basis of synthetic fertiliser. Our World in Data, drawing on the work of Vaclav Smil and others, estimates that roughly half of the world's population today is fed by food grown with nitrogen fertiliser made this way. Without the Haber–Bosch process, the population of the twentieth century could not have grown as it did.
+
+Ammonia is also the basis of explosives. When the First World War began and Britain's naval blockade cut Germany off from the Chilean nitrates it imported, the Haber–Bosch process let Germany keep making munitions. And Haber went further. He personally directed the development of chlorine gas as a weapon, and on 22 April 1915, at Ypres, he supervised its first large-scale use, which killed thousands of men.
+
+His wife, Clara Immerwahr, was a chemist herself, the first woman to earn a doctorate in chemistry at the University of Breslau. She was a pacifist and, according to people who knew her, opposed his work on gas. On the night of 2 May 1915, shortly after he returned from the front and while he was celebrating his promotion, she shot herself with his service revolver. Her reasons have never been established with certainty. Haber left for the Eastern Front the next day.
+
+In 1919 Haber received the Nobel Prize in Chemistry, for the synthesis of ammonia.
+
+The same man fed the world and gassed it, with the same chemistry, within six years. His life is the best evidence I know that the proverb confuses two different things. The invention came first, in peace. The war did not invent the Haber–Bosch process. It drafted it.
+
+### Everyday things from the trenches
+
+The First World War also produced a surprising number of household objects. The American company Kimberly-Clark made a wood-pulp material called cellucotton, used as surgical dressing and as a filter in gas masks. After the war, with warehouses full of it, the company sold it as Kotex sanitary pads from 1920 and as Kleenex, originally a cold-cream remover, from 1924. The trench coat is named after the place it was worn. Wristwatches, previously worn mostly by women, became standard for men because an officer could not fumble for a pocket watch while coordinating an attack.
+
+### The Second World War: acceleration
+
+The Second World War is the strongest case for the proverb, and it is worth being precise about what happened.
+
+Penicillin was not invented in the war. Alexander Fleming discovered its effect on bacteria in 1928, in peacetime, and for years almost nothing came of it. It was Howard Florey and Ernst Chain's team at Oxford, from 1939 onwards, that showed it could cure infections, and it was the war that turned their result into an industry. The United States government brought in drug companies and a Department of Agriculture laboratory in Peoria, Illinois, which developed deep-tank fermentation using corn steep liquor and found a strain of mould on a cantaloupe from a local market that produced far more of the drug. By the Normandy landings in June 1944, more than 2.3 million doses were ready for the Allied armies. After the war, penicillin went to everyone.
+
+Radar was developed in the late 1930s in several countries at once, and its crucial component, the cavity magnetron, was built in Britain in 1940 and taken to the United States to be mass-produced. One of the engineers who made magnetrons in quantity was Percy Spencer at Raytheon, and it was in his pocket that the chocolate bar melted. Raytheon sold the first microwave oven, the Radarange, in 1947.
+
+The jet engine was developed in parallel by Frank Whittle in Britain and Hans von Ohain in Germany, and the first jet aircraft flew in Germany in August 1939, days before the war began. Electronic computing was pushed forward by codebreaking at Bletchley Park, where the Colossus machines were running by 1944, and by the American need for artillery tables, which produced ENIAC in 1945. Nuclear physics went, in six years, from a laboratory curiosity to the destruction of two cities.
+
+The economic evidence suggests that this wartime effort had effects that lasted long after the fighting. The economists Daniel Gross and Bhaven Sampat studied every invention funded by the United States Office of Scientific Research and Development during the war and found that the funding seeded technology clusters, around Boston's Route 128 and elsewhere, that went on producing patents, start-ups and high-tech jobs into the 1970s. The war did not only produce inventions. It produced places that kept inventing.
+
+
+::: aside
+**Invoice. Invention:** the long-range ballistic missile. **Commissioned by:** Nazi Germany. **Delivered:** the V-2, from 1944. **Cost:** V-2 attacks killed an estimated 9,000 people, mostly in London and Antwerp. About 12,000 forced labourers and concentration camp prisoners died building them, many in the tunnels of the Mittelwerk under the Dora camp. It is one of the few weapons in history that killed more of the people who made it than the people it was aimed at. Its chief designer, Wernher von Braun, was brought to the United States after the war and led the development of the Saturn V rocket that took Americans to the Moon.
+:::
+
+### The Cold War: the invisible inheritance
+
+The Cold War produced less spectacular inventions and more pervasive ones.
+
+::: aside
+**Invoice. Invention:** nuclear power, and much of nuclear medicine. **Commissioned by:** the Manhattan Project, 1942. **Delivered:** Hiroshima, 6 August 1945, and Nagasaki, three days later. **Cost:** by the end of 1945 the two bombs had killed somewhere between 110,000 and 210,000 people; the uncertainty itself is part of the bill, because the records were destroyed along with the cities. The reactors that now light cities and the isotopes that now scan tumours descend from the same programme.
+:::
+
+The internet grew out of ARPANET, a network funded by the Pentagon's Advanced Research Projects Agency, which sent its first message in 1969. The popular story is that it was designed to survive a nuclear attack. That is mostly myth. The idea of a network that could survive the destruction of its nodes came from the RAND researcher Paul Baran, whose work was about nuclear survivability, but ARPANET itself was built to let researchers share scarce computers. It was military money buying a civilian idea.
+
+The Global Positioning System was started by the US Department of Defense in 1973 to guide weapons and troops. On 1 September 1983 a Korean Air Lines flight from New York to Seoul, KAL 007, strayed into Soviet airspace and was shot down, killing all 269 people aboard. Two weeks later the Reagan administration announced that GPS would be made available for civilian use, so that no airliner would be lost that way again.
+
+::: aside
+**Invoice. Invention:** satellite navigation for everyone. **Commissioned by:** the US Department of Defense, 1973. **Opened to the public after:** a navigational error put a civilian airliner over Soviet territory in 1983, and 269 people died. Every time my phone tells me where the tram stop is, it is using a system that was made public because of them.
+:::
+
+### The drone wars
+
+The wars of the 2020s are producing inventions at a speed that makes the Second World War look leisurely, and they are the least comfortable part of this story because the inventions are being tested, right now, on real people.
+
+Ukraine went from producing a few thousand small first-person-view drones a year in 2022 to producing them by the million in 2025; one estimate puts the country's output at more than two hundred thousand a month by early 2025, from around five hundred manufacturers. A drone that costs a few hundred dollars can disable a tank that costs millions. On 1 June 2025, in an operation Ukraine called Spiderweb, 117 drones smuggled into Russia in lorries attacked strategic bombers at five airbases; Ukraine claimed 41 aircraft hit, and at least a dozen were confirmed destroyed. The engineers designing these weapons are increasingly adding machine vision, so that the drone can recognise and track its target on its own in the last seconds of flight.
+
+In Gaza, in April 2024, the Israeli publication *+972 Magazine* reported, based on interviews with intelligence officers, that the Israeli army had used an artificial intelligence system called Lavender to generate lists of suspected militants for targeting, marking some 37,000 people. The Israeli military denied using a system that "identifies terrorist operatives or that recommends targets". Whatever the details turn out to be, the direction is clear. The first wars in which software helps decide who is a target are being fought now.
+
+The proverb is true here in the most literal sense. War is inventing, very fast. What it is inventing is cheaper, faster and more automated ways to kill.
+
+### Who takes part
+
+One more thing war invents is participation, and this is where the story becomes more complicated than a list of devices.
+
+The *levée en masse* made every citizen part of the war effort. The world wars made it literal. Factories filled with women because the men were at the front, and in several countries the vote followed: British women over thirty in 1918, American women in 1920. Vesta Stoudt, the duct tape inventor, was not a scientist or an officer. She was a mother at an ordnance plant in Illinois who wrote directly to President Roosevelt in February 1943 when her supervisors ignored her idea. Roosevelt passed her letter to the War Production Board, and the tape went into production.
+
+In Ukraine today, participation has become crowd-sourced. Citizens fund drones, volunteer engineers print parts, and programmers join volunteer cyber units. It is inspiring and alarming in equal measure: inspiring because it shows how much ingenuity a threatened society can release, alarming because it shows how completely a society can be converted into a war machine, and how quickly that conversion comes to feel normal.
+
+::: pull
+The war did not invent the Haber–Bosch process. It drafted it.
+:::
+
+## Act III: What war was forced to create against itself
+
+If war only invented weapons and the byproducts of weapons, this would be a very bleak essay. But some of the most important things war has produced were created in reaction to it, by people who saw what it did and decided to build something against it. Several of them were built in the city where I live.
+
+### The Geneva inheritance
+
+In June 1859 a Genevan businessman named Henry Dunant happened to arrive at Solferino, in northern Italy, just after one of the bloodiest battles of the century. He found tens of thousands of wounded men left to die on the field and in the surrounding villages, and he spent days organising local people to care for them, regardless of which side they had fought on. He wrote a book about what he saw, and in 1863, in Geneva, the organisation that became the International Committee of the Red Cross was founded. The following year, the first Geneva Convention committed governments to protect wounded soldiers and the people caring for them.
+
+The four Geneva Conventions of 1949, written in this city after the Second World War, still form the core of the laws of war: the rules on the treatment of the wounded, prisoners and civilians. They are broken every day, in every war I have mentioned. But they are the reason we have a vocabulary for saying that something is a war crime at all.
+
+Larrey's triage and Nightingale's statistics belong in this category too. They came out of war, but they were acts of care inside it, and they now save far more lives in peacetime emergency rooms than they ever did on battlefields.
+
+### The scientist who said no
+
+Fritz Haber is the scientist who said yes. It is worth knowing that the other answer was always available.
+
+Joseph Rotblat was a Polish physicist working in Britain who joined the Manhattan Project because he feared that Nazi Germany would build an atomic bomb first. In late 1944, when it became clear that Germany was nowhere near building one, he concluded that the reason he had come no longer existed, and he left. He is the only scientist known to have resigned from the project on moral grounds. After the war he helped found the Pugwash Conferences, which brought scientists from both sides of the Cold War together to argue for arms control when their governments would barely speak to each other. In 1995, fifty years after Hiroshima, he and Pugwash shared the Nobel Peace Prize.
+
+Rotblat does not undo Haber. But between them they settle a question this essay keeps circling. The inventions of war are not produced by some impersonal force called war. They are produced by people, who decide, one at a time, whether to take the work.
+
+### Swords into fertiliser
+
+The Haber–Bosch process feeds something like half of the people alive today. Penicillin and the antibiotics that followed it have saved lives that are impossible to count, almost all of them in peace. GPS guides ambulances. The internet connects families separated by the wars that produced it. The inheritance of war's inventions is, overwhelmingly, civilian. That is not a defence of war. It is a description of what people do with what war leaves behind.
+
+### Medicine from the wound
+
+Some of war's most humane inventions came from staring directly at what weapons do to a human body.
+
+The trenches of the First World War produced facial injuries on a scale surgeons had never seen: jaws, noses and cheeks torn away by shrapnel, in men who survived. A New Zealand-born surgeon named Harold Gillies persuaded the British army to let him treat them, and in 1917 he opened the Queen's Hospital at Sidcup, south-east of London, with more than a thousand beds. He assembled surgeons, dentists, radiologists and artists, and developed techniques for rebuilding faces from the patients' own tissue that are still the foundations of reconstructive surgery. By the time the hospital's work wound down, it had performed more than 11,000 operations on more than 5,000 men. He is generally called the father of modern plastic surgery.
+
+The same thing is happening now. Estimates of the number of Ukrainians who have lost limbs since the full-scale invasion range from tens of thousands to as many as 100,000. In Lviv, a rehabilitation centre called Superhumans, founded in 2023, has treated thousands of patients, soldiers and civilians, with prosthetics, reconstructive surgery and psychological care, and it is pushing prosthetic rehabilitation forward in the process. Ukraine did not choose to become a laboratory for this. But the knowledge being built there will, in time, reach every amputee in the world.
+
+### The rat that walks on minefields
+
+Among the most hopeful things I have learned while writing this is about a rat.
+
+Magawa was an African giant pouched rat trained by a Belgian charity called APOPO, based in Tanzania, to sniff out landmines. Rats are light enough not to set mines off and can search an area far faster than a human with a metal detector. Between 2016 and 2021, working in Cambodia, Magawa found 71 landmines and 38 other pieces of unexploded ordnance, clearing more than 22 hectares of land that people could then farm and live on. In 2020 he became the first animal other than a dog to receive Britain's PDSA Gold Medal for bravery.
+
+::: aside
+The mines Magawa found were laid during Cambodia's wars of the 1970s and 1980s. The war that laid them ended decades before he was born. That is the time scale of the bill: a war can keep killing for a generation after the peace treaty, and the cleanup is done, one sniff at a time, by animals and people who had nothing to do with the fighting.
+:::
+
+### Hope in the present tense
+
+The hope in this story is not all in the past.
+
+Ukraine is now among the most heavily mined countries in the world. Something like 138,000 square kilometres, more than a fifth of its territory, is considered potentially contaminated by mines and unexploded ordnance, and the cost of clearing it has been estimated at more than thirty billion dollars. The same Ukrainian engineers who turned cheap drones into weapons are now turning them, together with satellite imagery and machine learning, into tools for finding mines: flying sensors over fields, training algorithms to recognise explosives in the images, and, just as important, proving that land thought to be dangerous is safe to farm. The United Nations Development Programme has been funding some of that work. The same skills, pointed the other way.
+
+And in Geneva, a short walk from where I am writing, governments have spent a decade arguing about whether machines should be allowed to decide on their own to kill people. The expert group negotiating on lethal autonomous weapons under the Convention on Certain Conventional Weapons held its last formal session of the current mandate at the Palais des Nations at the start of this month. On 25 August the UN Secretary-General and the President of the International Committee of the Red Cross issued a joint warning that the world is "dangerously close to crossing a moral red line: the autonomous targeting of humans by machines." It is not yet a treaty. But it is the same city, and in a sense the same impulse, as Henry Dunant's: to write down, before the next war and not after it, what may not be done.
+
+### The peace lab down the road
+
+The most important invention of my lifetime was made a few kilometres from where I am sitting, in peacetime, by a physicist trying to solve a filing problem.
+
+CERN, the European particle physics laboratory on the border between Geneva and France, was founded in 1954 to rebuild European science after the Second World War and to bring together countries that had been at war a decade earlier. In 1989 Tim Berners-Lee, a British scientist working there, proposed a system for sharing documents between researchers across the lab's many computers. It became the World Wide Web. CERN put the technology into the public domain.
+
+The internet runs on infrastructure that military money helped build. But the thing that made it part of everyone's life, the Web, was not a weapon, a byproduct of a weapon, or a response to a weapon. It came out of a laboratory that exists because Europe decided, after the worst war in its history, to do science together instead of against each other.
+
+## Act IV: Clarity
+
+### Born, or bought?
+
+Let me put the proverb on trial, invention by invention, with a single question: was this born in war, or only bought by war?
+
+**Gunpowder:** born in peace, from alchemists' search for an elixir; bought by war later.
+**The iron-cased rocket:** born in war, in Mysore, and taken home by the people it was fired at.
+**The modern state:** built, in large part, to pay for war.
+**Canned food:** born of a military prize; bought by war.
+**Triage:** born in war.
+**The Haber–Bosch process:** born in peace, in 1909; drafted by war in 1914.
+**Chlorine gas:** born in war.
+**Penicillin:** born in peace, in 1928; mass-produced because of war.
+**Radar:** born of military need.
+**The microwave oven:** born by accident of radar.
+**The jet engine:** born in parallel in peace and war preparation.
+**The computer:** accelerated enormously by war.
+**The rocket:** born in war, in the slave-labour tunnels of the Mittelwerk.
+**The internet:** paid for by the military, built for civilian researchers.
+**GPS:** born in the military; opened to civilians by a tragedy.
+**The Web:** born in peace, at CERN.
+**The mRNA vaccine:** born in peace, in a university lab; helped along by a defence agency; bought, at last, by a pandemic.
+**The cheap attack drone:** born in war, now.
+
+Tally it however you like, and a pattern emerges. War is a good originator of weapons, of battlefield medicine, and of the logistics of feeding and moving armies. It is a poor originator of fundamental ideas. Most of the transformative science on this list, the chemistry of ammonia, the biology of penicillin, the physics behind radar and the atom, was done in peacetime by people who were not thinking about war. What war supplies is not the idea. It is urgency, money and the willingness to ignore cost.
+
+### The most demanding customer
+
+That is the clearest way I have found to describe war's role in invention. War is not invention's mother. It is its most demanding customer: a buyer who wants everything immediately, will pay almost any price, does not care about waste, and does not have to live with the consequences.
+
+And this customer is very rich. According to the Stockholm International Peace Research Institute, world military spending reached a record 2,887 billion dollars in 2025, the eleventh consecutive year of growth. That is roughly 330 million dollars an hour. The world's hundred largest arms companies had combined arms revenues of 679 billion dollars in 2024, also a record, with the largest, Lockheed Martin, taking in about 65 billion. In January 1961 Dwight Eisenhower, a general who had commanded the largest invasion in history, used his farewell address as president to warn Americans against the "unwarranted influence" of what he called the military-industrial complex. The phrase has become a cliché. The numbers have not.
+
+Consider what the same money can buy when it is spent on the other kind of invention. CERN, the laboratory that gave the world the Web and much of what we know about the fundamental particles, runs on an annual budget of roughly one to one and a half billion Swiss francs. At the rate the world spent on its militaries in 2025, it spent the equivalent of CERN's entire annual budget every four or five hours.
+
+### Who profits, and who pays
+
+The profits of war go to identifiable places: arms companies and their shareholders, the governments whose industries sell to other governments, the contractors who rebuild what the weapons destroyed, and in a smaller way the engineers and workers whose jobs depend on the orders. The inventions, eventually, go to everyone.
+
+The costs go somewhere else entirely. They go to the dead and the injured, to the displaced, to the children in the cemetery at Nataruk and the children in Gaza, Ukraine and Sudan. They go to the eight million horses and the sturgeon of the Dnipro estuary. They go to the atmosphere, in emissions no country counts in its national totals, and to farmland that will not be safe to walk on for decades.
+
+That is the real accounting, and it is lopsided in a way the proverb hides. The benefits of military invention are spread across the whole of humanity over decades. The costs are concentrated on particular people, in particular places, right now. We enjoy the microwave. Someone else paid for it, and they did not get a choice.
+
+### The alibi
+
+There is one more reason to be precise about the proverb, and it is the most practical one. "War drives innovation" is not only a historical claim. It is an argument used, today, to sell military budgets. The civilian spin-offs, GPS, the internet, the microwave, are offered as a kind of dividend that makes the spending look like an investment.
+
+Two pieces of evidence cut against that. The first is the economist Mariana Mazzucato's work on what she calls the entrepreneurial state. She traced the key technologies inside a smartphone, the internet, GPS, the touchscreen, the voice assistant, back to public funding, much of it from defence agencies like DARPA. Her conclusion is not that war produces innovation. It is that patient, risk-taking public investment does, and that defence happened to be where much of that investment was allowed to happen. The active ingredient is the public money and the ambition, not the violence.
+
+The second is simple arithmetic. The economist Heidi Garrett-Peltier, working for Brown University's Costs of War project, estimated how many jobs a million dollars of federal spending supports in different sectors. The military came out at about 6.9 jobs per million dollars; clean energy and infrastructure at about 9.8; health care at about 14.3; education at about 15.2. If the justification for military spending is what it does for the economy, the same money spent almost anywhere else does more.
+
+None of this means a country should not defend itself. Ukraine's drones exist because Ukraine was invaded. It means only that when someone argues for war, or for arms, on the grounds of what it will invent, they are describing a very expensive way of buying something that could be bought more cheaply, and more safely, in peace.
+
+::: pull
+The active ingredient is the public money and the ambition, not the violence.
+:::
+
+### The next revolution, with a pinch of salt
+
+Every century seems to have its science. The nineteenth was the century of chemistry and the steam engine, the twentieth of physics, from the atom to the transistor. It is often said that the twenty-first will be the century of biology, and if that is right, then the story of war and invention is about to change its character, because biology is the one field in which the weapon and the cure are almost the same object.
+
+Biological war is older than it looks. The most famous early case, the Mongol army catapulting plague-ridden corpses over the walls of Caffa in the Crimea in 1346 and so bringing the Black Death to Europe, rests on a single account written by a man who was not there, and historians now doubt it happened as told. The documented cases are later and worse. In 1763, during a siege at Fort Pitt in North America, British officers gave Native American envoys blankets from a smallpox hospital, hoping to spread the disease; whether it worked is unclear, but the intent is written down in their own journals. In the 1930s and 1940s Japan's Unit 731 experimented on thousands of prisoners in occupied China and dropped plague-infected fleas on Chinese cities, and after the war many of its members were spared prosecution by the United States in exchange for their data. The Soviet Union built a secret biological weapons programme, Biopreparat, that employed tens of thousands of people under civilian cover, and in 1979 an accidental release of anthrax spores from a military facility in Sverdlovsk killed dozens of people, at least 68, while the authorities blamed contaminated meat.
+
+The world did ban these weapons. The Biological Weapons Convention of 1972 prohibits developing, producing and stockpiling them. But unlike the treaties on nuclear and chemical weapons, it has no system for verifying that anyone complies. When the philosopher Toby Ord wrote *The Precipice* in 2020, he pointed out that the convention's support unit had four staff and an annual budget smaller than that of an average McDonald's restaurant.
+
+Now the other side of the coin. The science that could make biological weapons is the same science that is transforming medicine. The mRNA vaccines that were developed within a year of the Covid-19 pandemic rested on work by Katalin Karikó and Drew Weissman, published in 2005, for which they received the Nobel Prize in 2023. It is worth noticing who else was paying attention early: in 2013, the Pentagon's research agency DARPA awarded Moderna up to 25 million dollars to develop its mRNA platform, explicitly as a defence against emerging diseases and engineered biological threats. The pattern of this whole essay repeats itself. A peacetime discovery, a military customer, and a civilian windfall.
+
+CRISPR, the gene-editing tool whose developers won the Nobel Prize in 2020, lets biologists rewrite DNA with a precision that was unthinkable a generation ago. In 2024 the Nobel Prize in Chemistry went to Demis Hassabis and John Jumper, for AlphaFold, the artificial intelligence system that predicts the three-dimensional shape of proteins from their sequence, and to David Baker, for designing new proteins that do not exist in nature. Biology is becoming something you can compute and engineer, not only something you observe.
+
+And the dual use is not hypothetical. In 2022 a team of researchers who build AI models for drug discovery reported, in *Nature Machine Intelligence*, what happened when they turned their model around and asked it to look for toxicity instead of avoiding it. In six hours of computing time it proposed some 40,000 candidate toxic molecules, including the nerve agent VX and many compounds predicted to be even more lethal. They published the result, without the details, as a warning.
+
+This is where Thomas Kuhn is useful, and also where he tells us to be careful. In *The Structure of Scientific Revolutions*, published in 1962, Kuhn argued that science does not advance smoothly. Most of the time scientists do what he called normal science, solving puzzles within an accepted framework, a paradigm. Occasionally the anomalies pile up, the paradigm cracks, and a revolution replaces it with a new way of seeing. Kuhn's phrase, the paradigm shift, has become a cliché, but his central point is sobering: revolutions are recognised afterwards. From inside normal science, you cannot reliably tell which anomaly will bring the house down.
+
+So here is the salt. In June 2000, announcing the first survey of the human genome, President Clinton said that humanity was "learning the language in which God created life" and predicted that genome science would revolutionise the treatment of "most, if not all, human diseases". A quarter of a century later, the genome has transformed research and a handful of treatments, but most of the diseases he named are still with us. Predictions of a biological century have been made before, and been early. Mine may be too.
+
+What seems safe to say is narrower. If the next great wave of invention is biological, it will reach us through the same channel as the last ones: public and military money chasing urgent problems, and civilians inheriting the results. And the gap this essay has been describing, between how fast we invent and how slowly we agree on what not to do, is widest in biology. A treaty with four staff is guarding a science that can now be run on a laptop. If there is a single place where the old proverb could become most dangerous, it is here.
+
+::: aside
+Kuhn noticed something about his own theory that applies to this essay. A revolution, he wrote, is often invisible to those living through it, because the textbooks are rewritten afterwards to make it look inevitable. Every "war invention" in this essay has had that treatment: the textbook tells you radar won the war and gave you the microwave. It rarely tells you about the chemist's wife, the tunnels under the Dora camp, or the airliner that had to be shot down before the satellites were shared.
+:::
+
+### What I have come to think
+
+So is war the mother of invention? I think the proverb survives only if you read it the way Heraclitus meant the older version: not as praise, but as a description of power. War does bring things into being. It forces them into existence faster than they would otherwise come, and it does so by spending lives, animals, land and money on a scale nothing else can match.
+
+But the evidence of this essay is that almost none of the ideas were war's. They came from confectioners and chemists, from a surgeon who treated the enemy's wounded by the same rules as his own, from a woman at an ordnance plant who worried about her sons, from a physicist in Geneva who wanted to share his files. War took their ideas and paid for them in a currency that other people had to supply.
+
+I look at my kitchen differently now. The microwave, the tins, the tape, the tissues, the phone. None of them is sinister. All of them are useful. And every one of them came to me through a transaction I was never party to, in which the price was paid, in advance and in full, by someone who is not here to use them.
+
+If war is the father of all things, it is a father who has never once paid for the upkeep of his children. The rest of us have been doing it all along, and the least we can do is keep the receipts.
+
+## Sources
+
+- [University of Cambridge: evidence of a prehistoric massacre at Nataruk](https://www.cam.ac.uk/research/news/evidence-of-a-prehistoric-massacre-extends-the-history-of-warfare)
+- [*Nature*: Contesting the massacre at Nataruk](https://www.nature.com/articles/nature19778)
+- [CNRS: Jebel Sahaba, a succession of violence](https://www.cnrs.fr/en/press/jebel-sahaba-succession-violence-rather-prehistoric-war)
+- [Livius: Heraclitus](https://www.livius.org/articles/person/heraclitus/)
+- [The Brooke: war horse facts](https://www.thebrooke.org/about-us/war-horse-facts)
+- [Al Jazeera: Gaza death toll](https://www.aljazeera.com/features/2026/2/18/gaza-death-toll-exceeds-75000-as-independent-data-verify-loss)
+- [*The Lancet Global Health*: violent and non-violent death tolls in Gaza](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(25)00522-4/fulltext)
+- [OCHA: humanitarian situation report, occupied Palestinian territory](https://www.ochaopt.org/content/humanitarian-situation-report-2-april-2026)
+- [UN Human Rights Monitoring Mission in Ukraine: protection of civilians, July 2026](https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-July-2026)
+- [UN News: Sudan's war enters its fourth year](https://news.un.org/en/story/2026/04/1167281)
+- [CSIS: the Sudan war in 10 charts](https://www.csis.org/analysis/sudan-war-10-charts)
+- [Britannica: 2026 Iran war](https://www.britannica.com/event/2026-Iran-war)
+- [Congressional Research Service: US conflict with Iran](https://www.congress.gov/crs-product/R48887)
+- [CEOBS and SGR: estimating the military's global greenhouse gas emissions](https://ceobs.org/estimating-the-militarys-global-greenhouse-gas-emissions/)
+- [*Science*: environmental effects of the Kakhovka dam destruction](https://www.science.org/doi/10.1126/science.adn8655)
+- [Nesta: the French food preservation prize](https://www.nesta.org.uk/feature/guide-historical-challenge-prizes/the-french-food-preservation-prize/)
+- [Britannica: Nicolas Appert](https://www.britannica.com/biography/Nicolas-Appert)
+- [Royal College of Surgeons: Dominique Jean Larrey](https://www.rcseng.ac.uk/library-and-publications/library/blog/dominique-jean-larrey-surgeon-in-chief-of-napoleons-armies/)
+- [Science History Institute: Clara Immerwahr, casualty of war](https://www.sciencehistory.org/stories/magazine/casualty-of-war/)
+- [Smithsonian: Fritz Haber's experiments in life and death](https://www.smithsonianmag.com/history/fritz-habers-experiments-in-life-and-death-114161301/)
+- [Our World in Data: how many people does synthetic fertiliser feed?](https://ourworldindata.org/how-many-people-does-synthetic-fertilizer-feed)
+- [Smithsonian: the surprising origins of Kotex](https://www.smithsonianmag.com/innovation/surprising-origins-kotex-pads-180964466/)
+- [Johnson & Johnson: Vesta Stoudt and duct tape](https://www.jnj.com/our-heritage/vesta-stoudt-the-woman-who-invented-duct-tape)
+- [Science Museum: how penicillin was developed](https://www.sciencemuseum.org.uk/objects-and-stories/how-was-penicillin-developed)
+- [Smithsonian National Museum of American History: the mould behind penicillin](https://americanhistory.si.edu/explore/stories/national-treasure-mold-behind-miracle-penicillin)
+- [National Inventors Hall of Fame: Percy Spencer](https://www.invent.org/inductees/percy-l-spencer)
+- [US Holocaust Memorial Museum: Dora-Mittelbau](https://encyclopedia.ushmm.org/content/en/article/dora-mittelbau-overview)
+- [V-2 rocket (Wikipedia)](https://en.wikipedia.org/wiki/V-2_rocket)
+- [Britannica: ARPANET](https://www.britannica.com/topic/ARPANET)
+- [Paul Baran (Wikipedia)](https://en.wikipedia.org/wiki/Paul_Baran)
+- [Korean Air Lines Flight 007 (Wikipedia)](https://en.wikipedia.org/wiki/Korean_Air_Lines_Flight_007)
+- [Smithsonian Time and Navigation: GPS](https://timeandnavigation.si.edu/node/226)
+- [Atlantic Council: Ukraine as a drone superpower](https://www.atlanticcouncil.org/blogs/ukrainealert/drone-superpower-ukrainian-wartime-innovation-offers-lessons-for-nato/)
+- [CSIS: how Operation Spiderweb redefines asymmetric warfare](https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare)
+- [+972 Magazine: "Lavender"](https://www.972mag.com/lavender-ai-israeli-army-gaza/)
+- [APOPO: HeroRAT Magawa receives award for life-saving bravery](https://apopo.org/latest/2020/09/herorat-magawa-receives-award-for-life-saving-bravery/)
+- [SIPRI: trends in world military expenditure, 2025](https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-world-military-expenditure-2025)
+- [SIPRI Top 100 arms-producing companies, 2024](https://www.sipri.org/publications/2025/sipri-fact-sheets/sipri-top-100-arms-producing-and-military-services-companies-2024)
+- [*The Washington Post*: how Hind Rajab and two paramedics were killed in Gaza](https://www.washingtonpost.com/world/interactive/2024/hind-rajab-israel-gaza-killing-timeline/)
+- [Killing of Hind Rajab (Wikipedia)](https://en.wikipedia.org/wiki/Killing_of_Hind_Rajab)
+- [Mysorean rockets (Wikipedia)](https://en.wikipedia.org/wiki/Mysorean_rockets)
+- [Smithsonian *Air & Space*: the rockets that inspired Francis Scott Key](https://www.smithsonianmag.com/air-space-magazine/rockets-inspired-francis-scott-key-180952399/)
+- [Oxford Reference: state formation and war](https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100528988)
+- [Gross and Sampat, "America, Jump-Started", *American Economic Review*](https://www.aeaweb.org/articles?id=10.1257%2Faer.20221365)
+- [Geneva Solutions: landmines in Ukraine](https://genevasolutions.news/peace-humanitarian/as-landmines-return-to-europe-ukraine-struggles-to-clear-30-per-cent-of-its-contaminated-territory)
+- [UNDP: AI for demining in Ukraine](https://www.undp.org/ukraine/press-releases/ai-demining-ukrainian-innovators-train-algorithms-detect-explosives-drone-images)
+- [UN News: UN chief and Red Cross renew call for rules on lethal autonomous weapons](https://news.un.org/en/story/2026/08/1168196)
+- [Mariana Mazzucato: *The Entrepreneurial State*](https://marianamazzucato.com/books/the-entrepreneurial-state/)
+- [Costs of War: Garrett-Peltier, "War Spending and Lost Opportunities"](https://costsofwar.watson.brown.edu/sites/default/files/papers/Peltier-Job-Opportunity-Cost-of-War-2019.pdf)
+- [Bulletin of the Atomic Scientists: catapulting corpses at Caffa probably never happened](https://thebulletin.org/2023/08/catapulting-corpses-a-famous-case-of-medieval-biological-warfare-probably-never-happened/)
+- [Unit 731 (EBSCO Research Starters)](https://www.ebsco.com/research-starters/history/unit-731/)
+- [Sverdlovsk anthrax leak (Wikipedia)](https://en.wikipedia.org/wiki/Sverdlovsk_anthrax_leak)
+- [National Security Archive: anthrax at Sverdlovsk, 1979](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB61/)
+- [Biopreparat (Wikipedia)](https://en.wikipedia.org/wiki/Biopreparat)
+- [UNODA: the Biological Weapons Convention](https://disarmament.unoda.org/en/our-work/weapons-mass-destruction/biological-weapons/biological-weapons-convention)
+- [Arms Control Association: the BWC at a glance](https://www.armscontrol.org/factsheets/biological-weapons-convention-bwc-glance-0)
+- [Toby Ord: *The Precipice*](https://www.tobyord.com/)
+- [Nobel Prize: Physiology or Medicine 2023](https://www.nobelprize.org/prizes/medicine/2023/press-release/)
+- [Moderna: DARPA grant, 2013](https://news.modernatx.com/news/news-details/2013/darpa-awards-moderna-therapeutics-a-grant-for-up-to-25-million-to-develop-messenger-rna-therapeutics)
+- [Nobel Prize: Chemistry 2024](https://www.nobelprize.org/prizes/chemistry/2024/press-release/)
+- [Urbina et al., "Dual use of artificial-intelligence-powered drug discovery", *Nature Machine Intelligence*](https://www.nature.com/articles/s42256-022-00465-9)
+- [Farnam Street: Kuhn and how scientific advancement happens](https://fs.blog/how-scientific-advancement-happens/)
+- [Clinton White House: completion of the first survey of the human genome, 2000](https://clintonwhitehouse3.archives.gov/WH/Work/062600.html)
+- [NPR: UK to pardon First World War deserters](https://www.npr.org/2006/08/17/5662527/u-k-to-pardon-wwi-deserters)
+- [Shell shock (Wikipedia)](https://en.wikipedia.org/wiki/Shell_shock)
+- [US Department of Veterans Affairs: PTSD from Armistice Day to DSM-5](https://news.va.gov/10827/ptsd-from-armistice-day-to-dsm-5/)
+- [UK Parliament: war and the coming of income tax](https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/taxation/overview/incometax/)
+- [Bulletin of the Atomic Scientists: counting the dead at Hiroshima and Nagasaki](https://thebulletin.org/2020/08/counting-the-dead-at-hiroshima-and-nagasaki/)
+- [Britannica: Joseph Rotblat](https://www.britannica.com/biography/Joseph-Rotblat)
+- [Nobel Peace Prize 1995](https://www.nobelprize.org/prizes/peace/1995/rotblat/facts/)
+- [National Army Museum: the birth of plastic surgery](https://www.nam.ac.uk/explore/birth-plastic-surgery)
+- [Smithsonian: Harold Gillies and *The Facemaker*](https://www.smithsonianmag.com/history/inside-a-trailblazing-surgeons-quest-to-reconstruct-wwi-soldiers-disfigured-faces-180980347/)
+- [Superhumans Center (Wikipedia)](https://en.wikipedia.org/wiki/Superhumans_Center)
+- [RFE/RL: high-tech prosthetics for Ukrainians who lost limbs](https://www.rferl.org/a/32422992.html)
