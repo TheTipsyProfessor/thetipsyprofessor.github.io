@@ -6,8 +6,16 @@
     <atom:link href="https://thetipsyprofessor.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Essays written between the second coffee and the first drink. Mostly explaining how things work, occasionally wondering why.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2026 23:30:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 21:30:00 GMT</lastBuildDate>
     <generator>tools/build.js</generator>
+    <item>
+      <title>The Elephant Who Says Pehle Aap</title>
+      <link>https://thetipsyprofessor.com/essay/the-elephant-who-says-pehle-aap/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/the-elephant-who-says-pehle-aap/</guid>
+      <pubDate>Sat, 26 Sep 2026 21:30:00 GMT</pubDate>
+      <category>Arguments</category>
+      <description>One in every six Indians lives in Uttar Pradesh. It gave the country most of its prime ministers, both of its great literary languages of the north, the city where Hindus go to die and the park where the Buddha first taught. It also gave it Hashimpura, the Babri Masjid, a vocabulary of gangsters and a word, "bhaiya", that other Indians do not always mean kindly. A long, personal look at the state I grew up in, and at what it made of me.</description>
+    </item>
     <item>
       <title>My Kitchen Is a War Museum</title>
       <link>https://thetipsyprofessor.com/essay/my-kitchen-is-a-war-museum/</link>
