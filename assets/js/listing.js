@@ -320,8 +320,8 @@
       var pool = all.filter(function (p) { return p !== leadPost; });
 
       var talks = pool.filter(function (p) { return p.tangent === 'Strangers'; }).slice(0, 3);
-      var rest = pool.filter(function (p) { return talks.indexOf(p) === -1; })
-                     .slice(0, feed && strangersBox ? 6 : 7);
+      var rest = pool.filter(function (p) { return talks.indexOf(p) === -1; });
+      var BATCH = feed && strangersBox ? 6 : 7;
 
       if (leadPost) lead.innerHTML = card(leadPost, true);
       else if (lead) lead.innerHTML =
@@ -337,9 +337,43 @@
         if (strangersSection) strangersSection.hidden = !talks.length;
       }
 
-      if (feed) feed.innerHTML = rest.map(function (p) {
-        return card(p, false);
-      }).join('');
+      /* The round opens with one batch; the rest arrive a batch
+         at a time as the reader nears the bottom, until the last
+         essay is on the page. Without IntersectionObserver the
+         whole round is printed at once. */
+      if (feed) {
+        var shown = 0;
+        var more = function () {
+          var next = rest.slice(shown, shown + BATCH);
+          feed.insertAdjacentHTML('beforeend', next.map(function (p) {
+            return card(p, false);
+          }).join(''));
+          shown += next.length;
+          if (window.TP && window.TP.sway) window.TP.sway();
+          return shown < rest.length;
+        };
+        feed.innerHTML = '';
+        if (!('IntersectionObserver' in window)) {
+          while (more()) {}
+        } else if (more()) {
+          var sentinel = document.createElement('div');
+          sentinel.setAttribute('aria-hidden', 'true');
+          feed.parentNode.insertBefore(sentinel, feed.nextSibling);
+          var near = function () {
+            return sentinel.getBoundingClientRect().top < window.innerHeight + 600;
+          };
+          // The observer only fires on a change, so if a batch
+          // leaves the bottom still in reach, keep going.
+          var fill = function () {
+            if (!more()) { watch.disconnect(); sentinel.remove(); return; }
+            requestAnimationFrame(function () { if (near()) fill(); });
+          };
+          var watch = new IntersectionObserver(function (seen) {
+            if (seen[0].isIntersecting) fill();
+          }, { rootMargin: '0px 0px 600px 0px' });
+          watch.observe(sentinel);
+        }
+      }
 
       buildFilters();
       setMasthead();
