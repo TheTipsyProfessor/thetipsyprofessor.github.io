@@ -6,8 +6,16 @@
     <atom:link href="https://thetipsyprofessor.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Essays written between the second coffee and the first drink. Mostly explaining how things work, occasionally wondering why.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Sep 2026 21:30:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 22:40:00 GMT</lastBuildDate>
     <generator>tools/build.js</generator>
+    <item>
+      <title>One Must Imagine Me Happy</title>
+      <link>https://thetipsyprofessor.com/essay/one-must-imagine-me-happy/</link>
+      <guid isPermaLink="true">https://thetipsyprofessor.com/essay/one-must-imagine-me-happy/</guid>
+      <pubDate>Wed, 30 Sep 2026 22:40:00 GMT</pubDate>
+      <category>Explained</category>
+      <description>For most of my life the next exam told me what to do. Then the exams ran out, the salary arrived, and a question nobody had set turned up anyway. What brain science, therapy and three thousand years of philosophy say about happiness and purpose, and why I ended up with a man pushing a rock up a hill.</description>
+    </item>
     <item>
       <title>The Elephant Who Says Pehle Aap</title>
       <link>https://thetipsyprofessor.com/essay/the-elephant-who-says-pehle-aap/</link>
