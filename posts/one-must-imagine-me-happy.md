@@ -5,10 +5,10 @@ place: Geneva
 time: 22:40
 date: 2026-09-30
 tangent: Explained
-pours: 15
+pours: 16
 image: assets/img/plate-imagine-happy-1.webp
 imageAlt: Sepia photograph-style image of a small, bare figure pushing a huge round boulder up a steep rocky ridge under a cloudy sky, with two birds overhead.
-keywords: happiness, purpose, meaning, camus, sisyphus, absurdism, the myth of sisyphus, don juan, the actor, the conqueror, the creator, dopamine, reward prediction error, hedonic treadmill, arrival fallacy, emotions, interoception, alexithymia, affect labelling, therapy, cbt, act, acceptance and commitment therapy, behavioural activation, frankl, logotherapy, ikigai, aristotle, eudaimonia, epicurus, stoics, buddha, bhagavad gita, nishkama karma, john stuart mill, schopenhauer, nietzsche, kierkegaard, sartre, nagel, cern
+keywords: happiness, purpose, meaning, camus, sisyphus, absurdism, the myth of sisyphus, don juan, the actor, the conqueror, the creator, dopamine, reward prediction error, hedonic treadmill, arrival fallacy, emotions, interoception, alexithymia, affect labelling, therapy, cbt, act, acceptance and commitment therapy, behavioural activation, frankl, logotherapy, ikigai, aristotle, eudaimonia, epicurus, stoics, buddha, bhagavad gita, nishkama karma, john stuart mill, schopenhauer, nietzsche, kierkegaard, sartre, nagel, cern, running, ironman, ultramarathon, exercise, fitness, murakami
 ---
 
 *A note before we start.* Camus opens his book on this subject with the word suicide, and so, in a sense, does this essay. I am asking the question as a philosophical one, from a comfortable chair, and that is how the essay treats it. If, for you, the question has stopped being philosophical, please do not read a blog about it. Talk to someone: a friend, a doctor, or a helpline. In Switzerland, La Main Tendue answers on 143, day and night. In India, the government's Tele-MANAS line is 14416. Nothing below is more important than that sentence.
@@ -535,6 +535,32 @@ And from Camus I have kept the rock. Most work, including mine, is Sisyphean in 
 The question is not how to escape the rock. It is how to walk back down the hill.
 :::
 
+### The rock I chose
+
+There is one more rock in my life, and it is the one I chose myself. I run.
+
+It started, like most things for a person like me, as a goal: a distance, a time, a race. It has become something closer to a practice, and it has turned out to be the most practical way I have found to keep pushing the other rock, the one called everyday life. One day I would like to finish an Ironman, the triathlon of a 3.8-kilometre swim, a 180-kilometre bike ride and a full 42.2-kilometre marathon, one after the other, and to run an ultramarathon, anything longer than a marathon and often much longer. I am not there yet. That is rather the point.
+
+I have thought about why running works for me, and the answer runs through almost every section of this essay.
+
+It gives the good student in me what he needs, but on better terms. I still get the small bright moments of achievement: a longer distance than last month, a faster kilometre, a race finished. The wanting system gets its targets. But these are targets I set myself, for reasons of my own, and nobody is marking me. In the language of self-determination theory, running is competence without the loss of autonomy. It is the first set of exams in my life that I wrote myself.
+
+It is also the purest form of flow I know. On a good run, somewhere after the first half hour, the chatter of the default mode network goes quiet, and there is only the breathing, the road and the next few metres. I am not thinking about the finish. I am running.
+
+And it is honest about the rock. A run ends where it began; you go out and you come back, and the next day the body wants you to do it again. No run is ever finished for good. Fitness, like Sisyphus's stone, rolls back down if you stop pushing it. The runners I admire most seem to understand that without having read Camus. The novelist Haruki Murakami, who has run a marathon a year for decades and written a small book about it, quotes a line he heard from another runner that could be a caption for the whole of this essay: pain is inevitable, suffering is optional.
+
+There is a less romantic reason too, and it is the one I think about when I lace up on a cold morning. The science on exercise is among the most solid in this whole essay. Large reviews of clinical trials have found that regular exercise, including simply walking and jogging, reduces symptoms of depression about as well as some of the standard treatments. And fitness itself, the capacity of the heart and lungs measured on a treadmill, is one of the strongest predictors of how long people live: in large studies following tens of thousands of patients, the fittest groups had far lower death rates than the least fit, a difference as large as or larger than that associated with smoking or diabetes. I am running, in part, towards a particular old age: one in which I can still walk up a hill, carry my own shopping, and sit somewhere quiet with a clear head. A healthy and peaceful old age is not a result you can collect at the end. It is built, one ordinary run at a time, decades in advance.
+
+::: aside
+The professor should add the obvious caution, because he knows his own type. It is entirely possible to turn running into another exam: to chase splits and medals and the approval of strangers on an app, and to feel as empty after the Ironman as after the degree. The race is a town on the way west. The running is the direction. If the finish line ever becomes the point, it is time to go for a slow run with no watch.
+:::
+
+So the Ironman and the ultra are goals, and I will enjoy them if I get there. But the value underneath them is simpler: to keep a body that can keep pushing, and a mind that is quieter for it. It is the one rock I would push even if nobody ever saw me do it.
+
+::: pull
+It is the first set of exams in my life that I wrote myself.
+:::
+
 ### What happiness turned out to be
 
 I said at the start that I had been programmed to find happiness in accomplishment and external validation, and that I had no inner sense of it. That is still partly true. You do not undo twenty years of gold seals in a few years of reading.
@@ -551,7 +577,7 @@ The third is that purpose, if there is such a thing, does not have to be discove
 
 So here is where I have ended up, at thirty-two, with a decent salary and no more exams.
 
-I keep going because the going is the point. Not the result at the top of the hill, which rolls back down whether I like it or not, but the pushing, the attention, the craft, the walk back down in the evening light, and the people I meet on the way. The universe does not tell me what any of it is for. It does not need to. I can decide what to care about, and care about it fully, and that is enough to fill a life.
+I keep going because the going is the point. Not the result at the top of the hill, which rolls back down whether I like it or not, but the pushing, the attention, the craft, the long run on a cold morning, the walk back down in the evening light, and the people I meet on the way. The universe does not tell me what any of it is for. It does not need to. I can decide what to care about, and care about it fully, and that is enough to fill a life.
 
 On a good day, I believe that completely. On a bad day, I believe it the way you believe in a friend who is not in the room: I trust that it is still true, even if I cannot feel it. And on both kinds of day, I think of a small figure on Giorgos's forearm, bent against a stone that is much too big for him, and of a scholarship boy from Algiers who looked at that figure and decided, against all the evidence, that he was happy.
 
@@ -603,6 +629,10 @@ One must imagine me happy. Most days, I can.
 - [Arthur Schopenhauer (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/schopenhauer/)
 - [Nietzsche, eternal recurrence and *amor fati* (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/nietzsche/)
 - [Sartre, *Existentialism Is a Humanism* (1946)](https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm)
+- [Noetel et al., "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials", *BMJ* (2024)](https://www.bmj.com/content/384/bmj-2023-075847)
+- [Mandsager et al., "Association of Cardiorespiratory Fitness With Long-term Mortality", *JAMA Network Open* (2018)](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2707428)
+- [Haruki Murakami, *What I Talk About When I Talk About Running* (2008)](https://en.wikipedia.org/wiki/What_I_Talk_About_When_I_Talk_About_Running)
+- [Ironman triathlon (Wikipedia)](https://en.wikipedia.org/wiki/Ironman_Triathlon)
 - [La Main Tendue, 143 (Switzerland)](https://www.143.ch/)
 - [Tele-MANAS, 14416 (India)](https://telemanas.mohfw.gov.in/)
 
