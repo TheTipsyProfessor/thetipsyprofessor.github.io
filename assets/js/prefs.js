@@ -11,8 +11,10 @@
   'use strict';
 
   var KEY = 'tp.prefs';
-  var SIZES = [0.875, 1, 1.125, 1.25, 1.375, 1.5];
-  var DEFAULT_SIZE = 1;
+  // sv 2: the scale gained a 75% step at the bottom. Sizes saved
+  // before that are indices into the old list, so move them up one.
+  var SIZES = [0.75, 0.875, 1, 1.125, 1.25, 1.375, 1.5];
+  var DEFAULT_SIZE = 2;
   var root = document.documentElement;
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -44,6 +46,8 @@
 
   var prefs = read();
   if (prefs.edition !== 'night') prefs.edition = 'day';
+  if (typeof prefs.size === 'number' && prefs.sv !== 2) prefs.size += 1;
+  prefs.sv = 2;
   if (typeof prefs.size !== 'number' || !SIZES[prefs.size]) prefs.size = DEFAULT_SIZE;
   if (typeof prefs.tipsy !== 'number' || prefs.tipsy < 0 || prefs.tipsy > 1) prefs.tipsy = 0.25;
 

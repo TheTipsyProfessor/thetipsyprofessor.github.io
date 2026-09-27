@@ -30,7 +30,7 @@
 (function(){try{
   var p=JSON.parse(localStorage.getItem('tp.prefs')||'{}')||{},r=document.documentElement;
   r.setAttribute('data-edition',p.edition==='night'?'night':'day');
-  var S=[.875,1,1.125,1.25,1.375,1.5],i=typeof p.size==='number'&&S[p.size]?p.size:1;
+  var S=[.75,.875,1,1.125,1.25,1.375,1.5],i=typeof p.size==='number'?(p.sv===2?p.size:p.size+1):2;if(!S[i])i=2;
   r.style.setProperty('--fs-scale',S[i]);
   var t=typeof p.tipsy==='number'?p.tipsy:.25;
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)t=0;
